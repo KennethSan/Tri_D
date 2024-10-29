@@ -23,7 +23,7 @@ namespace Tri_D
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MySqlConnection connection = DatabaseHelper.GetConnection();
+           /* MySqlConnection connection = DatabaseHelper.GetConnection();*/
         }
 
         private void bunifuLabel1_Click(object sender, EventArgs e)
