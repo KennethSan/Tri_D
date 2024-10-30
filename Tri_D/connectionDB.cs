@@ -1,11 +1,13 @@
-﻿using System;
-using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Crypto.Engines;
-using System.Data.Common;
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Tri_D
 {
-    public static class DatabaseHelper
+    public static class connectionDB
     {
         static string server = "localhost";
         static string port = "3306";
@@ -18,11 +20,14 @@ namespace Tri_D
         public static MySqlConnection GetConnection()
         {
             MySqlConnection mySqlConnection = new MySqlConnection(connectionString);
-            try { 
-                    mySqlConnection.Open();
-                    return mySqlConnection; 
+            try
+            {
+                mySqlConnection.Open();
+                return mySqlConnection;
+
             }
-            catch(Exception ex) {
+            catch (Exception ex)
+            {
                 Console.WriteLine($"Connection failed: {ex.Message}");
                 return null;
             }

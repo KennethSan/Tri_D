@@ -113,12 +113,15 @@
             this.passwordTextbox.HoverState.Parent = this.passwordTextbox;
             this.passwordTextbox.Location = new System.Drawing.Point(23, 155);
             this.passwordTextbox.Name = "passwordTextbox";
-            this.passwordTextbox.PasswordChar = '\0';
+            this.passwordTextbox.PasswordChar = '*';
             this.passwordTextbox.PlaceholderText = "Password";
             this.passwordTextbox.SelectedText = "";
             this.passwordTextbox.ShadowDecoration.Parent = this.passwordTextbox;
             this.passwordTextbox.Size = new System.Drawing.Size(200, 36);
             this.passwordTextbox.TabIndex = 3;
+            this.passwordTextbox.TextChanged += new System.EventHandler(this.passwordTextbox_TextChanged);
+            this.passwordTextbox.DoubleClick += new System.EventHandler(this.passwordTextbox_DoubleClick);
+            this.passwordTextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordTextbox_KeyDown);
             // 
             // bunifuLabel1
             // 
@@ -181,6 +184,7 @@
             this.Name = "Login";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Enter += new System.EventHandler(this.Login_Enter);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
