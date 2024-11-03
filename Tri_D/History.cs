@@ -10,25 +10,31 @@ using System.Windows.Forms;
 
 namespace Tri_D
 {
-    public partial class Dashboard : Form
+    public partial class History : Form
     {
         bool sidebarExpand;
-        public Dashboard()
+        public History()
         {
             InitializeComponent();
-
         }
 
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-       
-
-        private void Dashboard_Load(object sender, EventArgs e)
+        private void History_Load(object sender, EventArgs e)
         {
             sidebar.Width = sidebar.MinimumSize.Width;
+        }
+
+        private void dashboardButton_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide(); // Hide the login form
+        }
+
+        private void manageButton_Click(object sender, EventArgs e)
+        {
+            Manage manage = new Manage();
+            manage.Show();
+            this.Hide();
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
@@ -40,7 +46,6 @@ namespace Tri_D
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
-            
             if (sidebarExpand)
             {
                 sidebar.Width -= 10;
@@ -53,7 +58,7 @@ namespace Tri_D
             else
             {
                 sidebar.Width += 10;
-                if(sidebar.Width == sidebar.MaximumSize.Width)
+                if (sidebar.Width == sidebar.MaximumSize.Width)
                 {
                     sidebarExpand = true;
                     sidebarTimer.Stop();
@@ -64,20 +69,6 @@ namespace Tri_D
         private void menuButton_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
-        }
-
-        private void manageButton_Click(object sender, EventArgs e)
-        {
-            Manage manage = new Manage();
-            manage.Show();
-            this.Hide();
-        }
-
-        private void historyButton_Click(object sender, EventArgs e)
-        {
-            History history = new History();
-            history.Show();
-            this.Hide();
         }
     }
 }

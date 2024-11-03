@@ -49,5 +49,26 @@ namespace Tri_D
                 }
             }
         }
+
+        private void dashboardButton_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide(); // Hide the login form
+        }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void historyButton_Click(object sender, EventArgs e)
+        {
+            History history = new History();
+            history.Show();
+            this.Hide();
+        }
     }
 }

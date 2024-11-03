@@ -1,6 +1,6 @@
 ﻿namespace Tri_D
 {
-    partial class Manage
+    partial class History
     {
         /// <summary>
         /// Required designer variable.
@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tuaLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuButton = new Bunifu.UI.WinForms.BunifuImageButton();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.sidePanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.sidePanel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.sidePanel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.sidePanel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menuButton = new Bunifu.UI.WinForms.BunifuImageButton();
             this.dashboardButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.sidePanel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.manageButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.sidePanel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.historyButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.sidePanel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.logoutButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebar.SuspendLayout();
             this.sidePanel.SuspendLayout();
             this.sidePanel2.SuspendLayout();
             this.sidePanel3.SuspendLayout();
             this.sidePanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -65,7 +65,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(800, 64);
-            this.guna2Panel1.TabIndex = 2;
+            this.guna2Panel1.TabIndex = 4;
             // 
             // tuaLabel
             // 
@@ -83,77 +83,6 @@
             this.tuaLabel.Text = "TUA Parking Management System";
             this.tuaLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.tuaLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // sidebar
-            // 
-            this.sidebar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(47)))));
-            this.sidebar.Controls.Add(this.panel1);
-            this.sidebar.Controls.Add(this.sidePanel);
-            this.sidebar.Controls.Add(this.sidePanel2);
-            this.sidebar.Controls.Add(this.sidePanel3);
-            this.sidebar.Controls.Add(this.sidePanel4);
-            this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.MaximumSize = new System.Drawing.Size(206, 451);
-            this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(206, 451);
-            this.sidebar.TabIndex = 3;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 61);
-            this.panel1.TabIndex = 2;
-            // 
-            // sidePanel
-            // 
-            this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.sidePanel.BorderRadius = 200;
-            this.sidePanel.Controls.Add(this.dashboardButton);
-            this.sidePanel.Location = new System.Drawing.Point(3, 70);
-            this.sidePanel.Name = "sidePanel";
-            this.sidePanel.ShadowDecoration.Parent = this.sidePanel;
-            this.sidePanel.Size = new System.Drawing.Size(200, 46);
-            this.sidePanel.TabIndex = 3;
-            // 
-            // sidePanel2
-            // 
-            this.sidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.sidePanel2.BorderRadius = 200;
-            this.sidePanel2.Controls.Add(this.manageButton);
-            this.sidePanel2.Location = new System.Drawing.Point(3, 122);
-            this.sidePanel2.Name = "sidePanel2";
-            this.sidePanel2.ShadowDecoration.Parent = this.sidePanel2;
-            this.sidePanel2.Size = new System.Drawing.Size(200, 46);
-            this.sidePanel2.TabIndex = 4;
-            // 
-            // sidePanel3
-            // 
-            this.sidePanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.sidePanel3.BorderRadius = 200;
-            this.sidePanel3.Controls.Add(this.historyButton);
-            this.sidePanel3.Location = new System.Drawing.Point(3, 174);
-            this.sidePanel3.Name = "sidePanel3";
-            this.sidePanel3.ShadowDecoration.Parent = this.sidePanel3;
-            this.sidePanel3.Size = new System.Drawing.Size(200, 46);
-            this.sidePanel3.TabIndex = 4;
-            // 
-            // sidePanel4
-            // 
-            this.sidePanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.sidePanel4.BorderRadius = 200;
-            this.sidePanel4.Controls.Add(this.logoutButton);
-            this.sidePanel4.Location = new System.Drawing.Point(3, 226);
-            this.sidePanel4.Name = "sidePanel4";
-            this.sidePanel4.ShadowDecoration.Parent = this.sidePanel4;
-            this.sidePanel4.Size = new System.Drawing.Size(200, 46);
-            this.sidePanel4.TabIndex = 4;
-            // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Interval = 5;
-            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
             // pictureBox1
             // 
@@ -202,6 +131,39 @@
             this.menuButton.ZoomSpeed = 10;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
+            // sidebar
+            // 
+            this.sidebar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(47)))));
+            this.sidebar.Controls.Add(this.panel1);
+            this.sidebar.Controls.Add(this.sidePanel);
+            this.sidebar.Controls.Add(this.sidePanel2);
+            this.sidebar.Controls.Add(this.sidePanel3);
+            this.sidebar.Controls.Add(this.sidePanel4);
+            this.sidebar.Location = new System.Drawing.Point(0, 0);
+            this.sidebar.MaximumSize = new System.Drawing.Size(206, 451);
+            this.sidebar.Name = "sidebar";
+            this.sidebar.Size = new System.Drawing.Size(206, 451);
+            this.sidebar.TabIndex = 5;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 61);
+            this.panel1.TabIndex = 2;
+            // 
+            // sidePanel
+            // 
+            this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.sidePanel.BorderRadius = 200;
+            this.sidePanel.Controls.Add(this.dashboardButton);
+            this.sidePanel.Location = new System.Drawing.Point(3, 70);
+            this.sidePanel.Name = "sidePanel";
+            this.sidePanel.ShadowDecoration.Parent = this.sidePanel;
+            this.sidePanel.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel.TabIndex = 3;
+            // 
             // dashboardButton
             // 
             this.dashboardButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dashboardButton.BackgroundImage")));
@@ -216,32 +178,64 @@
             this.dashboardButton.TabIndex = 4;
             this.dashboardButton.Click += new System.EventHandler(this.dashboardButton_Click);
             // 
+            // sidePanel2
+            // 
+            this.sidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.sidePanel2.BorderRadius = 200;
+            this.sidePanel2.Controls.Add(this.manageButton);
+            this.sidePanel2.Location = new System.Drawing.Point(3, 122);
+            this.sidePanel2.Name = "sidePanel2";
+            this.sidePanel2.ShadowDecoration.Parent = this.sidePanel2;
+            this.sidePanel2.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel2.TabIndex = 4;
+            // 
             // manageButton
             // 
             this.manageButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manageButton.BackgroundImage")));
             this.manageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.manageButton.CheckedState.Parent = this.manageButton;
-            this.manageButton.Cursor = System.Windows.Forms.Cursors.Default;
+            this.manageButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.manageButton.HoverState.Parent = this.manageButton;
             this.manageButton.Location = new System.Drawing.Point(0, 0);
             this.manageButton.Name = "manageButton";
             this.manageButton.PressedState.Parent = this.manageButton;
             this.manageButton.Size = new System.Drawing.Size(196, 52);
             this.manageButton.TabIndex = 5;
+            this.manageButton.Click += new System.EventHandler(this.manageButton_Click);
+            // 
+            // sidePanel3
+            // 
+            this.sidePanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.sidePanel3.BorderRadius = 200;
+            this.sidePanel3.Controls.Add(this.historyButton);
+            this.sidePanel3.Location = new System.Drawing.Point(3, 174);
+            this.sidePanel3.Name = "sidePanel3";
+            this.sidePanel3.ShadowDecoration.Parent = this.sidePanel3;
+            this.sidePanel3.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel3.TabIndex = 4;
             // 
             // historyButton
             // 
             this.historyButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("historyButton.BackgroundImage")));
             this.historyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.historyButton.CheckedState.Parent = this.historyButton;
-            this.historyButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.historyButton.HoverState.Parent = this.historyButton;
             this.historyButton.Location = new System.Drawing.Point(0, 0);
             this.historyButton.Name = "historyButton";
             this.historyButton.PressedState.Parent = this.historyButton;
             this.historyButton.Size = new System.Drawing.Size(196, 52);
             this.historyButton.TabIndex = 6;
-            this.historyButton.Click += new System.EventHandler(this.historyButton_Click);
+            // 
+            // sidePanel4
+            // 
+            this.sidePanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.sidePanel4.BorderRadius = 200;
+            this.sidePanel4.Controls.Add(this.logoutButton);
+            this.sidePanel4.Location = new System.Drawing.Point(3, 226);
+            this.sidePanel4.Name = "sidePanel4";
+            this.sidePanel4.ShadowDecoration.Parent = this.sidePanel4;
+            this.sidePanel4.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel4.TabIndex = 4;
             // 
             // logoutButton
             // 
@@ -257,24 +251,29 @@
             this.logoutButton.TabIndex = 7;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
-            // Manage
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 5;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
+            // 
+            // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.sidebar);
-            this.Name = "Manage";
-            this.Text = "Manage";
-            this.Load += new System.EventHandler(this.Manage_Load);
+            this.Name = "History";
+            this.Text = "History";
+            this.Load += new System.EventHandler(this.History_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.sidebar.ResumeLayout(false);
             this.sidePanel.ResumeLayout(false);
             this.sidePanel2.ResumeLayout(false);
             this.sidePanel3.ResumeLayout(false);
             this.sidePanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

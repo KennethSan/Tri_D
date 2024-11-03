@@ -56,10 +56,11 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.guna2Panel1.Controls.Add(this.tuaLabel);
             this.guna2Panel1.Controls.Add(this.pictureBox1);
             this.guna2Panel1.Controls.Add(this.menuButton);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -86,17 +87,17 @@
             // 
             // sidebar
             // 
-            this.sidebar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(47)))));
             this.sidebar.Controls.Add(this.panel1);
             this.sidebar.Controls.Add(this.sidePanel);
             this.sidebar.Controls.Add(this.sidePanel2);
             this.sidebar.Controls.Add(this.sidePanel3);
             this.sidebar.Controls.Add(this.sidePanel4);
+            this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(206, 451);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(206, 451);
+            this.sidebar.Size = new System.Drawing.Size(206, 450);
             this.sidebar.TabIndex = 1;
             // 
             // panel1
@@ -220,6 +221,7 @@
             this.manageButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manageButton.BackgroundImage")));
             this.manageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.manageButton.CheckedState.Parent = this.manageButton;
+            this.manageButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.manageButton.HoverState.Parent = this.manageButton;
             this.manageButton.Location = new System.Drawing.Point(0, 0);
             this.manageButton.Name = "manageButton";
@@ -233,18 +235,21 @@
             this.historyButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("historyButton.BackgroundImage")));
             this.historyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.historyButton.CheckedState.Parent = this.historyButton;
+            this.historyButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.historyButton.HoverState.Parent = this.historyButton;
             this.historyButton.Location = new System.Drawing.Point(0, 0);
             this.historyButton.Name = "historyButton";
             this.historyButton.PressedState.Parent = this.historyButton;
             this.historyButton.Size = new System.Drawing.Size(196, 52);
             this.historyButton.TabIndex = 6;
+            this.historyButton.Click += new System.EventHandler(this.historyButton_Click);
             // 
             // logoutButton
             // 
             this.logoutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoutButton.BackgroundImage")));
             this.logoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.logoutButton.CheckedState.Parent = this.logoutButton;
+            this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logoutButton.HoverState.Parent = this.logoutButton;
             this.logoutButton.Location = new System.Drawing.Point(0, 0);
             this.logoutButton.Name = "logoutButton";
