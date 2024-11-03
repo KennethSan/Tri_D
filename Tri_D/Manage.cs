@@ -10,35 +10,26 @@ using System.Windows.Forms;
 
 namespace Tri_D
 {
-    public partial class Dashboard : Form
+    public partial class Manage : Form
     {
         bool sidebarExpand;
-        public Dashboard()
+        public Manage()
         {
             InitializeComponent();
-
         }
 
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-       
-
-        private void Dashboard_Load(object sender, EventArgs e)
+        private void Manage_Load(object sender, EventArgs e)
         {
             sidebar.Width = sidebar.MinimumSize.Width;
         }
 
-        private void logoutButton_Click(object sender, EventArgs e)
+        private void menuButton_Click(object sender, EventArgs e)
         {
-
+            sidebarTimer.Start();
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
-            
             if (sidebarExpand)
             {
                 sidebar.Width -= 10;
@@ -51,24 +42,12 @@ namespace Tri_D
             else
             {
                 sidebar.Width += 10;
-                if(sidebar.Width == sidebar.MaximumSize.Width)
+                if (sidebar.Width == sidebar.MaximumSize.Width)
                 {
                     sidebarExpand = true;
                     sidebarTimer.Stop();
                 }
             }
-        }
-
-        private void menuButton_Click(object sender, EventArgs e)
-        {
-            sidebarTimer.Start();
-        }
-
-        private void manageButton_Click(object sender, EventArgs e)
-        {
-            Manage manage = new Manage();
-            manage.Show();
-            this.Hide();
         }
     }
 }

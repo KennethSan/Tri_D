@@ -1,6 +1,6 @@
 ﻿namespace Tri_D
 {
-    partial class Dashboard
+    partial class Manage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manage));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tuaLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
@@ -38,13 +38,13 @@
             this.sidePanel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.sidePanel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.sidePanel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuButton = new Bunifu.UI.WinForms.BunifuImageButton();
             this.dashboardButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.manageButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.historyButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.logoutButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             this.sidebar.SuspendLayout();
             this.sidePanel.SuspendLayout();
@@ -65,7 +65,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(800, 64);
-            this.guna2Panel1.TabIndex = 0;
+            this.guna2Panel1.TabIndex = 2;
             // 
             // tuaLabel
             // 
@@ -97,7 +97,7 @@
             this.sidebar.MaximumSize = new System.Drawing.Size(206, 451);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(206, 451);
-            this.sidebar.TabIndex = 1;
+            this.sidebar.TabIndex = 3;
             // 
             // panel1
             // 
@@ -116,7 +116,6 @@
             this.sidePanel.ShadowDecoration.Parent = this.sidePanel;
             this.sidePanel.Size = new System.Drawing.Size(200, 46);
             this.sidePanel.TabIndex = 3;
-            this.sidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // sidePanel2
             // 
@@ -150,11 +149,6 @@
             this.sidePanel4.ShadowDecoration.Parent = this.sidePanel4;
             this.sidePanel4.Size = new System.Drawing.Size(200, 46);
             this.sidePanel4.TabIndex = 4;
-            // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Interval = 5;
-            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
             // pictureBox1
             // 
@@ -226,7 +220,6 @@
             this.manageButton.PressedState.Parent = this.manageButton;
             this.manageButton.Size = new System.Drawing.Size(196, 52);
             this.manageButton.TabIndex = 5;
-            this.manageButton.Click += new System.EventHandler(this.manageButton_Click);
             // 
             // historyButton
             // 
@@ -251,18 +244,22 @@
             this.logoutButton.PressedState.Parent = this.logoutButton;
             this.logoutButton.Size = new System.Drawing.Size(196, 52);
             this.logoutButton.TabIndex = 7;
-            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
-            // Dashboard
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 5;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
+            // 
+            // Manage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.sidebar);
-            this.Name = "Dashboard";
-            this.Text = "Dashboard";
-            this.Load += new System.EventHandler(this.Dashboard_Load);
+            this.Name = "Manage";
+            this.Text = "Manage";
+            this.Load += new System.EventHandler(this.Manage_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.sidebar.ResumeLayout(false);
@@ -278,9 +275,9 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Bunifu.UI.WinForms.BunifuLabel tuaLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuImageButton menuButton;
-        private Bunifu.UI.WinForms.BunifuLabel tuaLabel;
         private System.Windows.Forms.FlowLayoutPanel sidebar;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Panel sidePanel;

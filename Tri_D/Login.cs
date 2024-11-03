@@ -20,11 +20,12 @@ namespace Tri_D
         public Login()
         {
             InitializeComponent();
+      
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+          
         }
 
         private void bunifuLabel1_Click(object sender, EventArgs e)
