@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +15,7 @@ namespace Tri_D
     public partial class Dashboard : Form
     {
         bool sidebarExpand;
+        MySqlConnection connection = connectionDB.GetConnection();
         public Dashboard()
         {
             InitializeComponent();
@@ -28,9 +31,64 @@ namespace Tri_D
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            sidebar.Width = sidebar.MinimumSize.Width;
-        }
 
+            sidebar.Width = sidebar.MinimumSize.Width;
+            refreshLoad.Start();
+            RefreshParkingCounts();
+            /*MySqlConnection connection = connectionDB.GetConnection();
+            string queryVacant = "SELECT COUNT(*) AS vacant_count FROM parkingslot WHERE status = 'vacant';";
+            string queryOccupied = "SELECT COUNT(*) AS occupied_count FROM parkingslot WHERE status = 'occupied';";
+            string queryTotalslot = "SELECT COUNT(*) AS total_slots FROM parkingslot;";
+
+            MySqlCommand commandSql = new MySqlCommand(queryVacant, connection);
+            MySqlCommand commandSql2 = new MySqlCommand(queryOccupied, connection);
+            MySqlCommand commandSql3 = new MySqlCommand(queryTotalslot, connection);
+
+            int vacantCar = Convert.ToInt32(commandSql.ExecuteScalar()); 
+            int occupiedCar = Convert.ToInt32(commandSql2.ExecuteScalar());
+            int maximumSlot = Convert.ToInt32(commandSql3.ExecuteScalar());
+            vacantnumLabel.Text = vacantCar.ToString();
+            occupiednumLabel.Text = occupiedCar.ToString();
+            carAvailabilityProgress.Value = occupiedCar;
+            carAvailabilityProgress.Maximum = maximumSlot;*/
+
+        }
+        private void RefreshParkingCounts()
+        {
+            
+            string queryVacant = "SELECT COUNT(*) AS vacant_count FROM parkingslot WHERE status = 'vacant';";
+            string queryOccupied = "SELECT COUNT(*) AS occupied_count FROM parkingslot WHERE status = 'occupied';";
+            string queryTotalslot = "SELECT COUNT(*) AS total_slots FROM parkingslot;";
+
+            string queryVacantMotor = "SELECT COUNT(*) AS vacantMotor_count FROM parkingslotmotorcycle WHERE status = 'vacant';";
+            string queryOccupiedMotor = "SELECT COUNT(*) AS occupiedMotor_count FROM parkingslotmotorcycle WHERE status = 'occupied';";
+            string queryTotalslotMotor = "SELECT COUNT(*) AS totalMotor_slots FROM parkingslotmotorcycle;";
+
+            MySqlCommand commandSql = new MySqlCommand(queryVacant, connection);
+            MySqlCommand commandSql2 = new MySqlCommand(queryOccupied, connection);
+            MySqlCommand commandSql3 = new MySqlCommand(queryTotalslot, connection);
+            MySqlCommand commandSql4 = new MySqlCommand(queryVacantMotor, connection);
+            MySqlCommand commandSql5 = new MySqlCommand(queryOccupiedMotor, connection);
+            MySqlCommand commandSql6 = new MySqlCommand(queryTotalslotMotor, connection);
+
+            int vacantCar = Convert.ToInt32(commandSql.ExecuteScalar());
+            int occupiedCar = Convert.ToInt32(commandSql2.ExecuteScalar());
+            int maximumSlot = Convert.ToInt32(commandSql3.ExecuteScalar());
+
+            int vacantMotor = Convert.ToInt32(commandSql4.ExecuteScalar());
+            int occupiedMotor = Convert.ToInt32(commandSql5.ExecuteScalar());
+            int maximumSlotMotor = Convert.ToInt32(commandSql6.ExecuteScalar());
+
+            vacantnumLabel.Text = vacantCar.ToString();
+            occupiednumLabel.Text = occupiedCar.ToString();
+            carAvailabilityProgress.Value = occupiedCar;
+            carAvailabilityProgress.Maximum = maximumSlot;
+
+            vacantnumMOTORLabel.Text = vacantMotor.ToString();
+            occupiednumMOTORLabel.Text = occupiedMotor.ToString();
+            motorAvailabilityProgress.Value = occupiedMotor;
+            motorAvailabilityProgress.Maximum = maximumSlotMotor;
+        }
         private void logoutButton_Click(object sender, EventArgs e)
         {
             Login login = new Login();
@@ -78,6 +136,11 @@ namespace Tri_D
             History history = new History();
             history.Show();
             this.Hide();
+        }
+
+        private void refreshLoad_Tick(object sender, EventArgs e)
+        {
+            RefreshParkingCounts();
         }
     }
 }

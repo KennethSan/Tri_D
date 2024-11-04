@@ -53,12 +53,13 @@
             this.occupiednumLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.vacantnumLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.vacantnumMOTORLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.occupiednumMOTORLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.guna2ProgressBar1 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.motorAvailabilityProgress = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.refreshLoad = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebar.SuspendLayout();
@@ -306,19 +307,25 @@
             // 
             // carAvailabilityProgress
             // 
-            this.carAvailabilityProgress.BackColor = System.Drawing.Color.White;
+            this.carAvailabilityProgress.AutoRoundedCorners = true;
+            this.carAvailabilityProgress.BackColor = System.Drawing.Color.Transparent;
+            this.carAvailabilityProgress.BorderRadius = 5;
             this.carAvailabilityProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.carAvailabilityProgress.ForeColor = System.Drawing.Color.Lime;
             this.carAvailabilityProgress.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.carAvailabilityProgress.Location = new System.Drawing.Point(13, 70);
+            this.carAvailabilityProgress.Maximum = 75;
             this.carAvailabilityProgress.Name = "carAvailabilityProgress";
+            this.carAvailabilityProgress.ProgressBrushMode = Guna.UI2.WinForms.Enums.BrushMode.Solid;
             this.carAvailabilityProgress.ProgressColor = System.Drawing.Color.Red;
             this.carAvailabilityProgress.ProgressColor2 = System.Drawing.Color.Red;
             this.carAvailabilityProgress.ShadowDecoration.Parent = this.carAvailabilityProgress;
+            this.carAvailabilityProgress.ShowPercentage = true;
             this.carAvailabilityProgress.Size = new System.Drawing.Size(166, 30);
             this.carAvailabilityProgress.TabIndex = 1;
             this.carAvailabilityProgress.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.carAvailabilityProgress.Value = 20;
+            this.carAvailabilityProgress.UseTransparentBackground = true;
+            this.carAvailabilityProgress.Value = 8;
             // 
             // occupiedLabel
             // 
@@ -385,11 +392,11 @@
             // guna2Panel3
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.guna2Panel3.Controls.Add(this.bunifuLabel1);
-            this.guna2Panel3.Controls.Add(this.bunifuLabel2);
+            this.guna2Panel3.Controls.Add(this.vacantnumMOTORLabel);
+            this.guna2Panel3.Controls.Add(this.occupiednumMOTORLabel);
             this.guna2Panel3.Controls.Add(this.bunifuLabel3);
             this.guna2Panel3.Controls.Add(this.bunifuLabel4);
-            this.guna2Panel3.Controls.Add(this.guna2ProgressBar1);
+            this.guna2Panel3.Controls.Add(this.motorAvailabilityProgress);
             this.guna2Panel3.Controls.Add(this.bunifuLabel5);
             this.guna2Panel3.Location = new System.Drawing.Point(525, 70);
             this.guna2Panel3.Name = "guna2Panel3";
@@ -397,37 +404,37 @@
             this.guna2Panel3.Size = new System.Drawing.Size(191, 113);
             this.guna2Panel3.TabIndex = 7;
             // 
-            // bunifuLabel1
+            // vacantnumMOTORLabel
             // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.CursorType = null;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.ForeColor = System.Drawing.Color.Green;
-            this.bunifuLabel1.Location = new System.Drawing.Point(154, 49);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(6, 15);
-            this.bunifuLabel1.TabIndex = 6;
-            this.bunifuLabel1.Text = "0";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.vacantnumMOTORLabel.AllowParentOverrides = false;
+            this.vacantnumMOTORLabel.AutoEllipsis = false;
+            this.vacantnumMOTORLabel.CursorType = null;
+            this.vacantnumMOTORLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.vacantnumMOTORLabel.ForeColor = System.Drawing.Color.Green;
+            this.vacantnumMOTORLabel.Location = new System.Drawing.Point(154, 49);
+            this.vacantnumMOTORLabel.Name = "vacantnumMOTORLabel";
+            this.vacantnumMOTORLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.vacantnumMOTORLabel.Size = new System.Drawing.Size(6, 15);
+            this.vacantnumMOTORLabel.TabIndex = 6;
+            this.vacantnumMOTORLabel.Text = "0";
+            this.vacantnumMOTORLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.vacantnumMOTORLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel2
+            // occupiednumMOTORLabel
             // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel2.ForeColor = System.Drawing.Color.Red;
-            this.bunifuLabel2.Location = new System.Drawing.Point(30, 50);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(6, 15);
-            this.bunifuLabel2.TabIndex = 5;
-            this.bunifuLabel2.Text = "0";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.occupiednumMOTORLabel.AllowParentOverrides = false;
+            this.occupiednumMOTORLabel.AutoEllipsis = false;
+            this.occupiednumMOTORLabel.CursorType = null;
+            this.occupiednumMOTORLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.occupiednumMOTORLabel.ForeColor = System.Drawing.Color.Red;
+            this.occupiednumMOTORLabel.Location = new System.Drawing.Point(30, 50);
+            this.occupiednumMOTORLabel.Name = "occupiednumMOTORLabel";
+            this.occupiednumMOTORLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.occupiednumMOTORLabel.Size = new System.Drawing.Size(6, 15);
+            this.occupiednumMOTORLabel.TabIndex = 5;
+            this.occupiednumMOTORLabel.Text = "0";
+            this.occupiednumMOTORLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.occupiednumMOTORLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel3
             // 
@@ -459,21 +466,21 @@
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // guna2ProgressBar1
+            // motorAvailabilityProgress
             // 
-            this.guna2ProgressBar1.BackColor = System.Drawing.Color.White;
-            this.guna2ProgressBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.guna2ProgressBar1.ForeColor = System.Drawing.Color.Lime;
-            this.guna2ProgressBar1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.guna2ProgressBar1.Location = new System.Drawing.Point(13, 70);
-            this.guna2ProgressBar1.Name = "guna2ProgressBar1";
-            this.guna2ProgressBar1.ProgressColor = System.Drawing.Color.Red;
-            this.guna2ProgressBar1.ProgressColor2 = System.Drawing.Color.Red;
-            this.guna2ProgressBar1.ShadowDecoration.Parent = this.guna2ProgressBar1;
-            this.guna2ProgressBar1.Size = new System.Drawing.Size(166, 30);
-            this.guna2ProgressBar1.TabIndex = 1;
-            this.guna2ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ProgressBar1.Value = 20;
+            this.motorAvailabilityProgress.BackColor = System.Drawing.Color.White;
+            this.motorAvailabilityProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.motorAvailabilityProgress.ForeColor = System.Drawing.Color.Lime;
+            this.motorAvailabilityProgress.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.motorAvailabilityProgress.Location = new System.Drawing.Point(13, 70);
+            this.motorAvailabilityProgress.Name = "motorAvailabilityProgress";
+            this.motorAvailabilityProgress.ProgressColor = System.Drawing.Color.Red;
+            this.motorAvailabilityProgress.ProgressColor2 = System.Drawing.Color.Red;
+            this.motorAvailabilityProgress.ShadowDecoration.Parent = this.motorAvailabilityProgress;
+            this.motorAvailabilityProgress.Size = new System.Drawing.Size(166, 30);
+            this.motorAvailabilityProgress.TabIndex = 1;
+            this.motorAvailabilityProgress.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.motorAvailabilityProgress.Value = 20;
             // 
             // bunifuLabel5
             // 
@@ -489,6 +496,11 @@
             this.bunifuLabel5.Text = "Parking Availability(Cycle)";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // refreshLoad
+            // 
+            this.refreshLoad.Interval = 5;
+            this.refreshLoad.Tick += new System.EventHandler(this.refreshLoad_Tick);
             // 
             // Dashboard
             // 
@@ -543,11 +555,12 @@
         private Bunifu.UI.WinForms.BunifuLabel occupiedLabel;
         private Guna.UI2.WinForms.Guna2ProgressBar carAvailabilityProgress;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private Bunifu.UI.WinForms.BunifuLabel vacantnumMOTORLabel;
+        private Bunifu.UI.WinForms.BunifuLabel occupiednumMOTORLabel;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
-        private Guna.UI2.WinForms.Guna2ProgressBar guna2ProgressBar1;
+        private Guna.UI2.WinForms.Guna2ProgressBar motorAvailabilityProgress;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
+        private System.Windows.Forms.Timer refreshLoad;
     }
 }

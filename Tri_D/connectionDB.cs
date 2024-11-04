@@ -13,7 +13,7 @@ namespace Tri_D
         static string port = "3306";
         static string username = "root";
         static string password = "";
-        static string database = "trid_db";
+        static string database = "trid";
 
         static string connectionString = $"server={server};port={port};username={username};password={password};database={database};";
 
