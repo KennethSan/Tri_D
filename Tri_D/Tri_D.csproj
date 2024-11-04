@@ -45,6 +45,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
       <HintPath>..\..\TriD\Bunifu\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>..\..\TriD\Bunifu\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
       <HintPath>..\..\TriD\Bunifu\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
     </Reference>
