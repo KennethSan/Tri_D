@@ -46,12 +46,12 @@
             this.logoutButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.parkingavailabilityLabel = new Bunifu.UI.WinForms.BunifuLabel();
-            this.carAvailabilityProgress = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.occupiedLabel = new Bunifu.UI.WinForms.BunifuLabel();
-            this.vacantLabel = new Bunifu.UI.WinForms.BunifuLabel();
-            this.occupiednumLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.vacantnumLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.occupiednumLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.vacantLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.occupiedLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.carAvailabilityProgress = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.parkingavailabilityLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.vacantnumMOTORLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.occupiednumMOTORLabel = new Bunifu.UI.WinForms.BunifuLabel();
@@ -290,72 +290,21 @@
             this.guna2Panel2.Size = new System.Drawing.Size(191, 113);
             this.guna2Panel2.TabIndex = 2;
             // 
-            // parkingavailabilityLabel
+            // vacantnumLabel
             // 
-            this.parkingavailabilityLabel.AllowParentOverrides = false;
-            this.parkingavailabilityLabel.AutoEllipsis = false;
-            this.parkingavailabilityLabel.CursorType = System.Windows.Forms.Cursors.Default;
-            this.parkingavailabilityLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.parkingavailabilityLabel.Location = new System.Drawing.Point(13, 3);
-            this.parkingavailabilityLabel.Name = "parkingavailabilityLabel";
-            this.parkingavailabilityLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.parkingavailabilityLabel.Size = new System.Drawing.Size(166, 20);
-            this.parkingavailabilityLabel.TabIndex = 0;
-            this.parkingavailabilityLabel.Text = "Parking Availability(Car)";
-            this.parkingavailabilityLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.parkingavailabilityLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // carAvailabilityProgress
-            // 
-            this.carAvailabilityProgress.AutoRoundedCorners = true;
-            this.carAvailabilityProgress.BackColor = System.Drawing.Color.Transparent;
-            this.carAvailabilityProgress.BorderRadius = 5;
-            this.carAvailabilityProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.carAvailabilityProgress.ForeColor = System.Drawing.Color.Lime;
-            this.carAvailabilityProgress.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.carAvailabilityProgress.Location = new System.Drawing.Point(13, 70);
-            this.carAvailabilityProgress.Maximum = 75;
-            this.carAvailabilityProgress.Name = "carAvailabilityProgress";
-            this.carAvailabilityProgress.ProgressBrushMode = Guna.UI2.WinForms.Enums.BrushMode.Solid;
-            this.carAvailabilityProgress.ProgressColor = System.Drawing.Color.Red;
-            this.carAvailabilityProgress.ProgressColor2 = System.Drawing.Color.Red;
-            this.carAvailabilityProgress.ShadowDecoration.Parent = this.carAvailabilityProgress;
-            this.carAvailabilityProgress.ShowPercentage = true;
-            this.carAvailabilityProgress.Size = new System.Drawing.Size(166, 30);
-            this.carAvailabilityProgress.TabIndex = 1;
-            this.carAvailabilityProgress.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.carAvailabilityProgress.UseTransparentBackground = true;
-            this.carAvailabilityProgress.Value = 8;
-            // 
-            // occupiedLabel
-            // 
-            this.occupiedLabel.AllowParentOverrides = false;
-            this.occupiedLabel.AutoEllipsis = false;
-            this.occupiedLabel.CursorType = System.Windows.Forms.Cursors.Default;
-            this.occupiedLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.occupiedLabel.Location = new System.Drawing.Point(13, 29);
-            this.occupiedLabel.Name = "occupiedLabel";
-            this.occupiedLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.occupiedLabel.Size = new System.Drawing.Size(51, 15);
-            this.occupiedLabel.TabIndex = 3;
-            this.occupiedLabel.Text = "Occupied";
-            this.occupiedLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.occupiedLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // vacantLabel
-            // 
-            this.vacantLabel.AllowParentOverrides = false;
-            this.vacantLabel.AutoEllipsis = false;
-            this.vacantLabel.CursorType = null;
-            this.vacantLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.vacantLabel.Location = new System.Drawing.Point(143, 29);
-            this.vacantLabel.Name = "vacantLabel";
-            this.vacantLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.vacantLabel.Size = new System.Drawing.Size(36, 15);
-            this.vacantLabel.TabIndex = 4;
-            this.vacantLabel.Text = "Vacant";
-            this.vacantLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.vacantLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.vacantnumLabel.AllowParentOverrides = false;
+            this.vacantnumLabel.AutoEllipsis = false;
+            this.vacantnumLabel.CursorType = null;
+            this.vacantnumLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.vacantnumLabel.ForeColor = System.Drawing.Color.Green;
+            this.vacantnumLabel.Location = new System.Drawing.Point(154, 49);
+            this.vacantnumLabel.Name = "vacantnumLabel";
+            this.vacantnumLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.vacantnumLabel.Size = new System.Drawing.Size(6, 15);
+            this.vacantnumLabel.TabIndex = 6;
+            this.vacantnumLabel.Text = "0";
+            this.vacantnumLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.vacantnumLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // occupiednumLabel
             // 
@@ -373,21 +322,74 @@
             this.occupiednumLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.occupiednumLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // vacantnumLabel
+            // vacantLabel
             // 
-            this.vacantnumLabel.AllowParentOverrides = false;
-            this.vacantnumLabel.AutoEllipsis = false;
-            this.vacantnumLabel.CursorType = null;
-            this.vacantnumLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.vacantnumLabel.ForeColor = System.Drawing.Color.Green;
-            this.vacantnumLabel.Location = new System.Drawing.Point(154, 49);
-            this.vacantnumLabel.Name = "vacantnumLabel";
-            this.vacantnumLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.vacantnumLabel.Size = new System.Drawing.Size(6, 15);
-            this.vacantnumLabel.TabIndex = 6;
-            this.vacantnumLabel.Text = "0";
-            this.vacantnumLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.vacantnumLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.vacantLabel.AllowParentOverrides = false;
+            this.vacantLabel.AutoEllipsis = false;
+            this.vacantLabel.CursorType = null;
+            this.vacantLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.vacantLabel.Location = new System.Drawing.Point(143, 29);
+            this.vacantLabel.Name = "vacantLabel";
+            this.vacantLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.vacantLabel.Size = new System.Drawing.Size(36, 15);
+            this.vacantLabel.TabIndex = 4;
+            this.vacantLabel.Text = "Vacant";
+            this.vacantLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.vacantLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // occupiedLabel
+            // 
+            this.occupiedLabel.AllowParentOverrides = false;
+            this.occupiedLabel.AutoEllipsis = false;
+            this.occupiedLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.occupiedLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.occupiedLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.occupiedLabel.Location = new System.Drawing.Point(13, 29);
+            this.occupiedLabel.Name = "occupiedLabel";
+            this.occupiedLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.occupiedLabel.Size = new System.Drawing.Size(51, 15);
+            this.occupiedLabel.TabIndex = 3;
+            this.occupiedLabel.Text = "Occupied";
+            this.occupiedLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.occupiedLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // carAvailabilityProgress
+            // 
+            this.carAvailabilityProgress.AutoRoundedCorners = true;
+            this.carAvailabilityProgress.BackColor = System.Drawing.Color.Transparent;
+            this.carAvailabilityProgress.BorderRadius = 14;
+            this.carAvailabilityProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.carAvailabilityProgress.ForeColor = System.Drawing.Color.Lime;
+            this.carAvailabilityProgress.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.carAvailabilityProgress.Location = new System.Drawing.Point(13, 70);
+            this.carAvailabilityProgress.Maximum = 75;
+            this.carAvailabilityProgress.Name = "carAvailabilityProgress";
+            this.carAvailabilityProgress.ProgressBrushMode = Guna.UI2.WinForms.Enums.BrushMode.Solid;
+            this.carAvailabilityProgress.ProgressColor = System.Drawing.Color.Red;
+            this.carAvailabilityProgress.ProgressColor2 = System.Drawing.Color.Red;
+            this.carAvailabilityProgress.ShadowDecoration.Parent = this.carAvailabilityProgress;
+            this.carAvailabilityProgress.ShowPercentage = true;
+            this.carAvailabilityProgress.Size = new System.Drawing.Size(166, 30);
+            this.carAvailabilityProgress.TabIndex = 1;
+            this.carAvailabilityProgress.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.carAvailabilityProgress.UseTransparentBackground = true;
+            this.carAvailabilityProgress.Value = 8;
+            // 
+            // parkingavailabilityLabel
+            // 
+            this.parkingavailabilityLabel.AllowParentOverrides = false;
+            this.parkingavailabilityLabel.AutoEllipsis = false;
+            this.parkingavailabilityLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.parkingavailabilityLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.parkingavailabilityLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.parkingavailabilityLabel.Location = new System.Drawing.Point(13, 3);
+            this.parkingavailabilityLabel.Name = "parkingavailabilityLabel";
+            this.parkingavailabilityLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.parkingavailabilityLabel.Size = new System.Drawing.Size(166, 20);
+            this.parkingavailabilityLabel.TabIndex = 0;
+            this.parkingavailabilityLabel.Text = "Parking Availability(Car)";
+            this.parkingavailabilityLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.parkingavailabilityLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // guna2Panel3
             // 
