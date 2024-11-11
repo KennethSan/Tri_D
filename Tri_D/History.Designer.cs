@@ -30,6 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tuaLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -45,6 +54,17 @@
             this.sidePanel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.logoutButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.historyTable = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.searchImage = new System.Windows.Forms.PictureBox();
+            this.searchTextbox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ownerHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeinHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeoutHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.durationHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.detailsButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebar.SuspendLayout();
@@ -52,6 +72,9 @@
             this.sidePanel2.SuspendLayout();
             this.sidePanel3.SuspendLayout();
             this.sidePanel4.SuspendLayout();
+            this.bunifuPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.historyTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchImage)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -64,7 +87,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(800, 64);
+            this.guna2Panel1.Size = new System.Drawing.Size(797, 64);
             this.guna2Panel1.TabIndex = 4;
             // 
             // tuaLabel
@@ -140,10 +163,10 @@
             this.sidebar.Controls.Add(this.sidePanel2);
             this.sidebar.Controls.Add(this.sidePanel3);
             this.sidebar.Controls.Add(this.sidePanel4);
-            this.sidebar.Location = new System.Drawing.Point(0, 0);
+            this.sidebar.Location = new System.Drawing.Point(-2, 0);
             this.sidebar.MaximumSize = new System.Drawing.Size(206, 451);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(206, 451);
+            this.sidebar.Size = new System.Drawing.Size(10, 451);
             this.sidebar.TabIndex = 5;
             // 
             // panel1
@@ -256,11 +279,198 @@
             this.sidebarTimer.Interval = 5;
             this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.bunifuPanel1.BorderRadius = 3;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.historyTable);
+            this.bunifuPanel1.Controls.Add(this.searchImage);
+            this.bunifuPanel1.Controls.Add(this.searchTextbox);
+            this.bunifuPanel1.Location = new System.Drawing.Point(65, 82);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(723, 356);
+            this.bunifuPanel1.TabIndex = 6;
+            // 
+            // historyTable
+            // 
+            this.historyTable.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.historyTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.historyTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.historyTable.BackgroundColor = System.Drawing.Color.White;
+            this.historyTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.historyTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.historyTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.historyTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.historyTable.ColumnHeadersHeight = 40;
+            this.historyTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ownerHeader,
+            this.typeHeader,
+            this.dateHeader,
+            this.timeinHeader,
+            this.timeoutHeader,
+            this.durationHeader,
+            this.detailsButton});
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.historyTable.DefaultCellStyle = dataGridViewCellStyle9;
+            this.historyTable.EnableHeadersVisualStyles = false;
+            this.historyTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            this.historyTable.Location = new System.Drawing.Point(14, 50);
+            this.historyTable.Name = "historyTable";
+            this.historyTable.RowHeadersVisible = false;
+            this.historyTable.RowTemplate.Height = 50;
+            this.historyTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.historyTable.Size = new System.Drawing.Size(695, 291);
+            this.historyTable.TabIndex = 2;
+            this.historyTable.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.historyTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.historyTable.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.historyTable.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.historyTable.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.historyTable.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.historyTable.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.historyTable.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            this.historyTable.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
+            this.historyTable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.historyTable.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.historyTable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            this.historyTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.historyTable.ThemeStyle.HeaderStyle.Height = 40;
+            this.historyTable.ThemeStyle.ReadOnly = false;
+            this.historyTable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.historyTable.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.historyTable.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.historyTable.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            this.historyTable.ThemeStyle.RowsStyle.Height = 50;
+            this.historyTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
+            this.historyTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            // 
+            // searchImage
+            // 
+            this.searchImage.BackColor = System.Drawing.Color.White;
+            this.searchImage.Image = ((System.Drawing.Image)(resources.GetObject("searchImage.Image")));
+            this.searchImage.Location = new System.Drawing.Point(20, 15);
+            this.searchImage.Name = "searchImage";
+            this.searchImage.Size = new System.Drawing.Size(22, 24);
+            this.searchImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.searchImage.TabIndex = 1;
+            this.searchImage.TabStop = false;
+            // 
+            // searchTextbox
+            // 
+            this.searchTextbox.BackColor = System.Drawing.Color.Transparent;
+            this.searchTextbox.BorderRadius = 10;
+            this.searchTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchTextbox.DefaultText = "";
+            this.searchTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.searchTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.searchTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchTextbox.DisabledState.Parent = this.searchTextbox;
+            this.searchTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchTextbox.FocusedState.Parent = this.searchTextbox;
+            this.searchTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchTextbox.HoverState.Parent = this.searchTextbox;
+            this.searchTextbox.Location = new System.Drawing.Point(14, 8);
+            this.searchTextbox.Name = "searchTextbox";
+            this.searchTextbox.PasswordChar = '\0';
+            this.searchTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
+            this.searchTextbox.PlaceholderText = "Search";
+            this.searchTextbox.SelectedText = "";
+            this.searchTextbox.ShadowDecoration.Parent = this.searchTextbox;
+            this.searchTextbox.Size = new System.Drawing.Size(237, 36);
+            this.searchTextbox.TabIndex = 0;
+            this.searchTextbox.TextOffset = new System.Drawing.Point(20, 0);
+            // 
+            // ownerHeader
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ownerHeader.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ownerHeader.FillWeight = 150F;
+            this.ownerHeader.HeaderText = "Owner Name";
+            this.ownerHeader.Name = "ownerHeader";
+            this.ownerHeader.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // typeHeader
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.typeHeader.DefaultCellStyle = dataGridViewCellStyle4;
+            this.typeHeader.FillWeight = 135.9223F;
+            this.typeHeader.HeaderText = "Type";
+            this.typeHeader.Name = "typeHeader";
+            this.typeHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // dateHeader
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dateHeader.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dateHeader.FillWeight = 102.5596F;
+            this.dateHeader.HeaderText = "Date";
+            this.dateHeader.Name = "dateHeader";
+            this.dateHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // timeinHeader
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.timeinHeader.DefaultCellStyle = dataGridViewCellStyle6;
+            this.timeinHeader.FillWeight = 102.5596F;
+            this.timeinHeader.HeaderText = "Time-In";
+            this.timeinHeader.Name = "timeinHeader";
+            this.timeinHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // timeoutHeader
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.timeoutHeader.DefaultCellStyle = dataGridViewCellStyle7;
+            this.timeoutHeader.FillWeight = 102.5596F;
+            this.timeoutHeader.HeaderText = "Time-Out";
+            this.timeoutHeader.Name = "timeoutHeader";
+            this.timeoutHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // durationHeader
+            // 
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.durationHeader.DefaultCellStyle = dataGridViewCellStyle8;
+            this.durationHeader.FillWeight = 153.8394F;
+            this.durationHeader.HeaderText = "Duration";
+            this.durationHeader.Name = "durationHeader";
+            this.durationHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // detailsButton
+            // 
+            this.detailsButton.FillWeight = 102.5596F;
+            this.detailsButton.HeaderText = "         ";
+            this.detailsButton.Name = "detailsButton";
+            this.detailsButton.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.detailsButton.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.detailsButton.Text = "Details";
+            this.detailsButton.UseColumnTextForButtonValue = true;
+            // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(238)))));
+            this.ClientSize = new System.Drawing.Size(797, 451);
+            this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.sidebar);
             this.Name = "History";
@@ -274,6 +484,9 @@
             this.sidePanel2.ResumeLayout(false);
             this.sidePanel3.ResumeLayout(false);
             this.sidePanel4.ResumeLayout(false);
+            this.bunifuPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.historyTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -295,5 +508,16 @@
         private Guna.UI2.WinForms.Guna2Panel sidePanel4;
         private Guna.UI2.WinForms.Guna2ImageButton logoutButton;
         private System.Windows.Forms.Timer sidebarTimer;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Guna.UI2.WinForms.Guna2TextBox searchTextbox;
+        private System.Windows.Forms.PictureBox searchImage;
+        private Guna.UI2.WinForms.Guna2DataGridView historyTable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ownerHeader;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeHeader;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateHeader;
+        private System.Windows.Forms.DataGridViewTextBoxColumn timeinHeader;
+        private System.Windows.Forms.DataGridViewTextBoxColumn timeoutHeader;
+        private System.Windows.Forms.DataGridViewTextBoxColumn durationHeader;
+        private System.Windows.Forms.DataGridViewButtonColumn detailsButton;
     }
 }
