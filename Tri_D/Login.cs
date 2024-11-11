@@ -52,6 +52,8 @@ namespace Tri_D
                 // Successful login, proceed to the dashboard
                 Dashboard dashboard = new Dashboard();
                 dashboard.Show();
+                /*Fullhistory fullhistory = new Fullhistory();
+                fullhistory.Show();*/
                 this.Hide(); // Hide the login form
             }
             else
