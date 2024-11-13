@@ -220,6 +220,12 @@
     <Compile Include="Manage.Designer.cs">
       <DependentUpon>Manage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ParkingAreas\ParkingArea1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParkingAreas\ParkingArea1.Designer.cs">
+      <DependentUpon>ParkingArea1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Dashboard.resx">
@@ -236,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manage.resx">
       <DependentUpon>Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParkingAreas\ParkingArea1.resx">
+      <DependentUpon>ParkingArea1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

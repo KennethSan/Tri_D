@@ -151,13 +151,14 @@ namespace Tri_D
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (guna2Panel2.Visible == true)
+            if (panel_verified.Visible == true)
             {
-                guna2Panel2.Visible = false;
+                panel_verified.Visible = false;
             } else
             {
-              guna2Panel2.Visible = true;
-              loadVehicles();
+                panel_verified.Visible = true;
+                panel_verified.Location = new Point(105, 105);
+                loadVehicles();
             }
             
         }
