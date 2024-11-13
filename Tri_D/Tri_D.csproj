@@ -43,7 +43,7 @@
       <HintPath>..\..\TriD\Bunifu\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
-      <HintPath>..\..\TriD\Bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+      <HintPath>..\libraries\Bunifu\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
       <HintPath>..\..\TriD\Bunifu\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
