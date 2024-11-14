@@ -5,9 +5,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tri_D.ParkingAreas;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Tri_D
 {
@@ -24,6 +28,10 @@ namespace Tri_D
         private void Manage_Load(object sender, EventArgs e)
         {
             sidebar.Width = sidebar.MinimumSize.Width;
+
+            ParkingArea1 parking_area1 = new ParkingArea1();
+            addUserControl(parking_area1);
+            parking_area1.update_slot_buttons();
         }
 
         private void menuButton_Click(object sender, EventArgs e)
@@ -156,11 +164,49 @@ namespace Tri_D
                 panel_verified.Visible = false;
             } else
             {
+                panel_verified.BringToFront();
                 panel_verified.Visible = true;
                 panel_verified.Location = new Point(105, 105);
                 loadVehicles();
             }
             
         }
+
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            parkingPanel.Controls.Clear();
+            parkingPanel.Controls.Add(userControl);
+            userControl.BringToFront();
+
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            ParkingArea1 parking_area1 = new ParkingArea1();
+            addUserControl(parking_area1);
+            parking_area1.update_slot_buttons();
+        }
+
+        private void btnParking2_Click(object sender, EventArgs e)
+        {
+            ParkingArea2 parking_area2 = new ParkingArea2();
+            addUserControl(parking_area2);
+        }
+
+        private void btnMotorParking1_Click(object sender, EventArgs e)
+        {
+            MotorcycleArea1 parking_motorcycle_area1 = new MotorcycleArea1();
+            addUserControl(parking_motorcycle_area1);
+        }
+
+
+
+
+        private void parking1_load_slot_buttons()
+        {
+            
+        }
+
     }
 }
