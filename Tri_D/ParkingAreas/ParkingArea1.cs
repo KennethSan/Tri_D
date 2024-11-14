@@ -50,7 +50,7 @@ namespace Tri_D.ParkingAreas
                         
                         if (status.ToLower() == "occupied")
                         {
-                            slotButton.BackgroundImage = Properties.Resources.g
+                            //slotButton.BackgroundImage = Properties.Resources.GREE
                         }
                         //slotButton.FillColor = status.ToLower() == "occupied" ? Color.Red : Color.Green;
                     }
