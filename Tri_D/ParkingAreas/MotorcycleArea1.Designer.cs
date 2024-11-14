@@ -46,7 +46,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Name = "MotorcycleArea1";
-            this.Size = new System.Drawing.Size(696, 363);
+            this.Size = new System.Drawing.Size(1252, 537);
             this.ResumeLayout(false);
             this.PerformLayout();
 

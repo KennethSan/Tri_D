@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,10 +51,14 @@ namespace Tri_D.ParkingAreas
                         
                         if (status.ToLower() == "occupied")
                         {
-                            //slotButton.BackgroundImage = Properties.Resources.GREE
+                            slotButton.BackgroundImage = Image.FromStream(new MemoryStream(Properties.Resources.RED_LIGHT));
+                        } else
+                        {
+                            slotButton.BackgroundImage = Image.FromStream(new MemoryStream(Properties.Resources.GREEN_LIGHT));
+
                         }
-                        //slotButton.FillColor = status.ToLower() == "occupied" ? Color.Red : Color.Green;
                     }
+                       
                 }
                 reader.Close();
             }

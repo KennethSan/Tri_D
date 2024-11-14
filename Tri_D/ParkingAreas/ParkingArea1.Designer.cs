@@ -131,9 +131,9 @@
             this.Controls.Add(this.btnSlotA3);
             this.Controls.Add(this.btnSlotA4);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ParkingArea1";
-            this.Size = new System.Drawing.Size(696, 363);
+            this.Size = new System.Drawing.Size(1252, 537);
             this.ResumeLayout(false);
             this.PerformLayout();
 
