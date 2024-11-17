@@ -41,31 +41,33 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tuaLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuButton = new Bunifu.UI.WinForms.BunifuImageButton();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.sidePanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.dashboardButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.sidePanel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.manageButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.sidePanel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.historyButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.sidePanel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.logoutButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.historyTable = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.searchImage = new System.Windows.Forms.PictureBox();
+            this.searchTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.ownerHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OwnerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeinHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeoutHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.durationHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.detailsButton = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.searchImage = new System.Windows.Forms.PictureBox();
-            this.searchTextbox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menuButton = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.dashboardButton = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.manageButton = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.historyButton = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.logoutButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebar.SuspendLayout();
             this.sidePanel.SuspendLayout();
             this.sidePanel2.SuspendLayout();
@@ -74,7 +76,6 @@
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.historyTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -106,6 +107,53 @@
             this.tuaLabel.Text = "TUA Parking Management System";
             this.tuaLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.tuaLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(208, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 58);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // menuButton
+            // 
+            this.menuButton.ActiveImage = ((System.Drawing.Image)(resources.GetObject("menuButton.ActiveImage")));
+            this.menuButton.AllowAnimations = true;
+            this.menuButton.AllowBuffering = false;
+            this.menuButton.AllowToggling = false;
+            this.menuButton.AllowZooming = true;
+            this.menuButton.AllowZoomingOnFocus = false;
+            this.menuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
+            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.menuButton.ErrorImage = ((System.Drawing.Image)(resources.GetObject("menuButton.ErrorImage")));
+            this.menuButton.FadeWhenInactive = false;
+            this.menuButton.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.menuButton.Image = ((System.Drawing.Image)(resources.GetObject("menuButton.Image")));
+            this.menuButton.ImageActive = ((System.Drawing.Image)(resources.GetObject("menuButton.ImageActive")));
+            this.menuButton.ImageLocation = null;
+            this.menuButton.ImageMargin = 0;
+            this.menuButton.ImageSize = new System.Drawing.Size(42, 38);
+            this.menuButton.ImageZoomSize = new System.Drawing.Size(43, 39);
+            this.menuButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("menuButton.InitialImage")));
+            this.menuButton.Location = new System.Drawing.Point(12, 12);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Rotation = 0;
+            this.menuButton.ShowActiveImage = true;
+            this.menuButton.ShowCursorChanges = true;
+            this.menuButton.ShowImageBorders = false;
+            this.menuButton.ShowSizeMarkers = false;
+            this.menuButton.Size = new System.Drawing.Size(43, 39);
+            this.menuButton.TabIndex = 0;
+            this.menuButton.ToolTipText = "";
+            this.menuButton.WaitOnLoad = false;
+            this.menuButton.Zoom = 0;
+            this.menuButton.ZoomSpeed = 10;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // sidebar
             // 
@@ -140,6 +188,20 @@
             this.sidePanel.Size = new System.Drawing.Size(200, 46);
             this.sidePanel.TabIndex = 3;
             // 
+            // dashboardButton
+            // 
+            this.dashboardButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dashboardButton.BackgroundImage")));
+            this.dashboardButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.dashboardButton.CheckedState.Parent = this.dashboardButton;
+            this.dashboardButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dashboardButton.HoverState.Parent = this.dashboardButton;
+            this.dashboardButton.Location = new System.Drawing.Point(-12, -10);
+            this.dashboardButton.Name = "dashboardButton";
+            this.dashboardButton.PressedState.Parent = this.dashboardButton;
+            this.dashboardButton.Size = new System.Drawing.Size(224, 66);
+            this.dashboardButton.TabIndex = 4;
+            this.dashboardButton.Click += new System.EventHandler(this.dashboardButton_Click);
+            // 
             // sidePanel2
             // 
             this.sidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
@@ -150,6 +212,20 @@
             this.sidePanel2.ShadowDecoration.Parent = this.sidePanel2;
             this.sidePanel2.Size = new System.Drawing.Size(200, 46);
             this.sidePanel2.TabIndex = 4;
+            // 
+            // manageButton
+            // 
+            this.manageButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manageButton.BackgroundImage")));
+            this.manageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.manageButton.CheckedState.Parent = this.manageButton;
+            this.manageButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.manageButton.HoverState.Parent = this.manageButton;
+            this.manageButton.Location = new System.Drawing.Point(0, 0);
+            this.manageButton.Name = "manageButton";
+            this.manageButton.PressedState.Parent = this.manageButton;
+            this.manageButton.Size = new System.Drawing.Size(196, 52);
+            this.manageButton.TabIndex = 5;
+            this.manageButton.Click += new System.EventHandler(this.manageButton_Click);
             // 
             // sidePanel3
             // 
@@ -162,6 +238,18 @@
             this.sidePanel3.Size = new System.Drawing.Size(200, 46);
             this.sidePanel3.TabIndex = 4;
             // 
+            // historyButton
+            // 
+            this.historyButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("historyButton.BackgroundImage")));
+            this.historyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.historyButton.CheckedState.Parent = this.historyButton;
+            this.historyButton.HoverState.Parent = this.historyButton;
+            this.historyButton.Location = new System.Drawing.Point(0, 0);
+            this.historyButton.Name = "historyButton";
+            this.historyButton.PressedState.Parent = this.historyButton;
+            this.historyButton.Size = new System.Drawing.Size(196, 52);
+            this.historyButton.TabIndex = 6;
+            // 
             // sidePanel4
             // 
             this.sidePanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
@@ -172,6 +260,20 @@
             this.sidePanel4.ShadowDecoration.Parent = this.sidePanel4;
             this.sidePanel4.Size = new System.Drawing.Size(200, 46);
             this.sidePanel4.TabIndex = 4;
+            // 
+            // logoutButton
+            // 
+            this.logoutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoutButton.BackgroundImage")));
+            this.logoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.logoutButton.CheckedState.Parent = this.logoutButton;
+            this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoutButton.HoverState.Parent = this.logoutButton;
+            this.logoutButton.Location = new System.Drawing.Point(0, 0);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.PressedState.Parent = this.logoutButton;
+            this.logoutButton.Size = new System.Drawing.Size(196, 52);
+            this.logoutButton.TabIndex = 7;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // sidebarTimer
             // 
@@ -216,6 +318,7 @@
             this.historyTable.ColumnHeadersHeight = 40;
             this.historyTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ownerHeader,
+            this.OwnerID,
             this.typeHeader,
             this.dateHeader,
             this.timeinHeader,
@@ -262,6 +365,43 @@
             this.historyTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.historyTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
             // 
+            // searchImage
+            // 
+            this.searchImage.BackColor = System.Drawing.Color.White;
+            this.searchImage.Image = ((System.Drawing.Image)(resources.GetObject("searchImage.Image")));
+            this.searchImage.Location = new System.Drawing.Point(20, 15);
+            this.searchImage.Name = "searchImage";
+            this.searchImage.Size = new System.Drawing.Size(22, 24);
+            this.searchImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.searchImage.TabIndex = 1;
+            this.searchImage.TabStop = false;
+            // 
+            // searchTextbox
+            // 
+            this.searchTextbox.BackColor = System.Drawing.Color.Transparent;
+            this.searchTextbox.BorderRadius = 10;
+            this.searchTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchTextbox.DefaultText = "";
+            this.searchTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.searchTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.searchTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchTextbox.DisabledState.Parent = this.searchTextbox;
+            this.searchTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchTextbox.FocusedState.Parent = this.searchTextbox;
+            this.searchTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchTextbox.HoverState.Parent = this.searchTextbox;
+            this.searchTextbox.Location = new System.Drawing.Point(14, 8);
+            this.searchTextbox.Name = "searchTextbox";
+            this.searchTextbox.PasswordChar = '\0';
+            this.searchTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
+            this.searchTextbox.PlaceholderText = "Search";
+            this.searchTextbox.SelectedText = "";
+            this.searchTextbox.ShadowDecoration.Parent = this.searchTextbox;
+            this.searchTextbox.Size = new System.Drawing.Size(237, 36);
+            this.searchTextbox.TabIndex = 0;
+            this.searchTextbox.TextOffset = new System.Drawing.Point(20, 0);
+            // 
             // ownerHeader
             // 
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -270,6 +410,11 @@
             this.ownerHeader.HeaderText = "Owner Name";
             this.ownerHeader.Name = "ownerHeader";
             this.ownerHeader.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // OwnerID
+            // 
+            this.OwnerID.HeaderText = "OwnerID";
+            this.OwnerID.Name = "OwnerID";
             // 
             // typeHeader
             // 
@@ -322,144 +467,6 @@
             this.detailsButton.Text = "Details";
             this.detailsButton.UseColumnTextForButtonValue = true;
             // 
-            // searchImage
-            // 
-            this.searchImage.BackColor = System.Drawing.Color.White;
-            this.searchImage.Image = ((System.Drawing.Image)(resources.GetObject("searchImage.Image")));
-            this.searchImage.Location = new System.Drawing.Point(20, 15);
-            this.searchImage.Name = "searchImage";
-            this.searchImage.Size = new System.Drawing.Size(22, 24);
-            this.searchImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.searchImage.TabIndex = 1;
-            this.searchImage.TabStop = false;
-            // 
-            // searchTextbox
-            // 
-            this.searchTextbox.BackColor = System.Drawing.Color.Transparent;
-            this.searchTextbox.BorderRadius = 10;
-            this.searchTextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.searchTextbox.DefaultText = "";
-            this.searchTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.searchTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.searchTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.searchTextbox.DisabledState.Parent = this.searchTextbox;
-            this.searchTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.searchTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchTextbox.FocusedState.Parent = this.searchTextbox;
-            this.searchTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchTextbox.HoverState.Parent = this.searchTextbox;
-            this.searchTextbox.Location = new System.Drawing.Point(14, 8);
-            this.searchTextbox.Name = "searchTextbox";
-            this.searchTextbox.PasswordChar = '\0';
-            this.searchTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
-            this.searchTextbox.PlaceholderText = "Search";
-            this.searchTextbox.SelectedText = "";
-            this.searchTextbox.ShadowDecoration.Parent = this.searchTextbox;
-            this.searchTextbox.Size = new System.Drawing.Size(237, 36);
-            this.searchTextbox.TabIndex = 0;
-            this.searchTextbox.TextOffset = new System.Drawing.Point(20, 0);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(208, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 58);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // menuButton
-            // 
-            this.menuButton.ActiveImage = ((System.Drawing.Image)(resources.GetObject("menuButton.ActiveImage")));
-            this.menuButton.AllowAnimations = true;
-            this.menuButton.AllowBuffering = false;
-            this.menuButton.AllowToggling = false;
-            this.menuButton.AllowZooming = true;
-            this.menuButton.AllowZoomingOnFocus = false;
-            this.menuButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
-            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.menuButton.ErrorImage = ((System.Drawing.Image)(resources.GetObject("menuButton.ErrorImage")));
-            this.menuButton.FadeWhenInactive = false;
-            this.menuButton.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.menuButton.Image = ((System.Drawing.Image)(resources.GetObject("menuButton.Image")));
-            this.menuButton.ImageActive = ((System.Drawing.Image)(resources.GetObject("menuButton.ImageActive")));
-            this.menuButton.ImageLocation = null;
-            this.menuButton.ImageMargin = 0;
-            this.menuButton.ImageSize = new System.Drawing.Size(42, 38);
-            this.menuButton.ImageZoomSize = new System.Drawing.Size(43, 39);
-            this.menuButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("menuButton.InitialImage")));
-            this.menuButton.Location = new System.Drawing.Point(12, 12);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Rotation = 0;
-            this.menuButton.ShowActiveImage = true;
-            this.menuButton.ShowCursorChanges = true;
-            this.menuButton.ShowImageBorders = false;
-            this.menuButton.ShowSizeMarkers = false;
-            this.menuButton.Size = new System.Drawing.Size(43, 39);
-            this.menuButton.TabIndex = 0;
-            this.menuButton.ToolTipText = "";
-            this.menuButton.WaitOnLoad = false;
-            this.menuButton.Zoom = 0;
-            this.menuButton.ZoomSpeed = 10;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
-            // 
-            // dashboardButton
-            // 
-            this.dashboardButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dashboardButton.BackgroundImage")));
-            this.dashboardButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.dashboardButton.CheckedState.Parent = this.dashboardButton;
-            this.dashboardButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dashboardButton.HoverState.Parent = this.dashboardButton;
-            this.dashboardButton.Location = new System.Drawing.Point(-12, -10);
-            this.dashboardButton.Name = "dashboardButton";
-            this.dashboardButton.PressedState.Parent = this.dashboardButton;
-            this.dashboardButton.Size = new System.Drawing.Size(224, 66);
-            this.dashboardButton.TabIndex = 4;
-            this.dashboardButton.Click += new System.EventHandler(this.dashboardButton_Click);
-            // 
-            // manageButton
-            // 
-            this.manageButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manageButton.BackgroundImage")));
-            this.manageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.manageButton.CheckedState.Parent = this.manageButton;
-            this.manageButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.manageButton.HoverState.Parent = this.manageButton;
-            this.manageButton.Location = new System.Drawing.Point(0, 0);
-            this.manageButton.Name = "manageButton";
-            this.manageButton.PressedState.Parent = this.manageButton;
-            this.manageButton.Size = new System.Drawing.Size(196, 52);
-            this.manageButton.TabIndex = 5;
-            this.manageButton.Click += new System.EventHandler(this.manageButton_Click);
-            // 
-            // historyButton
-            // 
-            this.historyButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("historyButton.BackgroundImage")));
-            this.historyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.historyButton.CheckedState.Parent = this.historyButton;
-            this.historyButton.HoverState.Parent = this.historyButton;
-            this.historyButton.Location = new System.Drawing.Point(0, 0);
-            this.historyButton.Name = "historyButton";
-            this.historyButton.PressedState.Parent = this.historyButton;
-            this.historyButton.Size = new System.Drawing.Size(196, 52);
-            this.historyButton.TabIndex = 6;
-            // 
-            // logoutButton
-            // 
-            this.logoutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoutButton.BackgroundImage")));
-            this.logoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.logoutButton.CheckedState.Parent = this.logoutButton;
-            this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logoutButton.HoverState.Parent = this.logoutButton;
-            this.logoutButton.Location = new System.Drawing.Point(0, 0);
-            this.logoutButton.Name = "logoutButton";
-            this.logoutButton.PressedState.Parent = this.logoutButton;
-            this.logoutButton.Size = new System.Drawing.Size(196, 52);
-            this.logoutButton.TabIndex = 7;
-            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
-            // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -474,6 +481,7 @@
             this.Load += new System.EventHandler(this.History_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.sidebar.ResumeLayout(false);
             this.sidePanel.ResumeLayout(false);
             this.sidePanel2.ResumeLayout(false);
@@ -482,7 +490,6 @@
             this.bunifuPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.historyTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -509,6 +516,7 @@
         private System.Windows.Forms.PictureBox searchImage;
         private Guna.UI2.WinForms.Guna2DataGridView historyTable;
         private System.Windows.Forms.DataGridViewTextBoxColumn ownerHeader;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OwnerID;
         private System.Windows.Forms.DataGridViewTextBoxColumn typeHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeinHeader;

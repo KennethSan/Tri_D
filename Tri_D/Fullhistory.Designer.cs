@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fullhistory));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuButton = new Bunifu.UI.WinForms.BunifuImageButton();
             this.fullHistoryTable = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -46,8 +46,14 @@
             this.tuaLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.ownerHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ownerID = new System.Windows.Forms.Label();
+            this.idLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.fullnameLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.typeLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.fullnameResultlbl = new Bunifu.UI.WinForms.BunifuLabel();
+            this.typeResultlbl = new Bunifu.UI.WinForms.BunifuLabel();
             this.typeHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plateHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeinHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeoutHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -110,25 +116,25 @@
             // fullHistoryTable
             // 
             this.fullHistoryTable.AllowUserToAddRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.fullHistoryTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.fullHistoryTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.fullHistoryTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.fullHistoryTable.BackgroundColor = System.Drawing.Color.White;
             this.fullHistoryTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.fullHistoryTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.fullHistoryTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.fullHistoryTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.fullHistoryTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.fullHistoryTable.ColumnHeadersHeight = 40;
             this.fullHistoryTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ownerHeader,
             this.typeHeader,
+            this.plateHeader,
             this.dateHeader,
             this.timeinHeader,
             this.timeoutHeader,
@@ -136,14 +142,14 @@
             this.reasonHeader,
             this.slotHeader,
             this.dutyHeader});
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.fullHistoryTable.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.fullHistoryTable.DefaultCellStyle = dataGridViewCellStyle9;
             this.fullHistoryTable.EnableHeadersVisualStyles = false;
             this.fullHistoryTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
             this.fullHistoryTable.Location = new System.Drawing.Point(30, 75);
@@ -219,6 +225,12 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.typeResultlbl);
+            this.bunifuPanel1.Controls.Add(this.fullnameResultlbl);
+            this.bunifuPanel1.Controls.Add(this.typeLabel);
+            this.bunifuPanel1.Controls.Add(this.fullnameLabel);
+            this.bunifuPanel1.Controls.Add(this.idLabel);
+            this.bunifuPanel1.Controls.Add(this.ownerID);
             this.bunifuPanel1.Controls.Add(this.fullHistoryTable);
             this.bunifuPanel1.Location = new System.Drawing.Point(12, 70);
             this.bunifuPanel1.Name = "bunifuPanel1";
@@ -226,50 +238,137 @@
             this.bunifuPanel1.Size = new System.Drawing.Size(955, 497);
             this.bunifuPanel1.TabIndex = 9;
             // 
-            // ownerHeader
+            // ownerID
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ownerHeader.DefaultCellStyle = dataGridViewCellStyle12;
-            this.ownerHeader.HeaderText = "Vehicle Type";
-            this.ownerHeader.Name = "ownerHeader";
-            this.ownerHeader.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ownerID.AutoSize = true;
+            this.ownerID.Location = new System.Drawing.Point(800, 31);
+            this.ownerID.Name = "ownerID";
+            this.ownerID.Size = new System.Drawing.Size(67, 13);
+            this.ownerID.TabIndex = 3;
+            this.ownerID.Text = "2022304056";
+            // 
+            // idLabel
+            // 
+            this.idLabel.AllowParentOverrides = false;
+            this.idLabel.AutoEllipsis = false;
+            this.idLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.idLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.idLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            this.idLabel.Location = new System.Drawing.Point(674, 29);
+            this.idLabel.Name = "idLabel";
+            this.idLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.idLabel.Size = new System.Drawing.Size(120, 15);
+            this.idLabel.TabIndex = 4;
+            this.idLabel.Text = "Identification Number:";
+            this.idLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.idLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // fullnameLabel
+            // 
+            this.fullnameLabel.AllowParentOverrides = false;
+            this.fullnameLabel.AutoEllipsis = false;
+            this.fullnameLabel.CursorType = null;
+            this.fullnameLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.fullnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            this.fullnameLabel.Location = new System.Drawing.Point(30, 17);
+            this.fullnameLabel.Name = "fullnameLabel";
+            this.fullnameLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.fullnameLabel.Size = new System.Drawing.Size(57, 15);
+            this.fullnameLabel.TabIndex = 5;
+            this.fullnameLabel.Text = "Full Name:";
+            this.fullnameLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.fullnameLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // typeLabel
+            // 
+            this.typeLabel.AllowParentOverrides = false;
+            this.typeLabel.AutoEllipsis = false;
+            this.typeLabel.CursorType = null;
+            this.typeLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.typeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            this.typeLabel.Location = new System.Drawing.Point(30, 54);
+            this.typeLabel.Name = "typeLabel";
+            this.typeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.typeLabel.Size = new System.Drawing.Size(28, 15);
+            this.typeLabel.TabIndex = 6;
+            this.typeLabel.Text = "Type:";
+            this.typeLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.typeLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // fullnameResultlbl
+            // 
+            this.fullnameResultlbl.AllowParentOverrides = false;
+            this.fullnameResultlbl.AutoEllipsis = false;
+            this.fullnameResultlbl.CursorType = System.Windows.Forms.Cursors.Default;
+            this.fullnameResultlbl.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.fullnameResultlbl.Location = new System.Drawing.Point(102, 17);
+            this.fullnameResultlbl.Name = "fullnameResultlbl";
+            this.fullnameResultlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.fullnameResultlbl.Size = new System.Drawing.Size(69, 15);
+            this.fullnameResultlbl.TabIndex = 7;
+            this.fullnameResultlbl.Text = "bunifuLabel1";
+            this.fullnameResultlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.fullnameResultlbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // typeResultlbl
+            // 
+            this.typeResultlbl.AllowParentOverrides = false;
+            this.typeResultlbl.AutoEllipsis = false;
+            this.typeResultlbl.CursorType = null;
+            this.typeResultlbl.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.typeResultlbl.Location = new System.Drawing.Point(64, 54);
+            this.typeResultlbl.Name = "typeResultlbl";
+            this.typeResultlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.typeResultlbl.Size = new System.Drawing.Size(69, 15);
+            this.typeResultlbl.TabIndex = 8;
+            this.typeResultlbl.Text = "bunifuLabel2";
+            this.typeResultlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.typeResultlbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // typeHeader
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.typeHeader.DefaultCellStyle = dataGridViewCellStyle13;
-            this.typeHeader.HeaderText = "Plate #";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.typeHeader.DefaultCellStyle = dataGridViewCellStyle3;
+            this.typeHeader.HeaderText = "Vehicle Type";
             this.typeHeader.Name = "typeHeader";
-            this.typeHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.typeHeader.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // plateHeader
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.plateHeader.DefaultCellStyle = dataGridViewCellStyle4;
+            this.plateHeader.HeaderText = "Plate #";
+            this.plateHeader.Name = "plateHeader";
+            this.plateHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // dateHeader
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dateHeader.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dateHeader.DefaultCellStyle = dataGridViewCellStyle5;
             this.dateHeader.HeaderText = "Date";
             this.dateHeader.Name = "dateHeader";
             this.dateHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // timeinHeader
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.timeinHeader.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.timeinHeader.DefaultCellStyle = dataGridViewCellStyle6;
             this.timeinHeader.HeaderText = "Time-In";
             this.timeinHeader.Name = "timeinHeader";
             this.timeinHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // timeoutHeader
             // 
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.timeoutHeader.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.timeoutHeader.DefaultCellStyle = dataGridViewCellStyle7;
             this.timeoutHeader.HeaderText = "Time-Out";
             this.timeoutHeader.Name = "timeoutHeader";
             this.timeoutHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // durationHeader
             // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.durationHeader.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.durationHeader.DefaultCellStyle = dataGridViewCellStyle8;
             this.durationHeader.HeaderText = "Duration";
             this.durationHeader.Name = "durationHeader";
             this.durationHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -304,6 +403,7 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.bunifuPanel1.ResumeLayout(false);
+            this.bunifuPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -317,8 +417,14 @@
         private Bunifu.UI.WinForms.BunifuLabel tuaLabel;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ownerHeader;
+        private System.Windows.Forms.Label ownerID;
+        private Bunifu.UI.WinForms.BunifuLabel idLabel;
+        private Bunifu.UI.WinForms.BunifuLabel typeResultlbl;
+        private Bunifu.UI.WinForms.BunifuLabel fullnameResultlbl;
+        private Bunifu.UI.WinForms.BunifuLabel typeLabel;
+        private Bunifu.UI.WinForms.BunifuLabel fullnameLabel;
         private System.Windows.Forms.DataGridViewTextBoxColumn typeHeader;
+        private System.Windows.Forms.DataGridViewTextBoxColumn plateHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeinHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeoutHeader;

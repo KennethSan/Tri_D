@@ -4501,7 +4501,7 @@
   <data name="menuButton.ActiveImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAE8AAABPCAYAAACqNJiGAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAlJJREFUeF7tmg1NxEAQhU8CDkACDsABOAAH4AAcgANwgAQkIAEJSID5DoZsSBuu
+        EAAACxABrSO9dQAAAlJJREFUeF7tmg1NxEAQhU8CDkACDsABOAAH4AAcgANwgAQkIAEJSID5DoZsSBuu
         nd3eTu99ycul3XZ/3u3PdNuNEEIIIYQQQggxzLnpxfRu+vz55fjKJEY4Mb2aMGxMpHOdKDg1eU/7MN2Z
         jk1A2rWp7ImcEwbGYJj3rCPTEH975sEP43uTm/HAiR2gV/o93H+QPJrcBAyZwsEayLB8NtFwhuvc4cdw
         dwNZjceG+2pg3nozuXHRib9caMh3tSsxDStXzFoNbZVvN9BDfEVt0UPIz3s0Bq4mlClDkSdTq7mJfJn7
@@ -4640,7 +4640,7 @@
   <data name="menuButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAhBJREFUeF7tmo1NwzAQhTMCG8AIbAAbwAawAWwAG5QNYANGYARGYARGgPsiTrKi
+        EAAACxABrSO9dQAAAhBJREFUeF7tmo1NwzAQhTMCG8AIbAAbwAawAWwAG5QNYANGYARGYARGgPsiTrKi
         pkl6Drmk75OeSn7sxi9nn+3SCCGEEEIswJnp0nT99/fJcGH6MP109Gri2qa5N32baDCfn6bSDM49mjbJ
         s8kbujOVYc+bJwL8OvduijeTN+6BEz08mfw+TFo9vGUPccL7yjTErcm7CV1ktQMkYf1loiF8MuKPpVt2
         dYMjjY02YLUmkNc9hAn/SAhTlm5AXdRJ90gNKYyHRYzqtWBA9HrTpskyzTGa16bMEOnS5Ng0F6WMsBRp
@@ -4655,7 +4655,7 @@
   <data name="menuButton.ImageActive" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAE8AAABPCAYAAACqNJiGAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAlJJREFUeF7tmg1NxEAQhU8CDkACDsABOAAH4AAcgANwgAQkIAEJSID5DoZsSBuu
+        EAAACxABrSO9dQAAAlJJREFUeF7tmg1NxEAQhU8CDkACDsABOAAH4AAcgANwgAQkIAEJSID5DoZsSBuu
         nd3eTu99ycul3XZ/3u3PdNuNEEIIIYQQQggxzLnpxfRu+vz55fjKJEY4Mb2aMGxMpHOdKDg1eU/7MN2Z
         jk1A2rWp7ImcEwbGYJj3rCPTEH975sEP43uTm/HAiR2gV/o93H+QPJrcBAyZwsEayLB8NtFwhuvc4cdw
         dwNZjceG+2pg3nozuXHRib9caMh3tSsxDStXzFoNbZVvN9BDfEVt0UPIz3s0Bq4mlClDkSdTq7mJfJn7
@@ -4985,10 +4985,10 @@
         RK5CYII=
 </value>
   </data>
-  <metadata name="ownerHeader.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="typeHeader.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="typeHeader.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="plateHeader.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="dateHeader.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -5089,5 +5089,20 @@
         XbELAADAjlJX7AIAALCj1BW7AAAA7Ch1xS4AAAA7St2P2H2/ruvLIwAAAHgVd9v+KXWP4zzP7/fn789H
         AAAA8CqeoXv37Y9S18zMzMzMzGxpx/EP2SP1J1kf+sQAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="typeResultlbl.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="fullnameResultlbl.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="typeLabel.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(1, 92, 46); text-align: left; }</value>
+  </data>
+  <data name="fullnameLabel.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(1, 92, 46); text-align: left; }</value>
+  </data>
+  <data name="idLabel.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(1, 92, 46); text-align: left; }</value>
   </data>
 </root>
