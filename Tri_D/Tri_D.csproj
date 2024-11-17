@@ -257,6 +257,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdmitUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmitUser.Designer.cs">
+      <DependentUpon>AdmitUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="connectionDB.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -308,6 +314,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdmitUser.resx">
+      <DependentUpon>AdmitUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>

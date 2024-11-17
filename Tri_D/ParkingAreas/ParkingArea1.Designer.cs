@@ -39,9 +39,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 18);
+            this.label1.Location = new System.Drawing.Point(33, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.Size = new System.Drawing.Size(95, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Parking Area 1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -59,10 +60,11 @@
             this.btnSlotA3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSlotA3.ForeColor = System.Drawing.Color.White;
             this.btnSlotA3.HoverState.Parent = this.btnSlotA3;
-            this.btnSlotA3.Location = new System.Drawing.Point(170, 68);
+            this.btnSlotA3.Location = new System.Drawing.Point(227, 84);
+            this.btnSlotA3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSlotA3.Name = "btnSlotA3";
             this.btnSlotA3.ShadowDecoration.Parent = this.btnSlotA3;
-            this.btnSlotA3.Size = new System.Drawing.Size(46, 45);
+            this.btnSlotA3.Size = new System.Drawing.Size(61, 55);
             this.btnSlotA3.TabIndex = 7;
             // 
             // btnSlotA4
@@ -78,10 +80,11 @@
             this.btnSlotA4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSlotA4.ForeColor = System.Drawing.Color.White;
             this.btnSlotA4.HoverState.Parent = this.btnSlotA4;
-            this.btnSlotA4.Location = new System.Drawing.Point(222, 68);
+            this.btnSlotA4.Location = new System.Drawing.Point(296, 84);
+            this.btnSlotA4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSlotA4.Name = "btnSlotA4";
             this.btnSlotA4.ShadowDecoration.Parent = this.btnSlotA4;
-            this.btnSlotA4.Size = new System.Drawing.Size(46, 45);
+            this.btnSlotA4.Size = new System.Drawing.Size(61, 55);
             this.btnSlotA4.TabIndex = 6;
             // 
             // btnSlotA2
@@ -97,10 +100,11 @@
             this.btnSlotA2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSlotA2.ForeColor = System.Drawing.Color.White;
             this.btnSlotA2.HoverState.Parent = this.btnSlotA2;
-            this.btnSlotA2.Location = new System.Drawing.Point(118, 68);
+            this.btnSlotA2.Location = new System.Drawing.Point(157, 84);
+            this.btnSlotA2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSlotA2.Name = "btnSlotA2";
             this.btnSlotA2.ShadowDecoration.Parent = this.btnSlotA2;
-            this.btnSlotA2.Size = new System.Drawing.Size(46, 45);
+            this.btnSlotA2.Size = new System.Drawing.Size(61, 55);
             this.btnSlotA2.TabIndex = 8;
             // 
             // btnSlotA1
@@ -116,24 +120,25 @@
             this.btnSlotA1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSlotA1.ForeColor = System.Drawing.Color.White;
             this.btnSlotA1.HoverState.Parent = this.btnSlotA1;
-            this.btnSlotA1.Location = new System.Drawing.Point(66, 68);
+            this.btnSlotA1.Location = new System.Drawing.Point(88, 84);
+            this.btnSlotA1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSlotA1.Name = "btnSlotA1";
             this.btnSlotA1.ShadowDecoration.Parent = this.btnSlotA1;
-            this.btnSlotA1.Size = new System.Drawing.Size(46, 45);
+            this.btnSlotA1.Size = new System.Drawing.Size(61, 55);
             this.btnSlotA1.TabIndex = 9;
             // 
             // ParkingArea1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnSlotA1);
             this.Controls.Add(this.btnSlotA2);
             this.Controls.Add(this.btnSlotA3);
             this.Controls.Add(this.btnSlotA4);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ParkingArea1";
-            this.Size = new System.Drawing.Size(1252, 537);
+            this.Size = new System.Drawing.Size(1399, 661);
             this.ResumeLayout(false);
             this.PerformLayout();
 
