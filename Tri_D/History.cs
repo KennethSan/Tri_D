@@ -50,11 +50,14 @@ namespace Tri_D
             {
                 DateTime date = Convert.ToDateTime(reader["date"]);
                 TimeSpan timeIn = (TimeSpan)reader["timein"];
-                TimeSpan timeOut = (TimeSpan)reader["timeout"];
+
                 string ownerID = reader["ownerID"].ToString();
 
-                // Calculate the duration
-                TimeSpan duration = CalculateDuration(timeIn, timeOut);
+                // Check if "time_out" is NULL
+                TimeSpan? timeOut = reader["timeout"] != DBNull.Value ? (TimeSpan?)reader["timeout"] : null;
+
+                // Calculate the duration if timeOut is not null
+                TimeSpan duration = timeOut.HasValue ? CalculateDuration(timeIn, timeOut.Value) : TimeSpan.Zero;
 
                 // Add the data to the DataGridView
                 historyTable.Rows.Add(
@@ -63,13 +66,17 @@ namespace Tri_D
                     reader["type"].ToString(),
                     date.ToString("yyyy-MM-dd"),  // Format date as needed
                     timeIn.ToString(@"hh\:mm"),   // Format time as HH:mm
-                    timeOut.ToString(@"hh\:mm"),  // Format time as HH:mm
+                    timeOut.HasValue ? timeOut.Value.ToString(@"hh\:mm") : "N/A",  // Handle NULL timeOut
                     duration.ToString(@"hh\:mm")  // Display the calculated duration
                 );
 
-                // Store the data for later update
-                updateData.Add(new Tuple<DateTime, TimeSpan, TimeSpan, string, string>(date, timeIn, timeOut, ownerID, duration.ToString(@"hh\:mm")));
+                // Store the data for later update (if timeOut is available)
+                if (timeOut.HasValue)
+                {
+                    updateData.Add(new Tuple<DateTime, TimeSpan, TimeSpan, string, string>(date, timeIn, timeOut.Value, ownerID, duration.ToString(@"hh\:mm")));
+                }
             }
+
 
             reader.Close();  // Close the reader after finishing reading
 

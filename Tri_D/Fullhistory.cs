@@ -43,25 +43,30 @@ namespace Tri_D
                 {
                     DateTime date = Convert.ToDateTime(reader["date"]);
                     TimeSpan timeIn = (TimeSpan)reader["timein"];
-                    TimeSpan timeOut = (TimeSpan)reader["timeout"];
-                    string duration = reader["duration"].ToString(); // Get the duration directly
+
+                    // Check if "time_out" is NULL
+                    TimeSpan? timeOut = reader["timeout"] != DBNull.Value ? (TimeSpan?)reader["timeout"] : null;
+
+                    // Get the duration directly from database (if nullable, handle it)
+                    string duration = reader["duration"] != DBNull.Value ? reader["duration"].ToString() : "N/A";
 
                     // Add the row to your existing DataGridView
                     fullHistoryTable.Rows.Add(
-                        reader["type"].ToString(),             // Owner type
-                        reader["plate_number"].ToString(),    // Plate number
-                        date.ToString("yyyy-MM-dd"),          // Date formatted
-                        timeIn.ToString(@"hh\:mm"),           // Time in
-                        timeOut.ToString(@"hh\:mm"),          // Time out
-                        duration,                             // Duration directly from database
-                        reader["reason"].ToString(),          // Reason
-                        reader["slot_number"].ToString(),     // Slot number
-                        reader["duty"].ToString()             // Guard notes/duty
+                        reader["type"].ToString(),                // Owner type
+                        reader["plate_number"].ToString(),        // Plate number
+                        date.ToString("yyyy-MM-dd"),              // Date formatted
+                        timeIn.ToString(@"hh\:mm"),               // Time in
+                        timeOut.HasValue ? timeOut.Value.ToString(@"hh\:mm") : "N/A", // Time out (handle NULL)
+                        duration,                                 // Duration directly from database (with NULL check)
+                        reader["reason"].ToString(),              // Reason
+                        reader["slot_number"].ToString(),         // Slot number
+                        reader["duty"].ToString()                 // Guard notes/duty
                     );
                 }
 
                 reader.Close();
             }
+
 
 
         }

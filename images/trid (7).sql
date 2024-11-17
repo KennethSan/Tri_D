@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2024 at 03:55 AM
--- Server version: 10.1.32-MariaDB
--- PHP Version: 7.2.5
+-- Generation Time: Nov 17, 2024 at 11:12 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -32,7 +31,7 @@ CREATE TABLE `account` (
   `Admin_ID` int(11) NOT NULL,
   `username` varchar(25) DEFAULT NULL,
   `password` varchar(25) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `account`
@@ -58,10 +57,10 @@ CREATE TABLE `employees` (
   `email_verified` varchar(10) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `employee_id_type` varchar(100) DEFAULT NULL,
-  `employee_id_image` text,
+  `employee_id_image` text DEFAULT NULL,
   `address` varchar(255) NOT NULL,
   `telephone` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `employees`
@@ -86,13 +85,13 @@ CREATE TABLE `guests` (
   `guest_number` int(11) NOT NULL,
   `full_name` varchar(255) DEFAULT NULL,
   `email` varchar(200) DEFAULT NULL,
-  `id_image` text,
+  `id_image` text DEFAULT NULL,
   `reason` text NOT NULL,
   `guard_notes` text NOT NULL,
   `plate_number` varchar(50) NOT NULL,
   `id_type` varchar(50) NOT NULL,
   `vehicle_type` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `guests`
@@ -114,25 +113,26 @@ CREATE TABLE `history` (
   `admin_name` varchar(255) DEFAULT NULL,
   `owner_id` varchar(255) NOT NULL,
   `slot_number` varchar(10) DEFAULT NULL,
-  `reason` text,
+  `reason` text DEFAULT NULL,
   `duration` time DEFAULT NULL,
-  `guard_notes` text,
+  `guard_notes` text DEFAULT NULL,
   `qr` text NOT NULL,
   `user_type` varchar(255) NOT NULL,
   `plate_number` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `history`
 --
 
 INSERT INTO `history` (`date`, `time_in`, `time_out`, `admin_name`, `owner_id`, `slot_number`, `reason`, `duration`, `guard_notes`, `qr`, `user_type`, `plate_number`) VALUES
-('2024-11-01', '09:00:00', '18:00:00', 'Admin2', '201923412', 'B2', 'Meeting', '00:00:00', 'Followed protocol', 'QR1002', '', 'DEF456'),
-('2024-11-03', '08:30:00', '17:30:00', 'Admin5', '2020304056', 'E5', 'Personal', '00:00:00', 'Special permission', 'QR1005', '', 'MNO345'),
+('2024-11-01', '09:00:00', '18:00:00', 'Admin2', '201923412', 'B2', 'Meeting', '09:00:00', 'Followed protocol', 'QR1002', '', 'DEF456'),
+('2024-11-03', '08:30:00', '17:30:00', 'Admin5', '2020304056', 'E5', 'Personal', '09:00:00', 'Special permission', 'QR1005', '', 'MNO345'),
 ('2024-11-02', '07:30:00', NULL, 'Admin4', '2020304141', 'D4', 'Delivery', '09:00:00', 'No issues', 'QR1004', '', 'JKL012'),
-('2024-11-01', '08:00:00', '17:30:00', 'Admin1', '2022304056', 'A1', 'Business', '09:00:00', 'No issues', 'QR1001', '', 'ABC123'),
-('2024-11-02', '06:00:00', '10:15:23', 'Admin3', '202424145', 'C3', 'Maintenance', '00:00:00', 'Arrived on time', 'QR1003', '', 'GHI789'),
-('2024-11-13', '04:00:00', NULL, NULL, '2022304060', NULL, 'Test reason', NULL, 'Test notes', 'QQEQEQEQEQE', 'Employee', 'DEF456');
+('2024-11-01', '08:00:00', '17:30:00', 'Admin1', '2022304056', 'A1', 'Business', '09:30:00', 'No issues', 'QR1001', '', 'ABC123'),
+('2024-11-02', '06:00:00', '10:15:23', 'Admin3', '202424145', 'C3', 'Maintenance', '04:15:00', 'Arrived on time', 'QR1003', '', 'GHI789'),
+('2024-11-13', '04:00:00', NULL, NULL, '2022304060', NULL, 'Test reason', NULL, 'Test notes', 'QQEQEQEQEQE', 'Employee', 'DEF456'),
+('2024-11-17', '10:15:20', NULL, 'admin', '2022304070', 'A1', 'testreasontestreasontestreasontestreasontestreasontestreason', NULL, NULL, 'qrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqr', 'Student', 'MMM 000');
 
 -- --------------------------------------------------------
 
@@ -146,7 +146,7 @@ CREATE TABLE `parkingslot` (
   `status` varchar(40) DEFAULT NULL,
   `area_number` int(11) DEFAULT NULL,
   `user_id` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `parkingslot`
@@ -240,63 +240,63 @@ CREATE TABLE `parkingslotmotorcycle` (
   `slot_number` varchar(10) NOT NULL,
   `status` varchar(255) NOT NULL,
   `user_id` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `parkingslotmotorcycle`
 --
 
 INSERT INTO `parkingslotmotorcycle` (`slot_id`, `slot_number`, `status`, `user_id`) VALUES
-(1, 'A1', 'occupied', NULL),
-(10, 'A10', 'vacant', NULL),
-(11, 'A11', 'vacant', NULL),
-(12, 'A12', 'vacant', NULL),
-(13, 'A13', 'vacant', NULL),
-(14, 'A14', 'vacant', NULL),
-(15, 'A15', 'vacant', NULL),
-(16, 'A16', 'vacant', NULL),
-(17, 'A17', 'vacant', NULL),
-(18, 'A18', 'vacant', NULL),
-(19, 'A19', 'vacant', NULL),
-(2, 'A2', 'occupied', NULL),
-(20, 'A20', 'vacant', NULL),
-(21, 'A21', 'vacant', NULL),
-(22, 'A22', 'vacant', NULL),
-(23, 'A23', 'vacant', NULL),
-(24, 'A24', 'vacant', NULL),
-(25, 'A25', 'vacant', NULL),
-(26, 'A26', 'vacant', NULL),
-(27, 'A27', 'vacant', NULL),
-(28, 'A28', 'vacant', NULL),
-(29, 'A29', 'vacant', NULL),
-(3, 'A3', 'occupied', NULL),
-(30, 'A30', 'vacant', NULL),
-(31, 'A31', 'vacant', NULL),
-(32, 'A32', 'vacant', NULL),
-(33, 'A33', 'vacant', NULL),
-(34, 'A34', 'vacant', NULL),
-(35, 'A35', 'vacant', NULL),
-(36, 'A36', 'vacant', NULL),
-(37, 'A37', 'vacant', NULL),
-(38, 'A38', 'vacant', NULL),
-(39, 'A39', 'vacant', NULL),
-(4, 'A4', 'occupied', NULL),
-(40, 'A40', 'vacant', NULL),
-(41, 'A41', 'vacant', NULL),
-(42, 'A42', 'vacant', NULL),
-(43, 'A43', 'vacant', NULL),
-(44, 'A44', 'vacant', NULL),
-(45, 'A45', 'vacant', NULL),
-(46, 'A46', 'vacant', NULL),
-(47, 'A47', 'vacant', NULL),
-(48, 'A48', 'vacant', NULL),
-(49, 'A49', 'vacant', NULL),
-(5, 'A5', 'occupied', NULL),
-(50, 'A50', 'vacant', NULL),
-(6, 'A6', 'vacant', NULL),
-(7, 'A7', 'vacant', NULL),
-(8, 'A8', 'vacant', NULL),
-(9, 'A9', 'vacant', NULL);
+(1, 'M1', 'occupied', NULL),
+(10, 'M10', 'vacant', NULL),
+(11, 'M11', 'vacant', NULL),
+(12, 'M12', 'vacant', NULL),
+(13, 'M13', 'vacant', NULL),
+(14, 'M14', 'vacant', NULL),
+(15, 'M15', 'vacant', NULL),
+(16, 'M16', 'vacant', NULL),
+(17, 'M17', 'vacant', NULL),
+(18, 'M18', 'vacant', NULL),
+(19, 'M19', 'vacant', NULL),
+(2, 'M2', 'occupied', NULL),
+(20, 'M20', 'vacant', NULL),
+(21, 'M21', 'vacant', NULL),
+(22, 'M22', 'vacant', NULL),
+(23, 'M23', 'vacant', NULL),
+(24, 'M24', 'vacant', NULL),
+(25, 'M25', 'vacant', NULL),
+(26, 'M26', 'vacant', NULL),
+(27, 'M27', 'vacant', NULL),
+(28, 'M28', 'vacant', NULL),
+(29, 'M29', 'vacant', NULL),
+(3, 'M3', 'occupied', NULL),
+(30, 'M30', 'vacant', NULL),
+(31, 'M31', 'vacant', NULL),
+(32, 'M32', 'vacant', NULL),
+(33, 'M33', 'vacant', NULL),
+(34, 'M34', 'vacant', NULL),
+(35, 'M35', 'vacant', NULL),
+(36, 'M36', 'vacant', NULL),
+(37, 'M37', 'vacant', NULL),
+(38, 'M38', 'vacant', NULL),
+(39, 'M39', 'vacant', NULL),
+(4, 'M4', 'occupied', NULL),
+(40, 'M40', 'vacant', NULL),
+(41, 'M41', 'vacant', NULL),
+(42, 'M42', 'vacant', NULL),
+(43, 'M43', 'vacant', NULL),
+(44, 'M44', 'vacant', NULL),
+(45, 'M45', 'vacant', NULL),
+(46, 'M46', 'vacant', NULL),
+(47, 'M47', 'vacant', NULL),
+(48, 'M48', 'occupied', NULL),
+(49, 'M49', 'vacant', NULL),
+(5, 'M5', 'occupied', NULL),
+(50, 'M50', 'vacant', NULL),
+(6, 'M6', 'vacant', NULL),
+(7, 'M7', 'vacant', NULL),
+(8, 'M8', 'vacant', NULL),
+(9, 'M9', 'vacant', NULL);
 
 -- --------------------------------------------------------
 
@@ -312,11 +312,11 @@ CREATE TABLE `students` (
   `password` varchar(255) DEFAULT NULL,
   `gender` varchar(10) DEFAULT NULL,
   `email_verified` varchar(10) DEFAULT NULL,
-  `student_id_image` text,
+  `student_id_image` text DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `telephone` varchar(100) DEFAULT NULL,
   `college_department` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `students`
@@ -353,7 +353,7 @@ CREATE TABLE `vehicles` (
   `brand` varchar(100) DEFAULT NULL,
   `type` varchar(100) DEFAULT NULL,
   `verified` varchar(10) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `vehicles`
