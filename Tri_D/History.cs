@@ -28,16 +28,22 @@ namespace Tri_D
             while (reader.Read())
             {
                 DateTime date = Convert.ToDateTime(reader["date"]);
-                TimeSpan timeIn = (TimeSpan)reader["timein"];
-                TimeSpan timeOut = (TimeSpan)reader["timeout"];
+
+                // Handle potential nulls for time_in and time_out
+                TimeSpan? timeIn = reader["timein"] != DBNull.Value ? (TimeSpan)reader["timein"] : (TimeSpan?)null;
+                TimeSpan? timeOut = reader["timeout"] != DBNull.Value ? (TimeSpan)reader["timeout"] : (TimeSpan?)null;
+
+                string duration = timeIn.HasValue && timeOut.HasValue
+                    ? CalculateDuration(timeIn.Value, timeOut.Value).ToString(@"hh\:mm")
+                    : "N/A"; // Indicate that duration cannot be calculated
 
                 historyTable.Rows.Add(
                     reader["owner"].ToString(),
                     reader["type"].ToString(),
                     date.ToString("yyyy-MM-dd"),    // Format date as needed
-                    timeIn.ToString(@"hh\:mm"),     // Format time as HH:mm
-                    timeOut.ToString(@"hh\:mm"),    // Format time as HH:mm
-                    CalculateDuration(timeIn, timeOut).ToString(@"hh\:mm") // Calculates the duration
+                    timeIn.HasValue ? timeIn.Value.ToString(@"hh\:mm") : "N/A",  // Handle null time_in
+                    timeOut.HasValue ? timeOut.Value.ToString(@"hh\:mm") : "N/A", // Handle null time_out
+                    duration
                 );
             }
             reader.Close();

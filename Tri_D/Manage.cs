@@ -24,7 +24,6 @@ namespace Tri_D
             InitializeComponent();
             vehiclesTable.CellClick += vehiclesTable_CellClick;
             panel_verified.Visible = false;
-            admit_panel.Visible = false;
         }
 
         private void Manage_Load(object sender, EventArgs e)
@@ -210,68 +209,27 @@ namespace Tri_D
             
         }
 
-        private void load_queued_drivers()
-        {
-            using (MySqlConnection conn = new MySqlConnection(connection.ConnectionString))
-            {
-                conn.Open();
-                string load_queued_query = @"SELECT h.plate_number, COALESCE(e.first_name, s.first_name) AS first_name, COALESCE(e.last_name, s.last_name) AS last_name FROM history h LEFT JOIN employees e ON h.owner_id = e.employee_number LEFT JOIN students s ON h.owner_id = s.student_number WHERE h.time_out IS NULL AND h.slot_number IS NULL;";
-                MySqlCommand cmd = new MySqlCommand(load_queued_query, conn);
+        
 
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    string first_name = reader["first_name"].ToString();
-                    string last_name = reader["last_name"].ToString();
-                    string plate_number = reader["plate_number"].ToString();
-
-                    string full_name_plate = first_name + " " + last_name + " | " + plate_number;
-                    combo_queued_drivers.Items.Add(full_name_plate);
-                }
-
-                reader.Close();
-            }
-        }
-
-        private void load_available_slots()
-        {
-            using (MySqlConnection conn = new MySqlConnection(connection.ConnectionString))
-            {
-                conn.Open();
-                string load_queued_query = @"SELECT h.plate_number, COALESCE(e.first_name, s.first_name) AS first_name, COALESCE(e.last_name, s.last_name) AS last_name FROM history h LEFT JOIN employees e ON h.owner_id = e.employee_number LEFT JOIN students s ON h.owner_id = s.student_number WHERE h.time_out IS NULL AND h.slot_number IS NULL;";
-                MySqlCommand cmd = new MySqlCommand(load_queued_query, conn);
-
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    string first_name = reader["first_name"].ToString();
-                    string last_name = reader["last_name"].ToString();
-                    string plate_number = reader["plate_number"].ToString();
-
-                    string full_name_plate = first_name + " " + last_name + " | " + plate_number;
-                    combo_queued_drivers.Items.Add(full_name_plate);
-                }
-
-                reader.Close();
-            }
-        }
+        
 
         private void btnAdmit_Click(object sender, EventArgs e)
         {
-            if (admit_panel.Visible == false)
-            {
-                admit_panel.Visible = true;
-                admit_panel.Location = new Point(171, 92);
+            //if (admit_panel.Visible == false)
+            //{
+            //    admit_panel.Visible = true;
+            //    admit_panel.Location = new Point(673, 209);
+            //    admit_panel.BringToFront();
+            //    load_queued_drivers();
 
-                load_queued_drivers();
+            //}
+            //else
+            //{
+            //    admit_panel.Visible = false;
+            //}
 
-            }
-            else
-            {
-                admit_panel.Visible = false;
-            }
+            AdmitUser admitUser = new AdmitUser();
+            admitUser.Show();
         }
 
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
