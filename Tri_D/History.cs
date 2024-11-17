@@ -16,11 +16,20 @@ namespace Tri_D
     {
         bool sidebarExpand;
         MySqlConnection connection = connectionDB.GetConnection();
+        public class OwnerDetails
+        {
+            // Static property to hold the selected owner ID
+            public static string OwnerID { get; set; }
+            public static string OwnerName { get; set; }
+            public static string OwnerType { get; set; }
+
+        }
+
         public History()
         {
             InitializeComponent();
-
-            string queryHistory = @" SELECT h.date, h.time_in AS timein, h.time_out AS timeout, CONCAT(s.first_name, ' ', s.last_name) AS owner, 'Student' AS type FROM history h JOIN students s ON h.owner_id = s.student_number UNION ALL SELECT h.date, h.time_in AS timein, h.time_out AS timeout, CONCAT(e.first_name, ' ', e.last_name) AS owner, 'Employee' AS type FROM history h JOIN employees e ON h.owner_id = e.employee_number";
+            historyTable.CellClick += historyTable_CellClick;
+            string queryHistory = @" SELECT h.date, h.time_in AS timein, h.time_out AS timeout, CONCAT(s.first_name, ' ', s.last_name) AS owner, 'Student' AS type, h.owner_id AS ownerID FROM history h JOIN students s ON h.owner_id = s.student_number UNION ALL SELECT h.date, h.time_in AS timein, h.time_out AS timeout, CONCAT(e.first_name, ' ', e.last_name) AS owner, 'Employee' AS type, h.owner_id AS ownerID FROM history h JOIN employees e ON h.owner_id = e.employee_number";
 
             MySqlCommand cmd = new MySqlCommand(queryHistory, connection);
             MySqlDataReader reader =  cmd.ExecuteReader();
@@ -33,6 +42,7 @@ namespace Tri_D
 
                 historyTable.Rows.Add(
                     reader["owner"].ToString(),
+                    reader["ownerID"].ToString(),      // Display the ownerID
                     reader["type"].ToString(),
                     date.ToString("yyyy-MM-dd"),    // Format date as needed
                     timeIn.ToString(@"hh\:mm"),     // Format time as HH:mm
@@ -47,7 +57,33 @@ namespace Tri_D
         {
             sidebar.Width = sidebar.MinimumSize.Width;
         }
+        private void historyTable_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Check if the clicked cell is the details button
+            if (e.RowIndex >= 0 && historyTable.Columns[e.ColumnIndex].Name == "detailsButton")
+            {
+                // Get the OwnerID from the corresponding row
+                string ownerID = historyTable.Rows[e.RowIndex].Cells["OwnerID"].Value.ToString();
+                string ownerName = historyTable.Rows[e.RowIndex].Cells["ownerHeader"].Value.ToString();
+                string ownerType = historyTable.Rows[e.RowIndex].Cells["typeHeader"].Value.ToString();
+         
 
+                // Set the static property in OwnerDetails
+                OwnerDetails.OwnerID = ownerID;
+                OwnerDetails.OwnerName = ownerName;
+                OwnerDetails.OwnerType = ownerType;
+                // Open the Fullhistory form
+                Fullhistory fullHistoryForm = new Fullhistory();
+
+                // Hide the current form
+                this.Hide();
+
+                // Show the Fullhistory form
+                fullHistoryForm.ShowDialog();
+
+             
+            }
+        }
         private void dashboardButton_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();
