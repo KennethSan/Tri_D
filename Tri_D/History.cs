@@ -29,31 +29,78 @@ namespace Tri_D
         {
             InitializeComponent();
             historyTable.CellClick += historyTable_CellClick;
-            string queryHistory = @" SELECT h.date, h.time_in AS timein, h.time_out AS timeout, CONCAT(s.first_name, ' ', s.last_name) AS owner, 'Student' AS type, h.owner_id AS ownerID FROM history h JOIN students s ON h.owner_id = s.student_number UNION ALL SELECT h.date, h.time_in AS timein, h.time_out AS timeout, CONCAT(e.first_name, ' ', e.last_name) AS owner, 'Employee' AS type, h.owner_id AS ownerID FROM history h JOIN employees e ON h.owner_id = e.employee_number";
+            string queryHistory = @"
+    SELECT h.date, h.time_in AS timein, h.time_out AS timeout, 
+           CONCAT(s.first_name, ' ', s.last_name) AS owner, 'Student' AS type, h.owner_id AS ownerID 
+    FROM history h 
+    JOIN students s ON h.owner_id = s.student_number 
+    UNION ALL 
+    SELECT h.date, h.time_in AS timein, h.time_out AS timeout, 
+           CONCAT(e.first_name, ' ', e.last_name) AS owner, 'Employee' AS type, h.owner_id AS ownerID 
+    FROM history h 
+    JOIN employees e ON h.owner_id = e.employee_number";
 
             MySqlCommand cmd = new MySqlCommand(queryHistory, connection);
-            MySqlDataReader reader =  cmd.ExecuteReader();
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+            // Create a list to hold the update data
+            List<Tuple<DateTime, TimeSpan, TimeSpan, string, string>> updateData = new List<Tuple<DateTime, TimeSpan, TimeSpan, string, string>>();
 
             while (reader.Read())
             {
                 DateTime date = Convert.ToDateTime(reader["date"]);
                 TimeSpan timeIn = (TimeSpan)reader["timein"];
                 TimeSpan timeOut = (TimeSpan)reader["timeout"];
+                string ownerID = reader["ownerID"].ToString();
 
+                // Calculate the duration
+                TimeSpan duration = CalculateDuration(timeIn, timeOut);
+
+                // Add the data to the DataGridView
                 historyTable.Rows.Add(
                     reader["owner"].ToString(),
-                    reader["ownerID"].ToString(),      // Display the ownerID
+                    ownerID,       // Display the ownerID
                     reader["type"].ToString(),
-                    date.ToString("yyyy-MM-dd"),    // Format date as needed
-                    timeIn.ToString(@"hh\:mm"),     // Format time as HH:mm
-                    timeOut.ToString(@"hh\:mm"),    // Format time as HH:mm
-                    CalculateDuration(timeIn, timeOut).ToString(@"hh\:mm") // Calculates the duration
+                    date.ToString("yyyy-MM-dd"),  // Format date as needed
+                    timeIn.ToString(@"hh\:mm"),   // Format time as HH:mm
+                    timeOut.ToString(@"hh\:mm"),  // Format time as HH:mm
+                    duration.ToString(@"hh\:mm")  // Display the calculated duration
                 );
+
+                // Store the data for later update
+                updateData.Add(new Tuple<DateTime, TimeSpan, TimeSpan, string, string>(date, timeIn, timeOut, ownerID, duration.ToString(@"hh\:mm")));
             }
-            reader.Close();
+
+            reader.Close();  // Close the reader after finishing reading
+
+            // Now perform the updates after all data is read
+            foreach (var data in updateData)
+            {
+                DateTime date = data.Item1;
+                TimeSpan timeIn = data.Item2;
+                TimeSpan timeOut = data.Item3;
+                string ownerID = data.Item4;
+                string duration = data.Item5;
+
+                // Update the specific record in the database
+                string updateQuery = @"
+        UPDATE history 
+        SET duration = @duration 
+        WHERE owner_id = @ownerID 
+        AND date = @date 
+        AND time_in = @timeIn"; // Use time_in to specifically identify the record
+
+                MySqlCommand updateCmd = new MySqlCommand(updateQuery, connection);
+                updateCmd.Parameters.AddWithValue("@duration", duration);  // Set the calculated duration
+                updateCmd.Parameters.AddWithValue("@ownerID", ownerID);
+                updateCmd.Parameters.AddWithValue("@date", date);
+                updateCmd.Parameters.AddWithValue("@timeIn", timeIn);
+
+                updateCmd.ExecuteNonQuery(); // Execute the update
+            }
         }
 
-        private void History_Load(object sender, EventArgs e)
+            private void History_Load(object sender, EventArgs e)
         {
             sidebar.Width = sidebar.MinimumSize.Width;
         }
@@ -136,6 +183,7 @@ namespace Tri_D
                 }
             }
         }
+
 
         private void menuButton_Click(object sender, EventArgs e)
         {

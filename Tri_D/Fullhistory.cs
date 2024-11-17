@@ -30,7 +30,7 @@ namespace Tri_D
 
             ownerID.Text = OwnerDetails.OwnerID;
             fullnameResultlbl.Text = OwnerDetails.OwnerName;
-            typeResultlbl.Text = OwnerDetails.OwnerType;
+            typeResultlbl.Text = OwnerDetails.OwnerType;    
             string queryHistory = @" SELECT v.type, h.plate_number, h.date, h.time_in AS timein, h.time_out AS timeout, h.duration, h.reason, h.slot_number, h.admin_name AS duty FROM history h LEFT JOIN vehicles v ON h.plate_number = v.plate_number LEFT JOIN students s ON h.owner_id = s.student_number LEFT JOIN employees e ON h.owner_id = e.employee_number WHERE h.owner_id = @OwnerID; ";
 
             using (MySqlCommand cmd = new MySqlCommand(queryHistory, connection))
