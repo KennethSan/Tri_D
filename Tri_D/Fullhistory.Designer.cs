@@ -39,19 +39,19 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menuButton = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.fullHistoryTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.tuaLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.ownerID = new System.Windows.Forms.Label();
-            this.idLabel = new Bunifu.UI.WinForms.BunifuLabel();
-            this.fullnameLabel = new Bunifu.UI.WinForms.BunifuLabel();
-            this.typeLabel = new Bunifu.UI.WinForms.BunifuLabel();
-            this.fullnameResultlbl = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuButton = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.fulltbl = new Bunifu.UI.WinForms.BunifuPanel();
             this.typeResultlbl = new Bunifu.UI.WinForms.BunifuLabel();
+            this.fullnameResultlbl = new Bunifu.UI.WinForms.BunifuLabel();
+            this.typeLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.fullnameLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.idLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.ownerID = new System.Windows.Forms.Label();
+            this.fullHistoryTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.typeHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.plateHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,11 +61,47 @@
             this.reasonHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.slotHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dutyHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fullHistoryTable)).BeginInit();
+            this.printBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
-            this.bunifuPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.fulltbl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fullHistoryTable)).BeginInit();
             this.SuspendLayout();
+            // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 5;
+            // 
+            // tuaLabel
+            // 
+            this.tuaLabel.AllowParentOverrides = false;
+            this.tuaLabel.AutoEllipsis = false;
+            this.tuaLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tuaLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.tuaLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.tuaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            this.tuaLabel.Location = new System.Drawing.Point(279, 12);
+            this.tuaLabel.Name = "tuaLabel";
+            this.tuaLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tuaLabel.Size = new System.Drawing.Size(374, 32);
+            this.tuaLabel.TabIndex = 2;
+            this.tuaLabel.Text = "TUA Parking Management System";
+            this.tuaLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.tuaLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.tuaLabel);
+            this.guna2Panel1.Controls.Add(this.pictureBox1);
+            this.guna2Panel1.Controls.Add(this.menuButton);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(979, 64);
+            this.guna2Panel1.TabIndex = 7;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // pictureBox1
             // 
@@ -112,6 +148,118 @@
             this.menuButton.WaitOnLoad = false;
             this.menuButton.Zoom = 0;
             this.menuButton.ZoomSpeed = 10;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // fulltbl
+            // 
+            this.fulltbl.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.fulltbl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fulltbl.BackgroundImage")));
+            this.fulltbl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fulltbl.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.fulltbl.BorderRadius = 3;
+            this.fulltbl.BorderThickness = 1;
+            this.fulltbl.Controls.Add(this.printBtn);
+            this.fulltbl.Controls.Add(this.typeResultlbl);
+            this.fulltbl.Controls.Add(this.fullnameResultlbl);
+            this.fulltbl.Controls.Add(this.typeLabel);
+            this.fulltbl.Controls.Add(this.fullnameLabel);
+            this.fulltbl.Controls.Add(this.idLabel);
+            this.fulltbl.Controls.Add(this.ownerID);
+            this.fulltbl.Controls.Add(this.fullHistoryTable);
+            this.fulltbl.Location = new System.Drawing.Point(12, 70);
+            this.fulltbl.Name = "fulltbl";
+            this.fulltbl.ShowBorders = true;
+            this.fulltbl.Size = new System.Drawing.Size(955, 497);
+            this.fulltbl.TabIndex = 9;
+            // 
+            // typeResultlbl
+            // 
+            this.typeResultlbl.AllowParentOverrides = false;
+            this.typeResultlbl.AutoEllipsis = false;
+            this.typeResultlbl.CursorType = null;
+            this.typeResultlbl.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.typeResultlbl.Location = new System.Drawing.Point(64, 54);
+            this.typeResultlbl.Name = "typeResultlbl";
+            this.typeResultlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.typeResultlbl.Size = new System.Drawing.Size(69, 15);
+            this.typeResultlbl.TabIndex = 8;
+            this.typeResultlbl.Text = "bunifuLabel2";
+            this.typeResultlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.typeResultlbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // fullnameResultlbl
+            // 
+            this.fullnameResultlbl.AllowParentOverrides = false;
+            this.fullnameResultlbl.AutoEllipsis = false;
+            this.fullnameResultlbl.Cursor = System.Windows.Forms.Cursors.Default;
+            this.fullnameResultlbl.CursorType = System.Windows.Forms.Cursors.Default;
+            this.fullnameResultlbl.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.fullnameResultlbl.Location = new System.Drawing.Point(102, 17);
+            this.fullnameResultlbl.Name = "fullnameResultlbl";
+            this.fullnameResultlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.fullnameResultlbl.Size = new System.Drawing.Size(69, 15);
+            this.fullnameResultlbl.TabIndex = 7;
+            this.fullnameResultlbl.Text = "bunifuLabel1";
+            this.fullnameResultlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.fullnameResultlbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // typeLabel
+            // 
+            this.typeLabel.AllowParentOverrides = false;
+            this.typeLabel.AutoEllipsis = false;
+            this.typeLabel.CursorType = null;
+            this.typeLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.typeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            this.typeLabel.Location = new System.Drawing.Point(30, 54);
+            this.typeLabel.Name = "typeLabel";
+            this.typeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.typeLabel.Size = new System.Drawing.Size(28, 15);
+            this.typeLabel.TabIndex = 6;
+            this.typeLabel.Text = "Type:";
+            this.typeLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.typeLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // fullnameLabel
+            // 
+            this.fullnameLabel.AllowParentOverrides = false;
+            this.fullnameLabel.AutoEllipsis = false;
+            this.fullnameLabel.CursorType = null;
+            this.fullnameLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.fullnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            this.fullnameLabel.Location = new System.Drawing.Point(30, 17);
+            this.fullnameLabel.Name = "fullnameLabel";
+            this.fullnameLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.fullnameLabel.Size = new System.Drawing.Size(57, 15);
+            this.fullnameLabel.TabIndex = 5;
+            this.fullnameLabel.Text = "Full Name:";
+            this.fullnameLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.fullnameLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // idLabel
+            // 
+            this.idLabel.AllowParentOverrides = false;
+            this.idLabel.AutoEllipsis = false;
+            this.idLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.idLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.idLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.idLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            this.idLabel.Location = new System.Drawing.Point(674, 29);
+            this.idLabel.Name = "idLabel";
+            this.idLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.idLabel.Size = new System.Drawing.Size(120, 15);
+            this.idLabel.TabIndex = 4;
+            this.idLabel.Text = "Identification Number:";
+            this.idLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.idLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // ownerID
+            // 
+            this.ownerID.AutoSize = true;
+            this.ownerID.Location = new System.Drawing.Point(800, 31);
+            this.ownerID.Name = "ownerID";
+            this.ownerID.Size = new System.Drawing.Size(67, 13);
+            this.ownerID.TabIndex = 3;
+            this.ownerID.Text = "2022304056";
             // 
             // fullHistoryTable
             // 
@@ -182,149 +330,6 @@
             this.fullHistoryTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.fullHistoryTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
             // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Interval = 5;
-            // 
-            // tuaLabel
-            // 
-            this.tuaLabel.AllowParentOverrides = false;
-            this.tuaLabel.AutoEllipsis = false;
-            this.tuaLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tuaLabel.CursorType = System.Windows.Forms.Cursors.Default;
-            this.tuaLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.tuaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            this.tuaLabel.Location = new System.Drawing.Point(279, 12);
-            this.tuaLabel.Name = "tuaLabel";
-            this.tuaLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tuaLabel.Size = new System.Drawing.Size(374, 32);
-            this.tuaLabel.TabIndex = 2;
-            this.tuaLabel.Text = "TUA Parking Management System";
-            this.tuaLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.tuaLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.tuaLabel);
-            this.guna2Panel1.Controls.Add(this.pictureBox1);
-            this.guna2Panel1.Controls.Add(this.menuButton);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(979, 64);
-            this.guna2Panel1.TabIndex = 7;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
-            // 
-            // bunifuPanel1
-            // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
-            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.bunifuPanel1.BorderRadius = 3;
-            this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.typeResultlbl);
-            this.bunifuPanel1.Controls.Add(this.fullnameResultlbl);
-            this.bunifuPanel1.Controls.Add(this.typeLabel);
-            this.bunifuPanel1.Controls.Add(this.fullnameLabel);
-            this.bunifuPanel1.Controls.Add(this.idLabel);
-            this.bunifuPanel1.Controls.Add(this.ownerID);
-            this.bunifuPanel1.Controls.Add(this.fullHistoryTable);
-            this.bunifuPanel1.Location = new System.Drawing.Point(12, 70);
-            this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(955, 497);
-            this.bunifuPanel1.TabIndex = 9;
-            // 
-            // ownerID
-            // 
-            this.ownerID.AutoSize = true;
-            this.ownerID.Location = new System.Drawing.Point(800, 31);
-            this.ownerID.Name = "ownerID";
-            this.ownerID.Size = new System.Drawing.Size(67, 13);
-            this.ownerID.TabIndex = 3;
-            this.ownerID.Text = "2022304056";
-            // 
-            // idLabel
-            // 
-            this.idLabel.AllowParentOverrides = false;
-            this.idLabel.AutoEllipsis = false;
-            this.idLabel.CursorType = System.Windows.Forms.Cursors.Default;
-            this.idLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.idLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            this.idLabel.Location = new System.Drawing.Point(674, 29);
-            this.idLabel.Name = "idLabel";
-            this.idLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.idLabel.Size = new System.Drawing.Size(120, 15);
-            this.idLabel.TabIndex = 4;
-            this.idLabel.Text = "Identification Number:";
-            this.idLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.idLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // fullnameLabel
-            // 
-            this.fullnameLabel.AllowParentOverrides = false;
-            this.fullnameLabel.AutoEllipsis = false;
-            this.fullnameLabel.CursorType = null;
-            this.fullnameLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.fullnameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            this.fullnameLabel.Location = new System.Drawing.Point(30, 17);
-            this.fullnameLabel.Name = "fullnameLabel";
-            this.fullnameLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.fullnameLabel.Size = new System.Drawing.Size(57, 15);
-            this.fullnameLabel.TabIndex = 5;
-            this.fullnameLabel.Text = "Full Name:";
-            this.fullnameLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.fullnameLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // typeLabel
-            // 
-            this.typeLabel.AllowParentOverrides = false;
-            this.typeLabel.AutoEllipsis = false;
-            this.typeLabel.CursorType = null;
-            this.typeLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.typeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            this.typeLabel.Location = new System.Drawing.Point(30, 54);
-            this.typeLabel.Name = "typeLabel";
-            this.typeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.typeLabel.Size = new System.Drawing.Size(28, 15);
-            this.typeLabel.TabIndex = 6;
-            this.typeLabel.Text = "Type:";
-            this.typeLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.typeLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // fullnameResultlbl
-            // 
-            this.fullnameResultlbl.AllowParentOverrides = false;
-            this.fullnameResultlbl.AutoEllipsis = false;
-            this.fullnameResultlbl.CursorType = System.Windows.Forms.Cursors.Default;
-            this.fullnameResultlbl.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.fullnameResultlbl.Location = new System.Drawing.Point(102, 17);
-            this.fullnameResultlbl.Name = "fullnameResultlbl";
-            this.fullnameResultlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.fullnameResultlbl.Size = new System.Drawing.Size(69, 15);
-            this.fullnameResultlbl.TabIndex = 7;
-            this.fullnameResultlbl.Text = "bunifuLabel1";
-            this.fullnameResultlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.fullnameResultlbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // typeResultlbl
-            // 
-            this.typeResultlbl.AllowParentOverrides = false;
-            this.typeResultlbl.AutoEllipsis = false;
-            this.typeResultlbl.CursorType = null;
-            this.typeResultlbl.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.typeResultlbl.Location = new System.Drawing.Point(64, 54);
-            this.typeResultlbl.Name = "typeResultlbl";
-            this.typeResultlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.typeResultlbl.Size = new System.Drawing.Size(69, 15);
-            this.typeResultlbl.TabIndex = 8;
-            this.typeResultlbl.Text = "bunifuLabel2";
-            this.typeResultlbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.typeResultlbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // typeHeader
             // 
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -388,22 +393,37 @@
             this.dutyHeader.HeaderText = "Duty";
             this.dutyHeader.Name = "dutyHeader";
             // 
+            // printBtn
+            // 
+            this.printBtn.CheckedState.Parent = this.printBtn;
+            this.printBtn.CustomImages.Parent = this.printBtn;
+            this.printBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.printBtn.ForeColor = System.Drawing.Color.White;
+            this.printBtn.HoverState.Parent = this.printBtn;
+            this.printBtn.Location = new System.Drawing.Point(393, 445);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.ShadowDecoration.Parent = this.printBtn;
+            this.printBtn.Size = new System.Drawing.Size(180, 45);
+            this.printBtn.TabIndex = 9;
+            this.printBtn.Text = "guna2Button1";
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
+            // 
             // Fullhistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 579);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.bunifuPanel1);
+            this.Controls.Add(this.fulltbl);
             this.Name = "Fullhistory";
             this.Text = "Fullhistory";
             this.Load += new System.EventHandler(this.Fullhistory_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fullHistoryTable)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.bunifuPanel1.ResumeLayout(false);
-            this.bunifuPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.fulltbl.ResumeLayout(false);
+            this.fulltbl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fullHistoryTable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -416,7 +436,7 @@
         private System.Windows.Forms.Timer sidebarTimer;
         private Bunifu.UI.WinForms.BunifuLabel tuaLabel;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuPanel fulltbl;
         private System.Windows.Forms.Label ownerID;
         private Bunifu.UI.WinForms.BunifuLabel idLabel;
         private Bunifu.UI.WinForms.BunifuLabel typeResultlbl;
@@ -432,5 +452,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn reasonHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn slotHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn dutyHeader;
+        private Guna.UI2.WinForms.Guna2Button printBtn;
     }
 }
