@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tri_D.Properties;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Tri_D.ParkingAreas
@@ -52,9 +53,11 @@ namespace Tri_D.ParkingAreas
                         if (status.ToLower() == "occupied")
                         {
                             slotButton.BackgroundImage = Image.FromStream(new MemoryStream(Properties.Resources.RED_LIGHT));
+                            slotButton.PressedColor = Color.Red;
                         } else
                         {
                             slotButton.BackgroundImage = Image.FromStream(new MemoryStream(Properties.Resources.GREEN_LIGHT));
+                            slotButton.PressedColor = Color.Green;
 
                         }
                     }
@@ -64,5 +67,26 @@ namespace Tri_D.ParkingAreas
             }
        }
 
+        private void btnSlotA1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSlot_Click(object sender, EventArgs e)
+        {
+            // Get the button that was clicked
+            Guna.UI2.WinForms.Guna2Button clickedButton = (Guna.UI2.WinForms.Guna2Button)sender;
+
+            // Extract slot number from button name (e.g., "btnSlotA1" -> "A1")
+            string slotNumber = clickedButton.Name.Replace("btnSlot", "");
+
+            if (clickedButton.PressedColor == Color.Red)
+            {
+                ViewUserDetailsManage viewUserDetailsManage = new ViewUserDetailsManage(slotNumber);
+                viewUserDetailsManage.Show();
+            }
+
+            
+        }
     }
 }

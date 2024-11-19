@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manage));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tuaLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
@@ -91,7 +91,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1407, 79);
@@ -106,7 +106,7 @@
             this.tuaLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             this.tuaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
             this.tuaLabel.Location = new System.Drawing.Point(372, 15);
-            this.tuaLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tuaLabel.Margin = new System.Windows.Forms.Padding(4);
             this.tuaLabel.Name = "tuaLabel";
             this.tuaLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tuaLabel.Size = new System.Drawing.Size(469, 41);
@@ -125,7 +125,7 @@
             this.sidebar.Controls.Add(this.sidePanel3);
             this.sidebar.Controls.Add(this.sidePanel4);
             this.sidebar.Location = new System.Drawing.Point(3, 4);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.sidebar.MaximumSize = new System.Drawing.Size(275, 555);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(275, 555);
@@ -134,7 +134,7 @@
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 75);
             this.panel1.TabIndex = 2;
@@ -145,7 +145,7 @@
             this.sidePanel.BorderRadius = 200;
             this.sidePanel.Controls.Add(this.dashboardButton);
             this.sidePanel.Location = new System.Drawing.Point(4, 87);
-            this.sidePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel.Name = "sidePanel";
             this.sidePanel.ShadowDecoration.Parent = this.sidePanel;
             this.sidePanel.Size = new System.Drawing.Size(267, 57);
@@ -157,7 +157,7 @@
             this.sidePanel2.BorderRadius = 200;
             this.sidePanel2.Controls.Add(this.manageButton);
             this.sidePanel2.Location = new System.Drawing.Point(4, 152);
-            this.sidePanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel2.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel2.Name = "sidePanel2";
             this.sidePanel2.ShadowDecoration.Parent = this.sidePanel2;
             this.sidePanel2.Size = new System.Drawing.Size(267, 57);
@@ -169,7 +169,7 @@
             this.sidePanel3.BorderRadius = 200;
             this.sidePanel3.Controls.Add(this.historyButton);
             this.sidePanel3.Location = new System.Drawing.Point(4, 217);
-            this.sidePanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel3.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel3.Name = "sidePanel3";
             this.sidePanel3.ShadowDecoration.Parent = this.sidePanel3;
             this.sidePanel3.Size = new System.Drawing.Size(267, 57);
@@ -181,7 +181,7 @@
             this.sidePanel4.BorderRadius = 200;
             this.sidePanel4.Controls.Add(this.logoutButton);
             this.sidePanel4.Location = new System.Drawing.Point(4, 282);
-            this.sidePanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel4.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel4.Name = "sidePanel4";
             this.sidePanel4.ShadowDecoration.Parent = this.sidePanel4;
             this.sidePanel4.Size = new System.Drawing.Size(267, 57);
@@ -225,21 +225,21 @@
             // vehiclesTable
             // 
             this.vehiclesTable.AllowUserToAddRows = false;
-            dataGridViewCellStyle71.BackColor = System.Drawing.Color.White;
-            this.vehiclesTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle71;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            this.vehiclesTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
             this.vehiclesTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.vehiclesTable.BackgroundColor = System.Drawing.Color.White;
             this.vehiclesTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.vehiclesTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.vehiclesTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle72.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
-            dataGridViewCellStyle72.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle72.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle72.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
-            dataGridViewCellStyle72.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle72.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.vehiclesTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle72;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.vehiclesTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.vehiclesTable.ColumnHeadersHeight = 40;
             this.vehiclesTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ownerHeader,
@@ -249,18 +249,18 @@
             this.colorHeader,
             this.Verified,
             this.Verify});
-            dataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle77.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle77.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle77.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle77.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle77.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.vehiclesTable.DefaultCellStyle = dataGridViewCellStyle77;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.vehiclesTable.DefaultCellStyle = dataGridViewCellStyle21;
             this.vehiclesTable.EnableHeadersVisualStyles = false;
             this.vehiclesTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
             this.vehiclesTable.Location = new System.Drawing.Point(21, 48);
-            this.vehiclesTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.vehiclesTable.Margin = new System.Windows.Forms.Padding(4);
             this.vehiclesTable.Name = "vehiclesTable";
             this.vehiclesTable.RowHeadersVisible = false;
             this.vehiclesTable.RowHeadersWidth = 51;
@@ -293,8 +293,8 @@
             // 
             // ownerHeader
             // 
-            dataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ownerHeader.DefaultCellStyle = dataGridViewCellStyle73;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ownerHeader.DefaultCellStyle = dataGridViewCellStyle17;
             this.ownerHeader.FillWeight = 150F;
             this.ownerHeader.HeaderText = "Owner Name";
             this.ownerHeader.MinimumWidth = 6;
@@ -309,8 +309,8 @@
             // 
             // typeHeader
             // 
-            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.typeHeader.DefaultCellStyle = dataGridViewCellStyle74;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.typeHeader.DefaultCellStyle = dataGridViewCellStyle18;
             this.typeHeader.FillWeight = 150F;
             this.typeHeader.HeaderText = "Type";
             this.typeHeader.MinimumWidth = 6;
@@ -319,8 +319,8 @@
             // 
             // plateHeader
             // 
-            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.plateHeader.DefaultCellStyle = dataGridViewCellStyle75;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.plateHeader.DefaultCellStyle = dataGridViewCellStyle19;
             this.plateHeader.FillWeight = 150F;
             this.plateHeader.HeaderText = "Plate #";
             this.plateHeader.MinimumWidth = 6;
@@ -329,8 +329,8 @@
             // 
             // colorHeader
             // 
-            dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colorHeader.DefaultCellStyle = dataGridViewCellStyle76;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colorHeader.DefaultCellStyle = dataGridViewCellStyle20;
             this.colorHeader.HeaderText = "Color";
             this.colorHeader.MinimumWidth = 6;
             this.colorHeader.Name = "colorHeader";
@@ -479,7 +479,7 @@
             // 
             this.parkingPanel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.parkingPanel.Location = new System.Drawing.Point(279, 143);
-            this.parkingPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.parkingPanel.Margin = new System.Windows.Forms.Padding(4);
             this.parkingPanel.Name = "parkingPanel";
             this.parkingPanel.Size = new System.Drawing.Size(1059, 468);
             this.parkingPanel.TabIndex = 7;
@@ -518,6 +518,7 @@
             this.btnExit.Size = new System.Drawing.Size(180, 46);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pictureBox1
             // 
@@ -639,7 +640,7 @@
             this.Controls.Add(this.btn_show_verify);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.sidebar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Manage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage";

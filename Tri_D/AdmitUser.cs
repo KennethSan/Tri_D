@@ -19,6 +19,8 @@ namespace Tri_D
         MySqlConnection connection = connectionDB.GetConnection();
         String current_admitting_user;
         String current_admitting_plate;
+        String current_owner_id;
+
         public AdmitUser()
         {
             InitializeComponent();
@@ -33,7 +35,7 @@ namespace Tri_D
             using (MySqlConnection conn = new MySqlConnection(connection.ConnectionString))
             {
                 conn.Open();
-                string load_queued_query = @"SELECT h.plate_number, COALESCE(e.first_name, s.first_name) AS first_name, COALESCE(e.last_name, s.last_name) AS last_name FROM history h LEFT JOIN employees e ON h.owner_id = e.employee_number LEFT JOIN students s ON h.owner_id = s.student_number WHERE h.time_out IS NULL AND h.slot_number IS NULL;";
+                string load_queued_query = @"SELECT h.plate_number, h.owner_id, COALESCE(e.first_name, s.first_name) AS first_name, COALESCE(e.last_name, s.last_name) AS last_name FROM history h LEFT JOIN employees e ON h.owner_id = e.employee_number LEFT JOIN students s ON h.owner_id = s.student_number WHERE h.time_out IS NULL AND h.slot_number IS NULL;";
                 MySqlCommand cmd = new MySqlCommand(load_queued_query, conn);
 
                 MySqlDataReader reader = cmd.ExecuteReader();
@@ -43,8 +45,9 @@ namespace Tri_D
                     string first_name = reader["first_name"].ToString();
                     string last_name = reader["last_name"].ToString();
                     string plate_number = reader["plate_number"].ToString();
+                    string owner_id = reader["owner_id"].ToString();
 
-                    string full_name_plate = first_name + " " + last_name + " | " + plate_number;
+                    string full_name_plate = first_name + " " + last_name + " | " + plate_number + " | " + owner_id;
                     combo_queued_drivers.Items.Add(full_name_plate);
                 }
 
@@ -116,11 +119,12 @@ namespace Tri_D
                 using (MySqlConnection conn = new MySqlConnection(connection.ConnectionString))
                 {
                     conn.Open();
-                    string update_slots_query = @"UPDATE parkingslot SET status='occupied' WHERE slot_number=@slot_number";
+                    string update_slots_query = @"UPDATE parkingslot SET status='occupied', user_id=@user_id WHERE slot_number=@slot_number";
                     MySqlCommand cmd = new MySqlCommand(update_slots_query, conn);
 
                     // Use parameterized queries to prevent SQL injection
                     cmd.Parameters.AddWithValue("@slot_number", slot_number);
+                    cmd.Parameters.AddWithValue("@user_id", current_owner_id);
                     cmd.ExecuteNonQuery();
                 }
             } else
@@ -128,11 +132,13 @@ namespace Tri_D
                 using (MySqlConnection conn = new MySqlConnection(connection.ConnectionString))
                 {
                     conn.Open();
-                    string update_slots_query = @"UPDATE parkingslotmotorcycle SET status='occupied' WHERE slot_number=@slot_number";
+                    string update_slots_query = @"UPDATE parkingslotmotorcycle SET status='occupied', user_id=@user_id WHERE slot_number=@slot_number";
                     MySqlCommand cmd = new MySqlCommand(update_slots_query, conn);
 
                     // Use parameterized queries to prevent SQL injection
                     cmd.Parameters.AddWithValue("@slot_number", slot_number);
+                    cmd.Parameters.AddWithValue("@user_id", current_owner_id);
+
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -144,6 +150,7 @@ namespace Tri_D
             string[] selected_driver_parts = selected_driver.Split(new string[] { " | " }, StringSplitOptions.None);
             current_admitting_user = selected_driver_parts[0];
             current_admitting_plate = selected_driver_parts[1];
+            current_owner_id = selected_driver_parts[2];
         }
 
         private void admit_button_Click(object sender, EventArgs e)

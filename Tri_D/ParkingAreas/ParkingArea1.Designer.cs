@@ -34,6 +34,10 @@
             this.btnSlotA4 = new Guna.UI2.WinForms.Guna2Button();
             this.btnSlotA2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnSlotA1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -61,11 +65,12 @@
             this.btnSlotA3.ForeColor = System.Drawing.Color.White;
             this.btnSlotA3.HoverState.Parent = this.btnSlotA3;
             this.btnSlotA3.Location = new System.Drawing.Point(227, 84);
-            this.btnSlotA3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSlotA3.Margin = new System.Windows.Forms.Padding(4);
             this.btnSlotA3.Name = "btnSlotA3";
             this.btnSlotA3.ShadowDecoration.Parent = this.btnSlotA3;
             this.btnSlotA3.Size = new System.Drawing.Size(61, 55);
             this.btnSlotA3.TabIndex = 7;
+            this.btnSlotA3.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // btnSlotA4
             // 
@@ -80,12 +85,13 @@
             this.btnSlotA4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSlotA4.ForeColor = System.Drawing.Color.White;
             this.btnSlotA4.HoverState.Parent = this.btnSlotA4;
-            this.btnSlotA4.Location = new System.Drawing.Point(296, 84);
-            this.btnSlotA4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSlotA4.Location = new System.Drawing.Point(292, 84);
+            this.btnSlotA4.Margin = new System.Windows.Forms.Padding(4);
             this.btnSlotA4.Name = "btnSlotA4";
             this.btnSlotA4.ShadowDecoration.Parent = this.btnSlotA4;
             this.btnSlotA4.Size = new System.Drawing.Size(61, 55);
             this.btnSlotA4.TabIndex = 6;
+            this.btnSlotA4.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // btnSlotA2
             // 
@@ -100,12 +106,13 @@
             this.btnSlotA2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSlotA2.ForeColor = System.Drawing.Color.White;
             this.btnSlotA2.HoverState.Parent = this.btnSlotA2;
-            this.btnSlotA2.Location = new System.Drawing.Point(157, 84);
-            this.btnSlotA2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSlotA2.Location = new System.Drawing.Point(158, 84);
+            this.btnSlotA2.Margin = new System.Windows.Forms.Padding(4);
             this.btnSlotA2.Name = "btnSlotA2";
             this.btnSlotA2.ShadowDecoration.Parent = this.btnSlotA2;
             this.btnSlotA2.Size = new System.Drawing.Size(61, 55);
             this.btnSlotA2.TabIndex = 8;
+            this.btnSlotA2.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // btnSlotA1
             // 
@@ -120,17 +127,58 @@
             this.btnSlotA1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSlotA1.ForeColor = System.Drawing.Color.White;
             this.btnSlotA1.HoverState.Parent = this.btnSlotA1;
-            this.btnSlotA1.Location = new System.Drawing.Point(88, 84);
-            this.btnSlotA1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSlotA1.Location = new System.Drawing.Point(89, 84);
+            this.btnSlotA1.Margin = new System.Windows.Forms.Padding(4);
             this.btnSlotA1.Name = "btnSlotA1";
             this.btnSlotA1.ShadowDecoration.Parent = this.btnSlotA1;
             this.btnSlotA1.Size = new System.Drawing.Size(61, 55);
             this.btnSlotA1.TabIndex = 9;
+            this.btnSlotA1.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(109, 146);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(19, 18);
+            this.guna2HtmlLabel1.TabIndex = 10;
+            this.guna2HtmlLabel1.Text = "A1";
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(177, 146);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(19, 18);
+            this.guna2HtmlLabel2.TabIndex = 11;
+            this.guna2HtmlLabel2.Text = "A2";
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(247, 146);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(19, 18);
+            this.guna2HtmlLabel3.TabIndex = 12;
+            this.guna2HtmlLabel3.Text = "A3";
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(315, 146);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(19, 18);
+            this.guna2HtmlLabel4.TabIndex = 13;
+            this.guna2HtmlLabel4.Text = "A4";
             // 
             // ParkingArea1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.guna2HtmlLabel4);
+            this.Controls.Add(this.guna2HtmlLabel3);
+            this.Controls.Add(this.guna2HtmlLabel2);
+            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.btnSlotA1);
             this.Controls.Add(this.btnSlotA2);
             this.Controls.Add(this.btnSlotA3);
@@ -150,5 +198,9 @@
         private Guna.UI2.WinForms.Guna2Button btnSlotA3;
         private Guna.UI2.WinForms.Guna2Button btnSlotA2;
         private Guna.UI2.WinForms.Guna2Button btnSlotA1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
     }
 }

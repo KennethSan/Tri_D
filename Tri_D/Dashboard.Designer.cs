@@ -80,9 +80,10 @@
             this.guna2Panel1.Controls.Add(this.menuButton);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(800, 64);
+            this.guna2Panel1.Size = new System.Drawing.Size(1261, 75);
             this.guna2Panel1.TabIndex = 0;
             // 
             // tuaLabel
@@ -91,12 +92,13 @@
             this.tuaLabel.AutoEllipsis = false;
             this.tuaLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.tuaLabel.CursorType = System.Windows.Forms.Cursors.Default;
-            this.tuaLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.tuaLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
             this.tuaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            this.tuaLabel.Location = new System.Drawing.Point(279, 12);
+            this.tuaLabel.Location = new System.Drawing.Point(367, 16);
+            this.tuaLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tuaLabel.Name = "tuaLabel";
             this.tuaLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tuaLabel.Size = new System.Drawing.Size(374, 32);
+            this.tuaLabel.Size = new System.Drawing.Size(511, 45);
             this.tuaLabel.TabIndex = 2;
             this.tuaLabel.Text = "TUA Parking Management System";
             this.tuaLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -106,9 +108,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(208, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(277, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 58);
+            this.pictureBox1.Size = new System.Drawing.Size(65, 71);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -131,17 +134,18 @@
             this.menuButton.ImageActive = ((System.Drawing.Image)(resources.GetObject("menuButton.ImageActive")));
             this.menuButton.ImageLocation = null;
             this.menuButton.ImageMargin = 0;
-            this.menuButton.ImageSize = new System.Drawing.Size(42, 38);
-            this.menuButton.ImageZoomSize = new System.Drawing.Size(43, 39);
+            this.menuButton.ImageSize = new System.Drawing.Size(56, 47);
+            this.menuButton.ImageZoomSize = new System.Drawing.Size(57, 48);
             this.menuButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("menuButton.InitialImage")));
-            this.menuButton.Location = new System.Drawing.Point(12, 12);
+            this.menuButton.Location = new System.Drawing.Point(16, 15);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.menuButton.Name = "menuButton";
             this.menuButton.Rotation = 0;
             this.menuButton.ShowActiveImage = true;
             this.menuButton.ShowCursorChanges = true;
             this.menuButton.ShowImageBorders = false;
             this.menuButton.ShowSizeMarkers = false;
-            this.menuButton.Size = new System.Drawing.Size(43, 39);
+            this.menuButton.Size = new System.Drawing.Size(57, 48);
             this.menuButton.TabIndex = 0;
             this.menuButton.ToolTipText = "";
             this.menuButton.WaitOnLoad = false;
@@ -159,16 +163,18 @@
             this.sidebar.Controls.Add(this.sidePanel4);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.MaximumSize = new System.Drawing.Size(206, 451);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidebar.MaximumSize = new System.Drawing.Size(275, 555);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(206, 450);
+            this.sidebar.Size = new System.Drawing.Size(275, 555);
             this.sidebar.TabIndex = 1;
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 61);
+            this.panel1.Size = new System.Drawing.Size(267, 75);
             this.panel1.TabIndex = 2;
             // 
             // sidePanel
@@ -176,10 +182,11 @@
             this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.sidePanel.BorderRadius = 200;
             this.sidePanel.Controls.Add(this.dashboardButton);
-            this.sidePanel.Location = new System.Drawing.Point(3, 70);
+            this.sidePanel.Location = new System.Drawing.Point(4, 87);
+            this.sidePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sidePanel.Name = "sidePanel";
             this.sidePanel.ShadowDecoration.Parent = this.sidePanel;
-            this.sidePanel.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel.Size = new System.Drawing.Size(267, 57);
             this.sidePanel.TabIndex = 3;
             this.sidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
@@ -189,10 +196,11 @@
             this.dashboardButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.dashboardButton.CheckedState.Parent = this.dashboardButton;
             this.dashboardButton.HoverState.Parent = this.dashboardButton;
-            this.dashboardButton.Location = new System.Drawing.Point(-12, -10);
+            this.dashboardButton.Location = new System.Drawing.Point(-16, -12);
+            this.dashboardButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dashboardButton.Name = "dashboardButton";
             this.dashboardButton.PressedState.Parent = this.dashboardButton;
-            this.dashboardButton.Size = new System.Drawing.Size(224, 66);
+            this.dashboardButton.Size = new System.Drawing.Size(299, 81);
             this.dashboardButton.TabIndex = 4;
             // 
             // sidePanel2
@@ -200,10 +208,11 @@
             this.sidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.sidePanel2.BorderRadius = 200;
             this.sidePanel2.Controls.Add(this.manageButton);
-            this.sidePanel2.Location = new System.Drawing.Point(3, 122);
+            this.sidePanel2.Location = new System.Drawing.Point(4, 152);
+            this.sidePanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sidePanel2.Name = "sidePanel2";
             this.sidePanel2.ShadowDecoration.Parent = this.sidePanel2;
-            this.sidePanel2.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel2.Size = new System.Drawing.Size(267, 57);
             this.sidePanel2.TabIndex = 4;
             // 
             // manageButton
@@ -214,9 +223,10 @@
             this.manageButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.manageButton.HoverState.Parent = this.manageButton;
             this.manageButton.Location = new System.Drawing.Point(0, 0);
+            this.manageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.manageButton.Name = "manageButton";
             this.manageButton.PressedState.Parent = this.manageButton;
-            this.manageButton.Size = new System.Drawing.Size(196, 52);
+            this.manageButton.Size = new System.Drawing.Size(261, 64);
             this.manageButton.TabIndex = 5;
             this.manageButton.Click += new System.EventHandler(this.manageButton_Click);
             // 
@@ -225,10 +235,11 @@
             this.sidePanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.sidePanel3.BorderRadius = 200;
             this.sidePanel3.Controls.Add(this.historyButton);
-            this.sidePanel3.Location = new System.Drawing.Point(3, 174);
+            this.sidePanel3.Location = new System.Drawing.Point(4, 217);
+            this.sidePanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sidePanel3.Name = "sidePanel3";
             this.sidePanel3.ShadowDecoration.Parent = this.sidePanel3;
-            this.sidePanel3.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel3.Size = new System.Drawing.Size(267, 57);
             this.sidePanel3.TabIndex = 4;
             // 
             // historyButton
@@ -239,9 +250,10 @@
             this.historyButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.historyButton.HoverState.Parent = this.historyButton;
             this.historyButton.Location = new System.Drawing.Point(0, 0);
+            this.historyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.historyButton.Name = "historyButton";
             this.historyButton.PressedState.Parent = this.historyButton;
-            this.historyButton.Size = new System.Drawing.Size(196, 52);
+            this.historyButton.Size = new System.Drawing.Size(261, 64);
             this.historyButton.TabIndex = 6;
             this.historyButton.Click += new System.EventHandler(this.historyButton_Click);
             // 
@@ -250,10 +262,11 @@
             this.sidePanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.sidePanel4.BorderRadius = 200;
             this.sidePanel4.Controls.Add(this.logoutButton);
-            this.sidePanel4.Location = new System.Drawing.Point(3, 226);
+            this.sidePanel4.Location = new System.Drawing.Point(4, 282);
+            this.sidePanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sidePanel4.Name = "sidePanel4";
             this.sidePanel4.ShadowDecoration.Parent = this.sidePanel4;
-            this.sidePanel4.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel4.Size = new System.Drawing.Size(267, 57);
             this.sidePanel4.TabIndex = 4;
             // 
             // logoutButton
@@ -264,9 +277,10 @@
             this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logoutButton.HoverState.Parent = this.logoutButton;
             this.logoutButton.Location = new System.Drawing.Point(0, 0);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.PressedState.Parent = this.logoutButton;
-            this.logoutButton.Size = new System.Drawing.Size(196, 52);
+            this.logoutButton.Size = new System.Drawing.Size(261, 64);
             this.logoutButton.TabIndex = 7;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
@@ -284,10 +298,11 @@
             this.guna2Panel2.Controls.Add(this.occupiedLabel);
             this.guna2Panel2.Controls.Add(this.carAvailabilityProgress);
             this.guna2Panel2.Controls.Add(this.parkingavailabilityLabel);
-            this.guna2Panel2.Location = new System.Drawing.Point(303, 70);
+            this.guna2Panel2.Location = new System.Drawing.Point(404, 86);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(191, 113);
+            this.guna2Panel2.Size = new System.Drawing.Size(324, 139);
             this.guna2Panel2.TabIndex = 2;
             // 
             // vacantnumLabel
@@ -297,10 +312,11 @@
             this.vacantnumLabel.CursorType = null;
             this.vacantnumLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.vacantnumLabel.ForeColor = System.Drawing.Color.Green;
-            this.vacantnumLabel.Location = new System.Drawing.Point(154, 49);
+            this.vacantnumLabel.Location = new System.Drawing.Point(254, 60);
+            this.vacantnumLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.vacantnumLabel.Name = "vacantnumLabel";
             this.vacantnumLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.vacantnumLabel.Size = new System.Drawing.Size(6, 15);
+            this.vacantnumLabel.Size = new System.Drawing.Size(8, 20);
             this.vacantnumLabel.TabIndex = 6;
             this.vacantnumLabel.Text = "0";
             this.vacantnumLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -313,10 +329,11 @@
             this.occupiednumLabel.CursorType = null;
             this.occupiednumLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.occupiednumLabel.ForeColor = System.Drawing.Color.Red;
-            this.occupiednumLabel.Location = new System.Drawing.Point(30, 50);
+            this.occupiednumLabel.Location = new System.Drawing.Point(40, 62);
+            this.occupiednumLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.occupiednumLabel.Name = "occupiednumLabel";
             this.occupiednumLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.occupiednumLabel.Size = new System.Drawing.Size(6, 15);
+            this.occupiednumLabel.Size = new System.Drawing.Size(8, 20);
             this.occupiednumLabel.TabIndex = 5;
             this.occupiednumLabel.Text = "0";
             this.occupiednumLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -328,10 +345,11 @@
             this.vacantLabel.AutoEllipsis = false;
             this.vacantLabel.CursorType = null;
             this.vacantLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.vacantLabel.Location = new System.Drawing.Point(143, 29);
+            this.vacantLabel.Location = new System.Drawing.Point(240, 36);
+            this.vacantLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.vacantLabel.Name = "vacantLabel";
             this.vacantLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.vacantLabel.Size = new System.Drawing.Size(36, 15);
+            this.vacantLabel.Size = new System.Drawing.Size(45, 20);
             this.vacantLabel.TabIndex = 4;
             this.vacantLabel.Text = "Vacant";
             this.vacantLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -344,10 +362,11 @@
             this.occupiedLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.occupiedLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.occupiedLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.occupiedLabel.Location = new System.Drawing.Point(13, 29);
+            this.occupiedLabel.Location = new System.Drawing.Point(17, 36);
+            this.occupiedLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.occupiedLabel.Name = "occupiedLabel";
             this.occupiedLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.occupiedLabel.Size = new System.Drawing.Size(51, 15);
+            this.occupiedLabel.Size = new System.Drawing.Size(63, 20);
             this.occupiedLabel.TabIndex = 3;
             this.occupiedLabel.Text = "Occupied";
             this.occupiedLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -357,19 +376,19 @@
             // 
             this.carAvailabilityProgress.AutoRoundedCorners = true;
             this.carAvailabilityProgress.BackColor = System.Drawing.Color.Transparent;
-            this.carAvailabilityProgress.BorderRadius = 14;
+            this.carAvailabilityProgress.BorderRadius = 17;
             this.carAvailabilityProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.carAvailabilityProgress.ForeColor = System.Drawing.Color.Lime;
             this.carAvailabilityProgress.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.carAvailabilityProgress.Location = new System.Drawing.Point(13, 70);
+            this.carAvailabilityProgress.Location = new System.Drawing.Point(17, 86);
+            this.carAvailabilityProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.carAvailabilityProgress.Maximum = 75;
             this.carAvailabilityProgress.Name = "carAvailabilityProgress";
-            this.carAvailabilityProgress.ProgressBrushMode = Guna.UI2.WinForms.Enums.BrushMode.Solid;
             this.carAvailabilityProgress.ProgressColor = System.Drawing.Color.Red;
             this.carAvailabilityProgress.ProgressColor2 = System.Drawing.Color.Red;
             this.carAvailabilityProgress.ShadowDecoration.Parent = this.carAvailabilityProgress;
             this.carAvailabilityProgress.ShowPercentage = true;
-            this.carAvailabilityProgress.Size = new System.Drawing.Size(166, 30);
+            this.carAvailabilityProgress.Size = new System.Drawing.Size(288, 37);
             this.carAvailabilityProgress.TabIndex = 1;
             this.carAvailabilityProgress.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.carAvailabilityProgress.UseTransparentBackground = true;
@@ -382,10 +401,11 @@
             this.parkingavailabilityLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.parkingavailabilityLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.parkingavailabilityLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.parkingavailabilityLabel.Location = new System.Drawing.Point(13, 3);
+            this.parkingavailabilityLabel.Location = new System.Drawing.Point(17, 4);
+            this.parkingavailabilityLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.parkingavailabilityLabel.Name = "parkingavailabilityLabel";
             this.parkingavailabilityLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.parkingavailabilityLabel.Size = new System.Drawing.Size(166, 20);
+            this.parkingavailabilityLabel.Size = new System.Drawing.Size(207, 25);
             this.parkingavailabilityLabel.TabIndex = 0;
             this.parkingavailabilityLabel.Text = "Parking Availability(Car)";
             this.parkingavailabilityLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -400,10 +420,11 @@
             this.guna2Panel3.Controls.Add(this.bunifuLabel4);
             this.guna2Panel3.Controls.Add(this.motorAvailabilityProgress);
             this.guna2Panel3.Controls.Add(this.bunifuLabel5);
-            this.guna2Panel3.Location = new System.Drawing.Point(525, 70);
+            this.guna2Panel3.Location = new System.Drawing.Point(769, 87);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(191, 113);
+            this.guna2Panel3.Size = new System.Drawing.Size(329, 139);
             this.guna2Panel3.TabIndex = 7;
             // 
             // vacantnumMOTORLabel
@@ -413,10 +434,11 @@
             this.vacantnumMOTORLabel.CursorType = null;
             this.vacantnumMOTORLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.vacantnumMOTORLabel.ForeColor = System.Drawing.Color.Green;
-            this.vacantnumMOTORLabel.Location = new System.Drawing.Point(154, 49);
+            this.vacantnumMOTORLabel.Location = new System.Drawing.Point(263, 60);
+            this.vacantnumMOTORLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.vacantnumMOTORLabel.Name = "vacantnumMOTORLabel";
             this.vacantnumMOTORLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.vacantnumMOTORLabel.Size = new System.Drawing.Size(6, 15);
+            this.vacantnumMOTORLabel.Size = new System.Drawing.Size(8, 20);
             this.vacantnumMOTORLabel.TabIndex = 6;
             this.vacantnumMOTORLabel.Text = "0";
             this.vacantnumMOTORLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -429,10 +451,11 @@
             this.occupiednumMOTORLabel.CursorType = null;
             this.occupiednumMOTORLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.occupiednumMOTORLabel.ForeColor = System.Drawing.Color.Red;
-            this.occupiednumMOTORLabel.Location = new System.Drawing.Point(30, 50);
+            this.occupiednumMOTORLabel.Location = new System.Drawing.Point(40, 62);
+            this.occupiednumMOTORLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.occupiednumMOTORLabel.Name = "occupiednumMOTORLabel";
             this.occupiednumMOTORLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.occupiednumMOTORLabel.Size = new System.Drawing.Size(6, 15);
+            this.occupiednumMOTORLabel.Size = new System.Drawing.Size(8, 20);
             this.occupiednumMOTORLabel.TabIndex = 5;
             this.occupiednumMOTORLabel.Text = "0";
             this.occupiednumMOTORLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -444,10 +467,11 @@
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(143, 29);
+            this.bunifuLabel3.Location = new System.Drawing.Point(249, 36);
+            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(36, 15);
+            this.bunifuLabel3.Size = new System.Drawing.Size(45, 20);
             this.bunifuLabel3.TabIndex = 4;
             this.bunifuLabel3.Text = "Vacant";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -459,10 +483,11 @@
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel4.Location = new System.Drawing.Point(13, 29);
+            this.bunifuLabel4.Location = new System.Drawing.Point(17, 36);
+            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(51, 15);
+            this.bunifuLabel4.Size = new System.Drawing.Size(63, 20);
             this.bunifuLabel4.TabIndex = 3;
             this.bunifuLabel4.Text = "Occupied";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -470,16 +495,18 @@
             // 
             // motorAvailabilityProgress
             // 
-            this.motorAvailabilityProgress.BackColor = System.Drawing.Color.White;
+            this.motorAvailabilityProgress.BackColor = System.Drawing.Color.Transparent;
+            this.motorAvailabilityProgress.BorderRadius = 17;
             this.motorAvailabilityProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.motorAvailabilityProgress.ForeColor = System.Drawing.Color.Lime;
             this.motorAvailabilityProgress.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.motorAvailabilityProgress.Location = new System.Drawing.Point(13, 70);
+            this.motorAvailabilityProgress.Location = new System.Drawing.Point(17, 86);
+            this.motorAvailabilityProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.motorAvailabilityProgress.Name = "motorAvailabilityProgress";
             this.motorAvailabilityProgress.ProgressColor = System.Drawing.Color.Red;
             this.motorAvailabilityProgress.ProgressColor2 = System.Drawing.Color.Red;
             this.motorAvailabilityProgress.ShadowDecoration.Parent = this.motorAvailabilityProgress;
-            this.motorAvailabilityProgress.Size = new System.Drawing.Size(166, 30);
+            this.motorAvailabilityProgress.Size = new System.Drawing.Size(290, 37);
             this.motorAvailabilityProgress.TabIndex = 1;
             this.motorAvailabilityProgress.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.motorAvailabilityProgress.Value = 20;
@@ -490,10 +517,11 @@
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel5.Location = new System.Drawing.Point(9, 3);
+            this.bunifuLabel5.Location = new System.Drawing.Point(12, 4);
+            this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(179, 20);
+            this.bunifuLabel5.Size = new System.Drawing.Size(224, 25);
             this.bunifuLabel5.TabIndex = 0;
             this.bunifuLabel5.Text = "Parking Availability(Cycle)";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -506,13 +534,14 @@
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1263, 805);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.sidebar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);

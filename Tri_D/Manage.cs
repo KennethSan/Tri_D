@@ -236,5 +236,12 @@ namespace Tri_D
         {
 
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            ExitUser exitUser = new ExitUser();
+            exitUser.Show();
+        }
+
     }
 }

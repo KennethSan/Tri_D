@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="tuaLabel.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 18pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(1, 92, 46); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 20pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(1, 92, 46); text-align: left; }</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAxIAAAOdCAYAAAARIlTGAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAA/7JJREFUeF7snQdYFMf7xxfsPfYUjcaoKHC7KPbee1cQbhfEith771ETNYm9l9i7
+        vAAADrwBlbxySQAA/7JJREFUeF7snQdYFMf7xxfsPfYUjcaoKHC7KPbee1cQbhfEith771ETNYm9l9i7
         AnawJdGYaABjevulWGPqP73n/b+zNwfHOXD9OPD9PM/3ObjbeWe2zbzv7hSJIAiCIAiCIAiCIAiCIAiC
         IAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiC
         IAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiC
@@ -4504,7 +4504,7 @@
   <data name="menuButton.ActiveImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAIdJREFUWEft10ENgDAUA9BJQAIScAAScIAFHCAFCUhAGrQDDiMrp2UH0pc028+y
+        DAAACwwBP0AiyAAAAIdJREFUWEft10ENgDAUA9BJQAIScAAScIAFHCAFCUhAGrQDDiMrp2UH0pc028+y
         pMctmFllM7IiTZxSLbLdaw7vjde2jB05kC5OqQXhGde3HuEZ7xfzlBnilHIZl8lxGcVlFJdRXEZxGcVl
         FJdRflGGb+biZSaEr/ycr98BfxO8x9+FmVUSwglieIND9/Gb1wAAAABJRU5ErkJggg==
 </value>
@@ -4643,7 +4643,7 @@
   <data name="menuButton.ImageActive" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAIdJREFUWEft10ENgDAUA9BJQAIScAAScIAFHCAFCUhAGrQDDiMrp2UH0pc028+y
+        DAAACwwBP0AiyAAAAIdJREFUWEft10ENgDAUA9BJQAIScAAScIAFHCAFCUhAGrQDDiMrp2UH0pc028+y
         pMctmFllM7IiTZxSLbLdaw7vjde2jB05kC5OqQXhGde3HuEZ7xfzlBnilHIZl8lxGcVlFJdRXEZxGcVl
         FJdRflGGb+biZSaEr/ycr98BfxO8x9+FmVUSwglieIND9/Gb1wAAAABJRU5ErkJggg==
 </value>
@@ -4994,7 +4994,7 @@
   <data name="manageButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAM0AAAA3CAYAAACvtc4WAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAABK5JREFUeF7tmzFS5DgYhfsIk1AFfQHSSSDdDeACcIHmBHAB2M2hanMINoUTEBJB
+        DAAACwwBP0AiyAAABK5JREFUeF7tmzFS5DgYhfsIk1AFfQHSSSDdDeACcIHmBHAB2M2hanMINoUTEBJB
         SgD5VsEBgBN4/Wn7sT8azRZy293e4r2qr9yWZKmZ/p9/WfJMpPX19V83NjZuptPpS3tsjDGJ+5ajuU3+
         VWuU37OGxpiP3H9rlQzTZphZoYEx5kf+SKZpP9xkFcaYMi8p2xQqjDE/YW1t7btNY0wF7ePMLzaNMRXY
         NMZUYtMYU4lNY0wlNo0xldg0xlTSm2k2Nzeb/f395ujoqBMHBwfN1tZWsW9jxkQvptnZ2Wmenp6aPnR+

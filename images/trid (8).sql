@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2024 at 11:12 AM
+-- Generation Time: Nov 19, 2024 at 04:38 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -129,10 +129,14 @@ INSERT INTO `history` (`date`, `time_in`, `time_out`, `admin_name`, `owner_id`, 
 ('2024-11-01', '09:00:00', '18:00:00', 'Admin2', '201923412', 'B2', 'Meeting', '09:00:00', 'Followed protocol', 'QR1002', '', 'DEF456'),
 ('2024-11-03', '08:30:00', '17:30:00', 'Admin5', '2020304056', 'E5', 'Personal', '09:00:00', 'Special permission', 'QR1005', '', 'MNO345'),
 ('2024-11-02', '07:30:00', NULL, 'Admin4', '2020304141', 'D4', 'Delivery', '09:00:00', 'No issues', 'QR1004', '', 'JKL012'),
-('2024-11-01', '08:00:00', '17:30:00', 'Admin1', '2022304056', 'A1', 'Business', '09:30:00', 'No issues', 'QR1001', '', 'ABC123'),
 ('2024-11-02', '06:00:00', '10:15:23', 'Admin3', '202424145', 'C3', 'Maintenance', '04:15:00', 'Arrived on time', 'QR1003', '', 'GHI789'),
-('2024-11-13', '04:00:00', NULL, NULL, '2022304060', NULL, 'Test reason', NULL, 'Test notes', 'QQEQEQEQEQE', 'Employee', 'DEF456'),
-('2024-11-17', '10:15:20', NULL, 'admin', '2022304070', 'A1', 'testreasontestreasontestreasontestreasontestreasontestreason', NULL, NULL, 'qrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqrqr', 'Student', 'MMM 000');
+('2024-11-13', '04:00:00', '08:37:46', 'admin', '2022304060', 'A2', 'Test reason', '04:37:00', 'Test notes', 'QQEQEQEQEQE', 'Employee', 'DEF456'),
+('2024-10-31', '12:01:51', '08:27:26', NULL, '2022304074', 'M1', 'dfsdfsdfsd', '20:25:00', 'dsfsdfsf', 'dsfsdfdsf', 'Student', 'ABC 123'),
+('2024-10-31', '07:01:51', '08:34:15', NULL, '2022304074', 'M1', 'dfsdfsdfsd', '01:35:00', 'dsfsdfsf', 'dsfsdfdsf', 'Student', 'ABC 123'),
+('2024-10-31', '07:01:51', '08:37:18', 'MEADMIN', '2022304074', 'A4', 'dfsdfsdfsd', '01:35:00', 'dsfsdfsf', 'dsfsdfdsf', 'Student', 'ABC 123'),
+('2024-11-12', '01:00:00', '09:37:46', 'admin', '2020304056', 'A2', 'sdfsdfds', '08:37:00', 'sdfsfsd', 'dsfsdfd', 'Employee', 'ZZZ 999'),
+('2024-11-04', '01:00:00', '11:06:16', 'admin', '2022304056', 'A1', 'fsdsddfsf', '10:06:00', 'dsfdsf', 'dfds', 'Employee', 'HHH 444'),
+('2024-10-10', '05:45:17', '10:47:24', 'admin1', '201923412', 'A2', 'dfsdfd', '05:02:00', 'sdfsf', 'sdfd', 'Employee', 'LLL 888');
 
 -- --------------------------------------------------------
 
@@ -153,8 +157,8 @@ CREATE TABLE `parkingslot` (
 --
 
 INSERT INTO `parkingslot` (`slot_id`, `slot_number`, `status`, `area_number`, `user_id`) VALUES
-(1, 'A1', 'occupied', 1, '2022304056'),
-(2, 'A2', 'vacant', 1, '2022304057'),
+(1, 'A1', 'vacant', 1, '2022304056'),
+(2, 'A2', 'vacant', 1, '201923412'),
 (3, 'A3', 'occupied', 1, '2022304058'),
 (4, 'A4', 'vacant', 1, '2022304059'),
 (5, 'A5', 'vacant', 1, '2022304060'),
@@ -247,7 +251,7 @@ CREATE TABLE `parkingslotmotorcycle` (
 --
 
 INSERT INTO `parkingslotmotorcycle` (`slot_id`, `slot_number`, `status`, `user_id`) VALUES
-(1, 'M1', 'occupied', NULL),
+(1, 'M1', 'vacant', NULL),
 (10, 'M10', 'vacant', NULL),
 (11, 'M11', 'vacant', NULL),
 (12, 'M12', 'vacant', NULL),
@@ -315,30 +319,31 @@ CREATE TABLE `students` (
   `student_id_image` text DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `telephone` varchar(100) DEFAULT NULL,
-  `college_department` varchar(20) DEFAULT NULL
+  `college_department` varchar(20) DEFAULT NULL,
+  `email` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`student_number`, `first_name`, `middle_name`, `last_name`, `password`, `gender`, `email_verified`, `student_id_image`, `address`, `telephone`, `college_department`) VALUES
-('2022304056', 'kenneth', 'terte', 'santos', 'dsadas', 'Male', 'NA', 't23', 't23t2', '09772380113', 'CEIS'),
-('2022304060', 'Alex', 'Ray', 'Miller', 'pass123', 'Male', 'Verified', 'img04', '123 Main St', '09122334455', 'Engineering'),
-('2022304061', 'Emily', 'Grace', 'Clark', 'pass456', 'Female', 'Verified', 'img05', '456 Elm St', '09123456788', 'Business'),
-('2022304062', 'David', 'Lee', 'Garcia', 'pass789', 'Male', 'Not Verifi', 'img06', '789 Oak St', '09129876543', 'Science'),
-('2022304063', 'Sophia', 'Marie', 'Brown', 'pass321', 'Female', 'Verified', 'img07', '101 Maple St', '09123456789', 'Law'),
-('2022304064', 'James', 'Alan', 'Wilson', 'pass654', 'Male', 'Verified', 'img08', '202 Birch St', '09128765432', 'Engineering'),
-('2022304065', 'Linda', 'Ann', 'Jones', 'pass987', 'Female', 'Not Verifi', 'img09', '303 Cedar St', '09124567890', 'Arts'),
-('2022304066', 'Brian', 'Paul', 'Martinez', 'pass111', 'Male', 'Verified', 'img10', '404 Pine St', '09125678901', 'Medicine'),
-('2022304067', 'Olivia', 'Kate', 'Lopez', 'pass222', 'Female', 'Verified', 'img11', '505 Walnut St', '09127890123', 'Business'),
-('2022304068', 'Ethan', 'George', 'Gonzalez', 'pass333', 'Male', 'Not Verifi', 'img12', '606 Chestnut St', '09121234567', 'Science'),
-('2022304069', 'Mia', 'Rose', 'Harris', 'pass444', 'Female', 'Verified', 'img13', '707 Willow St', '09123456776', 'Arts'),
-('2022304070', 'Henry', 'Clark', 'Young', 'pass555', 'Male', 'Verified', 'img14', '808 Sycamore St', '09127894321', 'Education'),
-('2022304071', 'Ella', 'Mae', 'Ramirez', 'pass666', 'Female', 'Verified', 'img15', '909 Fir St', '09124567891', 'Nursing'),
-('2022304072', 'Mason', 'John', 'Kelly', 'pass777', 'Male', 'Not Verifi', 'img16', '1010 Spruce St', '09123456987', 'Engineering'),
-('2022304073', 'Ava', 'June', 'Sanchez', 'pass888', 'Female', 'Verified', 'img17', '1111 Redwood St', '09126789321', 'Law'),
-('2022304074', 'Noah', 'Alex', 'Nguyen', 'pass999', 'Male', 'Verified', 'img18', '1212 Cedar Ln', '09127834567', 'CEIS');
+INSERT INTO `students` (`student_number`, `first_name`, `middle_name`, `last_name`, `password`, `gender`, `email_verified`, `student_id_image`, `address`, `telephone`, `college_department`, `email`) VALUES
+('2022304056', 'kenneth', 'terte', 'santos', 'dsadas', 'Male', 'NA', 't23', 't23t2', '09772380113', 'CEIS', 'testemail@email.com'),
+('2022304060', 'Alex', 'Ray', 'Miller', 'pass123', 'Male', 'Verified', 'img04', '123 Main St', '09122334455', 'Engineering', 'testemail@email.com'),
+('2022304061', 'Emily', 'Grace', 'Clark', 'pass456', 'Female', 'Verified', 'img05', '456 Elm St', '09123456788', 'Business', 'testemail@email.com'),
+('2022304062', 'David', 'Lee', 'Garcia', 'pass789', 'Male', 'Not Verifi', 'img06', '789 Oak St', '09129876543', 'Science', 'testemail@email.com'),
+('2022304063', 'Sophia', 'Marie', 'Brown', 'pass321', 'Female', 'Verified', 'img07', '101 Maple St', '09123456789', 'Law', 'testemail@email.com'),
+('2022304064', 'James', 'Alan', 'Wilson', 'pass654', 'Male', 'Verified', 'img08', '202 Birch St', '09128765432', 'Engineering', 'testemail@email.com'),
+('2022304065', 'Linda', 'Ann', 'Jones', 'pass987', 'Female', 'Not Verifi', 'img09', '303 Cedar St', '09124567890', 'Arts', 'testemail@email.com'),
+('2022304066', 'Brian', 'Paul', 'Martinez', 'pass111', 'Male', 'Verified', 'img10', '404 Pine St', '09125678901', 'Medicine', 'testemail@email.com'),
+('2022304067', 'Olivia', 'Kate', 'Lopez', 'pass222', 'Female', 'Verified', 'img11', '505 Walnut St', '09127890123', 'Business', 'testemail@email.com'),
+('2022304068', 'Ethan', 'George', 'Gonzalez', 'pass333', 'Male', 'Not Verifi', 'img12', '606 Chestnut St', '09121234567', 'Science', 'testemail@email.com'),
+('2022304069', 'Mia', 'Rose', 'Harris', 'pass444', 'Female', 'Verified', 'img13', '707 Willow St', '09123456776', 'Arts', 'testemail@email.com'),
+('2022304070', 'Henry', 'Clark', 'Young', 'pass555', 'Male', 'Verified', 'img14', '808 Sycamore St', '09127894321', 'Education', 'testemail@email.com'),
+('2022304071', 'Ella', 'Mae', 'Ramirez', 'pass666', 'Female', 'Verified', 'img15', '909 Fir St', '09124567891', 'Nursing', 'testemail@email.com'),
+('2022304072', 'Mason', 'John', 'Kelly', 'pass777', 'Male', 'Not Verifi', 'img16', '1010 Spruce St', '09123456987', 'Engineering', 'testemail@email.com'),
+('2022304073', 'Ava', 'June', 'Sanchez', 'pass888', 'Female', 'Verified', 'img17', '1111 Redwood St', '09126789321', 'Law', 'testemail@email.com'),
+('2022304074', 'Noah', 'Alex', 'Nguyen', 'pass999', 'Male', 'Verified', 'img18', '1212 Cedar Ln', '09127834567', 'CEIS', 'testemail@email.com');
 
 -- --------------------------------------------------------
 
