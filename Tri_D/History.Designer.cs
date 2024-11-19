@@ -56,8 +56,6 @@
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.historyTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.searchImage = new System.Windows.Forms.PictureBox();
-            this.searchTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.ownerHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OwnerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +64,8 @@
             this.timeoutHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.durationHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.detailsButton = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.searchImage = new System.Windows.Forms.PictureBox();
+            this.searchTextbox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebar.SuspendLayout();
@@ -86,9 +86,10 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(797, 64);
+            this.guna2Panel1.Size = new System.Drawing.Size(1063, 79);
             this.guna2Panel1.TabIndex = 4;
             // 
             // tuaLabel
@@ -99,10 +100,11 @@
             this.tuaLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.tuaLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             this.tuaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            this.tuaLabel.Location = new System.Drawing.Point(279, 12);
+            this.tuaLabel.Location = new System.Drawing.Point(372, 15);
+            this.tuaLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tuaLabel.Name = "tuaLabel";
             this.tuaLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tuaLabel.Size = new System.Drawing.Size(374, 32);
+            this.tuaLabel.Size = new System.Drawing.Size(469, 41);
             this.tuaLabel.TabIndex = 2;
             this.tuaLabel.Text = "TUA Parking Management System";
             this.tuaLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -112,9 +114,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(208, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(277, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 58);
+            this.pictureBox1.Size = new System.Drawing.Size(65, 71);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -137,17 +140,18 @@
             this.menuButton.ImageActive = ((System.Drawing.Image)(resources.GetObject("menuButton.ImageActive")));
             this.menuButton.ImageLocation = null;
             this.menuButton.ImageMargin = 0;
-            this.menuButton.ImageSize = new System.Drawing.Size(42, 38);
-            this.menuButton.ImageZoomSize = new System.Drawing.Size(43, 39);
+            this.menuButton.ImageSize = new System.Drawing.Size(56, 47);
+            this.menuButton.ImageZoomSize = new System.Drawing.Size(57, 48);
             this.menuButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("menuButton.InitialImage")));
-            this.menuButton.Location = new System.Drawing.Point(12, 12);
+            this.menuButton.Location = new System.Drawing.Point(16, 15);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.menuButton.Name = "menuButton";
             this.menuButton.Rotation = 0;
             this.menuButton.ShowActiveImage = true;
             this.menuButton.ShowCursorChanges = true;
             this.menuButton.ShowImageBorders = false;
             this.menuButton.ShowSizeMarkers = false;
-            this.menuButton.Size = new System.Drawing.Size(43, 39);
+            this.menuButton.Size = new System.Drawing.Size(57, 48);
             this.menuButton.TabIndex = 0;
             this.menuButton.ToolTipText = "";
             this.menuButton.WaitOnLoad = false;
@@ -164,17 +168,19 @@
             this.sidebar.Controls.Add(this.sidePanel2);
             this.sidebar.Controls.Add(this.sidePanel3);
             this.sidebar.Controls.Add(this.sidePanel4);
-            this.sidebar.Location = new System.Drawing.Point(-2, 0);
-            this.sidebar.MaximumSize = new System.Drawing.Size(206, 451);
+            this.sidebar.Location = new System.Drawing.Point(-3, 0);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidebar.MaximumSize = new System.Drawing.Size(275, 555);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(10, 451);
+            this.sidebar.Size = new System.Drawing.Size(13, 555);
             this.sidebar.TabIndex = 5;
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 61);
+            this.panel1.Size = new System.Drawing.Size(267, 75);
             this.panel1.TabIndex = 2;
             // 
             // sidePanel
@@ -182,10 +188,11 @@
             this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.sidePanel.BorderRadius = 200;
             this.sidePanel.Controls.Add(this.dashboardButton);
-            this.sidePanel.Location = new System.Drawing.Point(3, 70);
+            this.sidePanel.Location = new System.Drawing.Point(4, 87);
+            this.sidePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sidePanel.Name = "sidePanel";
             this.sidePanel.ShadowDecoration.Parent = this.sidePanel;
-            this.sidePanel.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel.Size = new System.Drawing.Size(267, 57);
             this.sidePanel.TabIndex = 3;
             // 
             // dashboardButton
@@ -195,10 +202,11 @@
             this.dashboardButton.CheckedState.Parent = this.dashboardButton;
             this.dashboardButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dashboardButton.HoverState.Parent = this.dashboardButton;
-            this.dashboardButton.Location = new System.Drawing.Point(-12, -10);
+            this.dashboardButton.Location = new System.Drawing.Point(-16, -12);
+            this.dashboardButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dashboardButton.Name = "dashboardButton";
             this.dashboardButton.PressedState.Parent = this.dashboardButton;
-            this.dashboardButton.Size = new System.Drawing.Size(224, 66);
+            this.dashboardButton.Size = new System.Drawing.Size(299, 81);
             this.dashboardButton.TabIndex = 4;
             this.dashboardButton.Click += new System.EventHandler(this.dashboardButton_Click);
             // 
@@ -207,10 +215,11 @@
             this.sidePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.sidePanel2.BorderRadius = 200;
             this.sidePanel2.Controls.Add(this.manageButton);
-            this.sidePanel2.Location = new System.Drawing.Point(3, 122);
+            this.sidePanel2.Location = new System.Drawing.Point(4, 152);
+            this.sidePanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sidePanel2.Name = "sidePanel2";
             this.sidePanel2.ShadowDecoration.Parent = this.sidePanel2;
-            this.sidePanel2.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel2.Size = new System.Drawing.Size(267, 57);
             this.sidePanel2.TabIndex = 4;
             // 
             // manageButton
@@ -221,9 +230,10 @@
             this.manageButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.manageButton.HoverState.Parent = this.manageButton;
             this.manageButton.Location = new System.Drawing.Point(0, 0);
+            this.manageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.manageButton.Name = "manageButton";
             this.manageButton.PressedState.Parent = this.manageButton;
-            this.manageButton.Size = new System.Drawing.Size(196, 52);
+            this.manageButton.Size = new System.Drawing.Size(261, 64);
             this.manageButton.TabIndex = 5;
             this.manageButton.Click += new System.EventHandler(this.manageButton_Click);
             // 
@@ -232,10 +242,11 @@
             this.sidePanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.sidePanel3.BorderRadius = 200;
             this.sidePanel3.Controls.Add(this.historyButton);
-            this.sidePanel3.Location = new System.Drawing.Point(3, 174);
+            this.sidePanel3.Location = new System.Drawing.Point(4, 217);
+            this.sidePanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sidePanel3.Name = "sidePanel3";
             this.sidePanel3.ShadowDecoration.Parent = this.sidePanel3;
-            this.sidePanel3.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel3.Size = new System.Drawing.Size(267, 57);
             this.sidePanel3.TabIndex = 4;
             // 
             // historyButton
@@ -245,9 +256,10 @@
             this.historyButton.CheckedState.Parent = this.historyButton;
             this.historyButton.HoverState.Parent = this.historyButton;
             this.historyButton.Location = new System.Drawing.Point(0, 0);
+            this.historyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.historyButton.Name = "historyButton";
             this.historyButton.PressedState.Parent = this.historyButton;
-            this.historyButton.Size = new System.Drawing.Size(196, 52);
+            this.historyButton.Size = new System.Drawing.Size(261, 64);
             this.historyButton.TabIndex = 6;
             // 
             // sidePanel4
@@ -255,10 +267,11 @@
             this.sidePanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.sidePanel4.BorderRadius = 200;
             this.sidePanel4.Controls.Add(this.logoutButton);
-            this.sidePanel4.Location = new System.Drawing.Point(3, 226);
+            this.sidePanel4.Location = new System.Drawing.Point(4, 282);
+            this.sidePanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sidePanel4.Name = "sidePanel4";
             this.sidePanel4.ShadowDecoration.Parent = this.sidePanel4;
-            this.sidePanel4.Size = new System.Drawing.Size(200, 46);
+            this.sidePanel4.Size = new System.Drawing.Size(267, 57);
             this.sidePanel4.TabIndex = 4;
             // 
             // logoutButton
@@ -269,9 +282,10 @@
             this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logoutButton.HoverState.Parent = this.logoutButton;
             this.logoutButton.Location = new System.Drawing.Point(0, 0);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.PressedState.Parent = this.logoutButton;
-            this.logoutButton.Size = new System.Drawing.Size(196, 52);
+            this.logoutButton.Size = new System.Drawing.Size(261, 64);
             this.logoutButton.TabIndex = 7;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
@@ -291,10 +305,11 @@
             this.bunifuPanel1.Controls.Add(this.historyTable);
             this.bunifuPanel1.Controls.Add(this.searchImage);
             this.bunifuPanel1.Controls.Add(this.searchTextbox);
-            this.bunifuPanel1.Location = new System.Drawing.Point(52, 83);
+            this.bunifuPanel1.Location = new System.Drawing.Point(69, 102);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(723, 356);
+            this.bunifuPanel1.Size = new System.Drawing.Size(964, 438);
             this.bunifuPanel1.TabIndex = 6;
             // 
             // historyTable
@@ -335,12 +350,14 @@
             this.historyTable.DefaultCellStyle = dataGridViewCellStyle9;
             this.historyTable.EnableHeadersVisualStyles = false;
             this.historyTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            this.historyTable.Location = new System.Drawing.Point(14, 50);
+            this.historyTable.Location = new System.Drawing.Point(19, 62);
+            this.historyTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.historyTable.Name = "historyTable";
             this.historyTable.RowHeadersVisible = false;
+            this.historyTable.RowHeadersWidth = 51;
             this.historyTable.RowTemplate.Height = 40;
             this.historyTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.historyTable.Size = new System.Drawing.Size(695, 291);
+            this.historyTable.Size = new System.Drawing.Size(927, 358);
             this.historyTable.TabIndex = 2;
             this.historyTable.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.historyTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -365,13 +382,87 @@
             this.historyTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.historyTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
             // 
+            // ownerHeader
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ownerHeader.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ownerHeader.FillWeight = 150F;
+            this.ownerHeader.HeaderText = "Owner Name";
+            this.ownerHeader.MinimumWidth = 6;
+            this.ownerHeader.Name = "ownerHeader";
+            this.ownerHeader.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // OwnerID
+            // 
+            this.OwnerID.HeaderText = "OwnerID";
+            this.OwnerID.MinimumWidth = 6;
+            this.OwnerID.Name = "OwnerID";
+            // 
+            // typeHeader
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.typeHeader.DefaultCellStyle = dataGridViewCellStyle4;
+            this.typeHeader.FillWeight = 150F;
+            this.typeHeader.HeaderText = "Type";
+            this.typeHeader.MinimumWidth = 6;
+            this.typeHeader.Name = "typeHeader";
+            this.typeHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // dateHeader
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dateHeader.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dateHeader.FillWeight = 150F;
+            this.dateHeader.HeaderText = "Date";
+            this.dateHeader.MinimumWidth = 6;
+            this.dateHeader.Name = "dateHeader";
+            this.dateHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // timeinHeader
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.timeinHeader.DefaultCellStyle = dataGridViewCellStyle6;
+            this.timeinHeader.HeaderText = "Time-In";
+            this.timeinHeader.MinimumWidth = 6;
+            this.timeinHeader.Name = "timeinHeader";
+            this.timeinHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // timeoutHeader
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.timeoutHeader.DefaultCellStyle = dataGridViewCellStyle7;
+            this.timeoutHeader.HeaderText = "Time-Out";
+            this.timeoutHeader.MinimumWidth = 6;
+            this.timeoutHeader.Name = "timeoutHeader";
+            this.timeoutHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // durationHeader
+            // 
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.durationHeader.DefaultCellStyle = dataGridViewCellStyle8;
+            this.durationHeader.HeaderText = "Duration";
+            this.durationHeader.MinimumWidth = 6;
+            this.durationHeader.Name = "durationHeader";
+            this.durationHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // detailsButton
+            // 
+            this.detailsButton.HeaderText = "         ";
+            this.detailsButton.MinimumWidth = 6;
+            this.detailsButton.Name = "detailsButton";
+            this.detailsButton.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.detailsButton.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.detailsButton.Text = "Details";
+            this.detailsButton.UseColumnTextForButtonValue = true;
+            // 
             // searchImage
             // 
             this.searchImage.BackColor = System.Drawing.Color.White;
             this.searchImage.Image = ((System.Drawing.Image)(resources.GetObject("searchImage.Image")));
-            this.searchImage.Location = new System.Drawing.Point(20, 15);
+            this.searchImage.Location = new System.Drawing.Point(27, 18);
+            this.searchImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchImage.Name = "searchImage";
-            this.searchImage.Size = new System.Drawing.Size(22, 24);
+            this.searchImage.Size = new System.Drawing.Size(29, 30);
             this.searchImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.searchImage.TabIndex = 1;
             this.searchImage.TabStop = false;
@@ -391,91 +482,28 @@
             this.searchTextbox.FocusedState.Parent = this.searchTextbox;
             this.searchTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTextbox.HoverState.Parent = this.searchTextbox;
-            this.searchTextbox.Location = new System.Drawing.Point(14, 8);
+            this.searchTextbox.Location = new System.Drawing.Point(19, 10);
+            this.searchTextbox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.searchTextbox.Name = "searchTextbox";
             this.searchTextbox.PasswordChar = '\0';
             this.searchTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
             this.searchTextbox.PlaceholderText = "Search";
             this.searchTextbox.SelectedText = "";
             this.searchTextbox.ShadowDecoration.Parent = this.searchTextbox;
-            this.searchTextbox.Size = new System.Drawing.Size(237, 36);
+            this.searchTextbox.Size = new System.Drawing.Size(316, 44);
             this.searchTextbox.TabIndex = 0;
             this.searchTextbox.TextOffset = new System.Drawing.Point(20, 0);
             // 
-            // ownerHeader
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ownerHeader.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ownerHeader.FillWeight = 150F;
-            this.ownerHeader.HeaderText = "Owner Name";
-            this.ownerHeader.Name = "ownerHeader";
-            this.ownerHeader.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // OwnerID
-            // 
-            this.OwnerID.HeaderText = "OwnerID";
-            this.OwnerID.Name = "OwnerID";
-            // 
-            // typeHeader
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.typeHeader.DefaultCellStyle = dataGridViewCellStyle4;
-            this.typeHeader.FillWeight = 150F;
-            this.typeHeader.HeaderText = "Type";
-            this.typeHeader.Name = "typeHeader";
-            this.typeHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // dateHeader
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dateHeader.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dateHeader.FillWeight = 150F;
-            this.dateHeader.HeaderText = "Date";
-            this.dateHeader.Name = "dateHeader";
-            this.dateHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // timeinHeader
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.timeinHeader.DefaultCellStyle = dataGridViewCellStyle6;
-            this.timeinHeader.HeaderText = "Time-In";
-            this.timeinHeader.Name = "timeinHeader";
-            this.timeinHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // timeoutHeader
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.timeoutHeader.DefaultCellStyle = dataGridViewCellStyle7;
-            this.timeoutHeader.HeaderText = "Time-Out";
-            this.timeoutHeader.Name = "timeoutHeader";
-            this.timeoutHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // durationHeader
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.durationHeader.DefaultCellStyle = dataGridViewCellStyle8;
-            this.durationHeader.HeaderText = "Duration";
-            this.durationHeader.Name = "durationHeader";
-            this.durationHeader.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // detailsButton
-            // 
-            this.detailsButton.HeaderText = "         ";
-            this.detailsButton.Name = "detailsButton";
-            this.detailsButton.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.detailsButton.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.detailsButton.Text = "Details";
-            this.detailsButton.UseColumnTextForButtonValue = true;
-            // 
             // History
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(797, 451);
+            this.ClientSize = new System.Drawing.Size(1063, 555);
             this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.sidebar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "History";
             this.Text = "History";
             this.Load += new System.EventHandler(this.History_Load);

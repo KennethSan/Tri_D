@@ -196,7 +196,5 @@ namespace Tri_D
         {
             sidebarTimer.Start();
         }
-
-       
     }
 }
