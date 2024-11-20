@@ -80,7 +80,7 @@
             this.guna2Panel1.Controls.Add(this.menuButton);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1261, 75);
@@ -95,7 +95,7 @@
             this.tuaLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
             this.tuaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
             this.tuaLabel.Location = new System.Drawing.Point(367, 16);
-            this.tuaLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tuaLabel.Margin = new System.Windows.Forms.Padding(4);
             this.tuaLabel.Name = "tuaLabel";
             this.tuaLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tuaLabel.Size = new System.Drawing.Size(511, 45);
@@ -109,7 +109,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(277, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(65, 71);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -138,7 +138,7 @@
             this.menuButton.ImageZoomSize = new System.Drawing.Size(57, 48);
             this.menuButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("menuButton.InitialImage")));
             this.menuButton.Location = new System.Drawing.Point(16, 15);
-            this.menuButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(4);
             this.menuButton.Name = "menuButton";
             this.menuButton.Rotation = 0;
             this.menuButton.ShowActiveImage = true;
@@ -163,7 +163,7 @@
             this.sidebar.Controls.Add(this.sidePanel4);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.sidebar.MaximumSize = new System.Drawing.Size(275, 555);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(275, 555);
@@ -172,7 +172,7 @@
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 75);
             this.panel1.TabIndex = 2;
@@ -183,7 +183,7 @@
             this.sidePanel.BorderRadius = 200;
             this.sidePanel.Controls.Add(this.dashboardButton);
             this.sidePanel.Location = new System.Drawing.Point(4, 87);
-            this.sidePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel.Name = "sidePanel";
             this.sidePanel.ShadowDecoration.Parent = this.sidePanel;
             this.sidePanel.Size = new System.Drawing.Size(267, 57);
@@ -197,7 +197,7 @@
             this.dashboardButton.CheckedState.Parent = this.dashboardButton;
             this.dashboardButton.HoverState.Parent = this.dashboardButton;
             this.dashboardButton.Location = new System.Drawing.Point(-16, -12);
-            this.dashboardButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dashboardButton.Margin = new System.Windows.Forms.Padding(4);
             this.dashboardButton.Name = "dashboardButton";
             this.dashboardButton.PressedState.Parent = this.dashboardButton;
             this.dashboardButton.Size = new System.Drawing.Size(299, 81);
@@ -209,7 +209,7 @@
             this.sidePanel2.BorderRadius = 200;
             this.sidePanel2.Controls.Add(this.manageButton);
             this.sidePanel2.Location = new System.Drawing.Point(4, 152);
-            this.sidePanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel2.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel2.Name = "sidePanel2";
             this.sidePanel2.ShadowDecoration.Parent = this.sidePanel2;
             this.sidePanel2.Size = new System.Drawing.Size(267, 57);
@@ -223,7 +223,7 @@
             this.manageButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.manageButton.HoverState.Parent = this.manageButton;
             this.manageButton.Location = new System.Drawing.Point(0, 0);
-            this.manageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.manageButton.Margin = new System.Windows.Forms.Padding(4);
             this.manageButton.Name = "manageButton";
             this.manageButton.PressedState.Parent = this.manageButton;
             this.manageButton.Size = new System.Drawing.Size(261, 64);
@@ -236,7 +236,7 @@
             this.sidePanel3.BorderRadius = 200;
             this.sidePanel3.Controls.Add(this.historyButton);
             this.sidePanel3.Location = new System.Drawing.Point(4, 217);
-            this.sidePanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel3.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel3.Name = "sidePanel3";
             this.sidePanel3.ShadowDecoration.Parent = this.sidePanel3;
             this.sidePanel3.Size = new System.Drawing.Size(267, 57);
@@ -250,7 +250,7 @@
             this.historyButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.historyButton.HoverState.Parent = this.historyButton;
             this.historyButton.Location = new System.Drawing.Point(0, 0);
-            this.historyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.historyButton.Margin = new System.Windows.Forms.Padding(4);
             this.historyButton.Name = "historyButton";
             this.historyButton.PressedState.Parent = this.historyButton;
             this.historyButton.Size = new System.Drawing.Size(261, 64);
@@ -263,7 +263,7 @@
             this.sidePanel4.BorderRadius = 200;
             this.sidePanel4.Controls.Add(this.logoutButton);
             this.sidePanel4.Location = new System.Drawing.Point(4, 282);
-            this.sidePanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel4.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel4.Name = "sidePanel4";
             this.sidePanel4.ShadowDecoration.Parent = this.sidePanel4;
             this.sidePanel4.Size = new System.Drawing.Size(267, 57);
@@ -277,7 +277,7 @@
             this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logoutButton.HoverState.Parent = this.logoutButton;
             this.logoutButton.Location = new System.Drawing.Point(0, 0);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(4);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.PressedState.Parent = this.logoutButton;
             this.logoutButton.Size = new System.Drawing.Size(261, 64);
@@ -299,7 +299,7 @@
             this.guna2Panel2.Controls.Add(this.carAvailabilityProgress);
             this.guna2Panel2.Controls.Add(this.parkingavailabilityLabel);
             this.guna2Panel2.Location = new System.Drawing.Point(404, 86);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(324, 139);
@@ -313,7 +313,7 @@
             this.vacantnumLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.vacantnumLabel.ForeColor = System.Drawing.Color.Green;
             this.vacantnumLabel.Location = new System.Drawing.Point(254, 60);
-            this.vacantnumLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.vacantnumLabel.Margin = new System.Windows.Forms.Padding(4);
             this.vacantnumLabel.Name = "vacantnumLabel";
             this.vacantnumLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.vacantnumLabel.Size = new System.Drawing.Size(8, 20);
@@ -330,7 +330,7 @@
             this.occupiednumLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.occupiednumLabel.ForeColor = System.Drawing.Color.Red;
             this.occupiednumLabel.Location = new System.Drawing.Point(40, 62);
-            this.occupiednumLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.occupiednumLabel.Margin = new System.Windows.Forms.Padding(4);
             this.occupiednumLabel.Name = "occupiednumLabel";
             this.occupiednumLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.occupiednumLabel.Size = new System.Drawing.Size(8, 20);
@@ -346,7 +346,7 @@
             this.vacantLabel.CursorType = null;
             this.vacantLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.vacantLabel.Location = new System.Drawing.Point(240, 36);
-            this.vacantLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.vacantLabel.Margin = new System.Windows.Forms.Padding(4);
             this.vacantLabel.Name = "vacantLabel";
             this.vacantLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.vacantLabel.Size = new System.Drawing.Size(45, 20);
@@ -363,7 +363,7 @@
             this.occupiedLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.occupiedLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.occupiedLabel.Location = new System.Drawing.Point(17, 36);
-            this.occupiedLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.occupiedLabel.Margin = new System.Windows.Forms.Padding(4);
             this.occupiedLabel.Name = "occupiedLabel";
             this.occupiedLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.occupiedLabel.Size = new System.Drawing.Size(63, 20);
@@ -381,7 +381,7 @@
             this.carAvailabilityProgress.ForeColor = System.Drawing.Color.Lime;
             this.carAvailabilityProgress.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.carAvailabilityProgress.Location = new System.Drawing.Point(17, 86);
-            this.carAvailabilityProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.carAvailabilityProgress.Margin = new System.Windows.Forms.Padding(4);
             this.carAvailabilityProgress.Maximum = 75;
             this.carAvailabilityProgress.Name = "carAvailabilityProgress";
             this.carAvailabilityProgress.ProgressColor = System.Drawing.Color.Red;
@@ -402,7 +402,7 @@
             this.parkingavailabilityLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.parkingavailabilityLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.parkingavailabilityLabel.Location = new System.Drawing.Point(17, 4);
-            this.parkingavailabilityLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.parkingavailabilityLabel.Margin = new System.Windows.Forms.Padding(4);
             this.parkingavailabilityLabel.Name = "parkingavailabilityLabel";
             this.parkingavailabilityLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.parkingavailabilityLabel.Size = new System.Drawing.Size(207, 25);
@@ -421,7 +421,7 @@
             this.guna2Panel3.Controls.Add(this.motorAvailabilityProgress);
             this.guna2Panel3.Controls.Add(this.bunifuLabel5);
             this.guna2Panel3.Location = new System.Drawing.Point(769, 87);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(329, 139);
@@ -435,7 +435,7 @@
             this.vacantnumMOTORLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.vacantnumMOTORLabel.ForeColor = System.Drawing.Color.Green;
             this.vacantnumMOTORLabel.Location = new System.Drawing.Point(263, 60);
-            this.vacantnumMOTORLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.vacantnumMOTORLabel.Margin = new System.Windows.Forms.Padding(4);
             this.vacantnumMOTORLabel.Name = "vacantnumMOTORLabel";
             this.vacantnumMOTORLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.vacantnumMOTORLabel.Size = new System.Drawing.Size(8, 20);
@@ -452,7 +452,7 @@
             this.occupiednumMOTORLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.occupiednumMOTORLabel.ForeColor = System.Drawing.Color.Red;
             this.occupiednumMOTORLabel.Location = new System.Drawing.Point(40, 62);
-            this.occupiednumMOTORLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.occupiednumMOTORLabel.Margin = new System.Windows.Forms.Padding(4);
             this.occupiednumMOTORLabel.Name = "occupiednumMOTORLabel";
             this.occupiednumMOTORLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.occupiednumMOTORLabel.Size = new System.Drawing.Size(8, 20);
@@ -468,7 +468,7 @@
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel3.Location = new System.Drawing.Point(249, 36);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(45, 20);
@@ -484,7 +484,7 @@
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel4.Location = new System.Drawing.Point(17, 36);
-            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel4.Size = new System.Drawing.Size(63, 20);
@@ -501,7 +501,7 @@
             this.motorAvailabilityProgress.ForeColor = System.Drawing.Color.Lime;
             this.motorAvailabilityProgress.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.motorAvailabilityProgress.Location = new System.Drawing.Point(17, 86);
-            this.motorAvailabilityProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.motorAvailabilityProgress.Margin = new System.Windows.Forms.Padding(4);
             this.motorAvailabilityProgress.Name = "motorAvailabilityProgress";
             this.motorAvailabilityProgress.ProgressColor = System.Drawing.Color.Red;
             this.motorAvailabilityProgress.ProgressColor2 = System.Drawing.Color.Red;
@@ -518,7 +518,7 @@
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel5.Location = new System.Drawing.Point(12, 4);
-            this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuLabel5.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(224, 25);
@@ -541,7 +541,7 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.sidebar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
