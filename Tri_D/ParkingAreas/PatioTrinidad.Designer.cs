@@ -84,6 +84,40 @@
             this.btnSlotR_A7 = new Guna.UI2.WinForms.Guna2Button();
             this.btnSlotR_A6 = new Guna.UI2.WinForms.Guna2Button();
             this.btnSlotR_A5 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A36 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A35 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A34 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A40 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A39 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A41 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotU_A33 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotU_A32 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotU_A27 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotU_A29 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotU_A28 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotU_A31 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotU_A30 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A17 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A16 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A11 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A13 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A12 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A15 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A14 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotL_A18 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotL_A19 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotL_A20 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotL_A21 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotL_A22 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotL_A23 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotL_A24 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotL_A25 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotL_A26 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotR_A44 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotR_A42 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotR_A43 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A9 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSlotD_A10 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,6 +189,7 @@
             this.btnSlotD_A38.Size = new System.Drawing.Size(34, 55);
             this.btnSlotD_A38.TabIndex = 16;
             this.btnSlotD_A38.UseTransparentBackground = true;
+            this.btnSlotD_A38.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -662,6 +697,7 @@
             this.btnSlotR_A1.Size = new System.Drawing.Size(55, 34);
             this.btnSlotR_A1.TabIndex = 61;
             this.btnSlotR_A1.UseTransparentBackground = true;
+            this.btnSlotR_A1.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // btnSlotR_A2
             // 
@@ -685,6 +721,7 @@
             this.btnSlotR_A2.Size = new System.Drawing.Size(55, 34);
             this.btnSlotR_A2.TabIndex = 62;
             this.btnSlotR_A2.UseTransparentBackground = true;
+            this.btnSlotR_A2.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // btnSlotR_A4
             // 
@@ -708,6 +745,7 @@
             this.btnSlotR_A4.Size = new System.Drawing.Size(55, 34);
             this.btnSlotR_A4.TabIndex = 64;
             this.btnSlotR_A4.UseTransparentBackground = true;
+            this.btnSlotR_A4.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // btnSlotR_A3
             // 
@@ -731,6 +769,7 @@
             this.btnSlotR_A3.Size = new System.Drawing.Size(55, 34);
             this.btnSlotR_A3.TabIndex = 63;
             this.btnSlotR_A3.UseTransparentBackground = true;
+            this.btnSlotR_A3.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // btnSlotR_A8
             // 
@@ -754,6 +793,7 @@
             this.btnSlotR_A8.Size = new System.Drawing.Size(55, 34);
             this.btnSlotR_A8.TabIndex = 68;
             this.btnSlotR_A8.UseTransparentBackground = true;
+            this.btnSlotR_A8.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // btnSlotR_A7
             // 
@@ -777,6 +817,7 @@
             this.btnSlotR_A7.Size = new System.Drawing.Size(55, 34);
             this.btnSlotR_A7.TabIndex = 67;
             this.btnSlotR_A7.UseTransparentBackground = true;
+            this.btnSlotR_A7.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // btnSlotR_A6
             // 
@@ -800,6 +841,7 @@
             this.btnSlotR_A6.Size = new System.Drawing.Size(55, 34);
             this.btnSlotR_A6.TabIndex = 66;
             this.btnSlotR_A6.UseTransparentBackground = true;
+            this.btnSlotR_A6.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // btnSlotR_A5
             // 
@@ -823,12 +865,863 @@
             this.btnSlotR_A5.Size = new System.Drawing.Size(55, 34);
             this.btnSlotR_A5.TabIndex = 65;
             this.btnSlotR_A5.UseTransparentBackground = true;
+            this.btnSlotR_A5.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A36
+            // 
+            this.btnSlotD_A36.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A36.BackgroundImage")));
+            this.btnSlotD_A36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A36.BorderRadius = 20;
+            this.btnSlotD_A36.Checked = true;
+            this.btnSlotD_A36.CheckedState.Parent = this.btnSlotD_A36;
+            this.btnSlotD_A36.CustomImages.Parent = this.btnSlotD_A36;
+            this.btnSlotD_A36.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A36.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A36.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A36.HoverState.Parent = this.btnSlotD_A36;
+            this.btnSlotD_A36.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A36.Image")));
+            this.btnSlotD_A36.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A36.Location = new System.Drawing.Point(515, 285);
+            this.btnSlotD_A36.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A36.Name = "btnSlotD_A36";
+            this.btnSlotD_A36.ShadowDecoration.Parent = this.btnSlotD_A36;
+            this.btnSlotD_A36.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A36.TabIndex = 70;
+            this.btnSlotD_A36.UseTransparentBackground = true;
+            this.btnSlotD_A36.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A35
+            // 
+            this.btnSlotD_A35.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A35.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A35.BackgroundImage")));
+            this.btnSlotD_A35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A35.BorderRadius = 20;
+            this.btnSlotD_A35.Checked = true;
+            this.btnSlotD_A35.CheckedState.Parent = this.btnSlotD_A35;
+            this.btnSlotD_A35.CustomImages.Parent = this.btnSlotD_A35;
+            this.btnSlotD_A35.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A35.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A35.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A35.HoverState.Parent = this.btnSlotD_A35;
+            this.btnSlotD_A35.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A35.Image")));
+            this.btnSlotD_A35.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A35.Location = new System.Drawing.Point(477, 285);
+            this.btnSlotD_A35.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A35.Name = "btnSlotD_A35";
+            this.btnSlotD_A35.ShadowDecoration.Parent = this.btnSlotD_A35;
+            this.btnSlotD_A35.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A35.TabIndex = 69;
+            this.btnSlotD_A35.UseTransparentBackground = true;
+            this.btnSlotD_A35.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A34
+            // 
+            this.btnSlotD_A34.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A34.BackgroundImage")));
+            this.btnSlotD_A34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A34.BorderRadius = 20;
+            this.btnSlotD_A34.Checked = true;
+            this.btnSlotD_A34.CheckedState.Parent = this.btnSlotD_A34;
+            this.btnSlotD_A34.CustomImages.Parent = this.btnSlotD_A34;
+            this.btnSlotD_A34.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A34.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A34.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A34.HoverState.Parent = this.btnSlotD_A34;
+            this.btnSlotD_A34.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A34.Image")));
+            this.btnSlotD_A34.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A34.Location = new System.Drawing.Point(438, 285);
+            this.btnSlotD_A34.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A34.Name = "btnSlotD_A34";
+            this.btnSlotD_A34.ShadowDecoration.Parent = this.btnSlotD_A34;
+            this.btnSlotD_A34.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A34.TabIndex = 71;
+            this.btnSlotD_A34.UseTransparentBackground = true;
+            this.btnSlotD_A34.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A40
+            // 
+            this.btnSlotD_A40.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A40.BackgroundImage")));
+            this.btnSlotD_A40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A40.BorderRadius = 20;
+            this.btnSlotD_A40.Checked = true;
+            this.btnSlotD_A40.CheckedState.Parent = this.btnSlotD_A40;
+            this.btnSlotD_A40.CustomImages.Parent = this.btnSlotD_A40;
+            this.btnSlotD_A40.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A40.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A40.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A40.HoverState.Parent = this.btnSlotD_A40;
+            this.btnSlotD_A40.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A40.Image")));
+            this.btnSlotD_A40.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A40.Location = new System.Drawing.Point(668, 285);
+            this.btnSlotD_A40.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A40.Name = "btnSlotD_A40";
+            this.btnSlotD_A40.ShadowDecoration.Parent = this.btnSlotD_A40;
+            this.btnSlotD_A40.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A40.TabIndex = 74;
+            this.btnSlotD_A40.UseTransparentBackground = true;
+            this.btnSlotD_A40.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A39
+            // 
+            this.btnSlotD_A39.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A39.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A39.BackgroundImage")));
+            this.btnSlotD_A39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A39.BorderRadius = 20;
+            this.btnSlotD_A39.Checked = true;
+            this.btnSlotD_A39.CheckedState.Parent = this.btnSlotD_A39;
+            this.btnSlotD_A39.CustomImages.Parent = this.btnSlotD_A39;
+            this.btnSlotD_A39.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A39.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A39.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A39.HoverState.Parent = this.btnSlotD_A39;
+            this.btnSlotD_A39.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A39.Image")));
+            this.btnSlotD_A39.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A39.Location = new System.Drawing.Point(630, 285);
+            this.btnSlotD_A39.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A39.Name = "btnSlotD_A39";
+            this.btnSlotD_A39.ShadowDecoration.Parent = this.btnSlotD_A39;
+            this.btnSlotD_A39.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A39.TabIndex = 73;
+            this.btnSlotD_A39.UseTransparentBackground = true;
+            this.btnSlotD_A39.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A41
+            // 
+            this.btnSlotD_A41.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A41.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A41.BackgroundImage")));
+            this.btnSlotD_A41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A41.BorderRadius = 20;
+            this.btnSlotD_A41.Checked = true;
+            this.btnSlotD_A41.CheckedState.Parent = this.btnSlotD_A41;
+            this.btnSlotD_A41.CustomImages.Parent = this.btnSlotD_A41;
+            this.btnSlotD_A41.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A41.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A41.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A41.HoverState.Parent = this.btnSlotD_A41;
+            this.btnSlotD_A41.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A41.Image")));
+            this.btnSlotD_A41.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A41.Location = new System.Drawing.Point(706, 285);
+            this.btnSlotD_A41.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A41.Name = "btnSlotD_A41";
+            this.btnSlotD_A41.ShadowDecoration.Parent = this.btnSlotD_A41;
+            this.btnSlotD_A41.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A41.TabIndex = 72;
+            this.btnSlotD_A41.UseTransparentBackground = true;
+            this.btnSlotD_A41.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotU_A33
+            // 
+            this.btnSlotU_A33.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A33.BackgroundImage")));
+            this.btnSlotU_A33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotU_A33.BorderRadius = 20;
+            this.btnSlotU_A33.Checked = true;
+            this.btnSlotU_A33.CheckedState.Parent = this.btnSlotU_A33;
+            this.btnSlotU_A33.CustomImages.Parent = this.btnSlotU_A33;
+            this.btnSlotU_A33.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A33.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotU_A33.ForeColor = System.Drawing.Color.White;
+            this.btnSlotU_A33.HoverState.Parent = this.btnSlotU_A33;
+            this.btnSlotU_A33.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A33.Image")));
+            this.btnSlotU_A33.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotU_A33.Location = new System.Drawing.Point(666, 217);
+            this.btnSlotU_A33.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotU_A33.Name = "btnSlotU_A33";
+            this.btnSlotU_A33.ShadowDecoration.Parent = this.btnSlotU_A33;
+            this.btnSlotU_A33.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotU_A33.TabIndex = 81;
+            this.btnSlotU_A33.UseTransparentBackground = true;
+            this.btnSlotU_A33.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotU_A32
+            // 
+            this.btnSlotU_A32.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A32.BackgroundImage")));
+            this.btnSlotU_A32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotU_A32.BorderRadius = 20;
+            this.btnSlotU_A32.Checked = true;
+            this.btnSlotU_A32.CheckedState.Parent = this.btnSlotU_A32;
+            this.btnSlotU_A32.CustomImages.Parent = this.btnSlotU_A32;
+            this.btnSlotU_A32.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A32.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotU_A32.ForeColor = System.Drawing.Color.White;
+            this.btnSlotU_A32.HoverState.Parent = this.btnSlotU_A32;
+            this.btnSlotU_A32.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A32.Image")));
+            this.btnSlotU_A32.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotU_A32.Location = new System.Drawing.Point(628, 217);
+            this.btnSlotU_A32.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotU_A32.Name = "btnSlotU_A32";
+            this.btnSlotU_A32.ShadowDecoration.Parent = this.btnSlotU_A32;
+            this.btnSlotU_A32.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotU_A32.TabIndex = 80;
+            this.btnSlotU_A32.UseTransparentBackground = true;
+            this.btnSlotU_A32.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotU_A27
+            // 
+            this.btnSlotU_A27.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A27.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A27.BackgroundImage")));
+            this.btnSlotU_A27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotU_A27.BorderRadius = 20;
+            this.btnSlotU_A27.Checked = true;
+            this.btnSlotU_A27.CheckedState.Parent = this.btnSlotU_A27;
+            this.btnSlotU_A27.CustomImages.Parent = this.btnSlotU_A27;
+            this.btnSlotU_A27.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A27.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotU_A27.ForeColor = System.Drawing.Color.White;
+            this.btnSlotU_A27.HoverState.Parent = this.btnSlotU_A27;
+            this.btnSlotU_A27.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A27.Image")));
+            this.btnSlotU_A27.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotU_A27.Location = new System.Drawing.Point(436, 217);
+            this.btnSlotU_A27.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotU_A27.Name = "btnSlotU_A27";
+            this.btnSlotU_A27.ShadowDecoration.Parent = this.btnSlotU_A27;
+            this.btnSlotU_A27.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotU_A27.TabIndex = 79;
+            this.btnSlotU_A27.UseTransparentBackground = true;
+            this.btnSlotU_A27.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotU_A29
+            // 
+            this.btnSlotU_A29.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A29.BackgroundImage")));
+            this.btnSlotU_A29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotU_A29.BorderRadius = 20;
+            this.btnSlotU_A29.Checked = true;
+            this.btnSlotU_A29.CheckedState.Parent = this.btnSlotU_A29;
+            this.btnSlotU_A29.CustomImages.Parent = this.btnSlotU_A29;
+            this.btnSlotU_A29.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A29.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotU_A29.ForeColor = System.Drawing.Color.White;
+            this.btnSlotU_A29.HoverState.Parent = this.btnSlotU_A29;
+            this.btnSlotU_A29.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A29.Image")));
+            this.btnSlotU_A29.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotU_A29.Location = new System.Drawing.Point(513, 217);
+            this.btnSlotU_A29.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotU_A29.Name = "btnSlotU_A29";
+            this.btnSlotU_A29.ShadowDecoration.Parent = this.btnSlotU_A29;
+            this.btnSlotU_A29.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotU_A29.TabIndex = 78;
+            this.btnSlotU_A29.UseTransparentBackground = true;
+            this.btnSlotU_A29.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotU_A28
+            // 
+            this.btnSlotU_A28.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A28.BackgroundImage")));
+            this.btnSlotU_A28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotU_A28.BorderRadius = 20;
+            this.btnSlotU_A28.Checked = true;
+            this.btnSlotU_A28.CheckedState.Parent = this.btnSlotU_A28;
+            this.btnSlotU_A28.CustomImages.Parent = this.btnSlotU_A28;
+            this.btnSlotU_A28.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A28.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotU_A28.ForeColor = System.Drawing.Color.White;
+            this.btnSlotU_A28.HoverState.Parent = this.btnSlotU_A28;
+            this.btnSlotU_A28.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A28.Image")));
+            this.btnSlotU_A28.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotU_A28.Location = new System.Drawing.Point(475, 217);
+            this.btnSlotU_A28.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotU_A28.Name = "btnSlotU_A28";
+            this.btnSlotU_A28.ShadowDecoration.Parent = this.btnSlotU_A28;
+            this.btnSlotU_A28.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotU_A28.TabIndex = 77;
+            this.btnSlotU_A28.UseTransparentBackground = true;
+            this.btnSlotU_A28.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotU_A31
+            // 
+            this.btnSlotU_A31.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A31.BackgroundImage")));
+            this.btnSlotU_A31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotU_A31.BorderRadius = 20;
+            this.btnSlotU_A31.Checked = true;
+            this.btnSlotU_A31.CheckedState.Parent = this.btnSlotU_A31;
+            this.btnSlotU_A31.CustomImages.Parent = this.btnSlotU_A31;
+            this.btnSlotU_A31.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A31.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotU_A31.ForeColor = System.Drawing.Color.White;
+            this.btnSlotU_A31.HoverState.Parent = this.btnSlotU_A31;
+            this.btnSlotU_A31.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A31.Image")));
+            this.btnSlotU_A31.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotU_A31.Location = new System.Drawing.Point(589, 217);
+            this.btnSlotU_A31.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotU_A31.Name = "btnSlotU_A31";
+            this.btnSlotU_A31.ShadowDecoration.Parent = this.btnSlotU_A31;
+            this.btnSlotU_A31.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotU_A31.TabIndex = 76;
+            this.btnSlotU_A31.UseTransparentBackground = true;
+            this.btnSlotU_A31.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotU_A30
+            // 
+            this.btnSlotU_A30.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A30.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A30.BackgroundImage")));
+            this.btnSlotU_A30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotU_A30.BorderRadius = 20;
+            this.btnSlotU_A30.Checked = true;
+            this.btnSlotU_A30.CheckedState.Parent = this.btnSlotU_A30;
+            this.btnSlotU_A30.CustomImages.Parent = this.btnSlotU_A30;
+            this.btnSlotU_A30.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotU_A30.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotU_A30.ForeColor = System.Drawing.Color.White;
+            this.btnSlotU_A30.HoverState.Parent = this.btnSlotU_A30;
+            this.btnSlotU_A30.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotU_A30.Image")));
+            this.btnSlotU_A30.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotU_A30.Location = new System.Drawing.Point(551, 217);
+            this.btnSlotU_A30.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotU_A30.Name = "btnSlotU_A30";
+            this.btnSlotU_A30.ShadowDecoration.Parent = this.btnSlotU_A30;
+            this.btnSlotU_A30.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotU_A30.TabIndex = 75;
+            this.btnSlotU_A30.UseTransparentBackground = true;
+            this.btnSlotU_A30.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A17
+            // 
+            this.btnSlotD_A17.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A17.BackgroundImage")));
+            this.btnSlotD_A17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A17.BorderRadius = 20;
+            this.btnSlotD_A17.Checked = true;
+            this.btnSlotD_A17.CheckedState.Parent = this.btnSlotD_A17;
+            this.btnSlotD_A17.CustomImages.Parent = this.btnSlotD_A17;
+            this.btnSlotD_A17.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A17.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A17.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A17.HoverState.Parent = this.btnSlotD_A17;
+            this.btnSlotD_A17.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A17.Image")));
+            this.btnSlotD_A17.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A17.Location = new System.Drawing.Point(805, 55);
+            this.btnSlotD_A17.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A17.Name = "btnSlotD_A17";
+            this.btnSlotD_A17.ShadowDecoration.Parent = this.btnSlotD_A17;
+            this.btnSlotD_A17.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A17.TabIndex = 88;
+            this.btnSlotD_A17.UseTransparentBackground = true;
+            this.btnSlotD_A17.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A16
+            // 
+            this.btnSlotD_A16.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A16.BackgroundImage")));
+            this.btnSlotD_A16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A16.BorderRadius = 20;
+            this.btnSlotD_A16.Checked = true;
+            this.btnSlotD_A16.CheckedState.Parent = this.btnSlotD_A16;
+            this.btnSlotD_A16.CustomImages.Parent = this.btnSlotD_A16;
+            this.btnSlotD_A16.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A16.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A16.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A16.HoverState.Parent = this.btnSlotD_A16;
+            this.btnSlotD_A16.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A16.Image")));
+            this.btnSlotD_A16.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A16.Location = new System.Drawing.Point(767, 55);
+            this.btnSlotD_A16.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A16.Name = "btnSlotD_A16";
+            this.btnSlotD_A16.ShadowDecoration.Parent = this.btnSlotD_A16;
+            this.btnSlotD_A16.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A16.TabIndex = 87;
+            this.btnSlotD_A16.UseTransparentBackground = true;
+            this.btnSlotD_A16.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A11
+            // 
+            this.btnSlotD_A11.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A11.BackgroundImage")));
+            this.btnSlotD_A11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A11.BorderRadius = 20;
+            this.btnSlotD_A11.Checked = true;
+            this.btnSlotD_A11.CheckedState.Parent = this.btnSlotD_A11;
+            this.btnSlotD_A11.CustomImages.Parent = this.btnSlotD_A11;
+            this.btnSlotD_A11.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A11.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A11.HoverState.Parent = this.btnSlotD_A11;
+            this.btnSlotD_A11.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A11.Image")));
+            this.btnSlotD_A11.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A11.Location = new System.Drawing.Point(575, 55);
+            this.btnSlotD_A11.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A11.Name = "btnSlotD_A11";
+            this.btnSlotD_A11.ShadowDecoration.Parent = this.btnSlotD_A11;
+            this.btnSlotD_A11.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A11.TabIndex = 86;
+            this.btnSlotD_A11.UseTransparentBackground = true;
+            this.btnSlotD_A11.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A13
+            // 
+            this.btnSlotD_A13.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A13.BackgroundImage")));
+            this.btnSlotD_A13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A13.BorderRadius = 20;
+            this.btnSlotD_A13.Checked = true;
+            this.btnSlotD_A13.CheckedState.Parent = this.btnSlotD_A13;
+            this.btnSlotD_A13.CustomImages.Parent = this.btnSlotD_A13;
+            this.btnSlotD_A13.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A13.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A13.HoverState.Parent = this.btnSlotD_A13;
+            this.btnSlotD_A13.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A13.Image")));
+            this.btnSlotD_A13.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A13.Location = new System.Drawing.Point(652, 55);
+            this.btnSlotD_A13.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A13.Name = "btnSlotD_A13";
+            this.btnSlotD_A13.ShadowDecoration.Parent = this.btnSlotD_A13;
+            this.btnSlotD_A13.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A13.TabIndex = 85;
+            this.btnSlotD_A13.UseTransparentBackground = true;
+            this.btnSlotD_A13.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A12
+            // 
+            this.btnSlotD_A12.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A12.BackgroundImage")));
+            this.btnSlotD_A12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A12.BorderRadius = 20;
+            this.btnSlotD_A12.Checked = true;
+            this.btnSlotD_A12.CheckedState.Parent = this.btnSlotD_A12;
+            this.btnSlotD_A12.CustomImages.Parent = this.btnSlotD_A12;
+            this.btnSlotD_A12.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A12.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A12.HoverState.Parent = this.btnSlotD_A12;
+            this.btnSlotD_A12.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A12.Image")));
+            this.btnSlotD_A12.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A12.Location = new System.Drawing.Point(614, 55);
+            this.btnSlotD_A12.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A12.Name = "btnSlotD_A12";
+            this.btnSlotD_A12.ShadowDecoration.Parent = this.btnSlotD_A12;
+            this.btnSlotD_A12.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A12.TabIndex = 84;
+            this.btnSlotD_A12.UseTransparentBackground = true;
+            this.btnSlotD_A12.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A15
+            // 
+            this.btnSlotD_A15.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A15.BackgroundImage")));
+            this.btnSlotD_A15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A15.BorderRadius = 20;
+            this.btnSlotD_A15.Checked = true;
+            this.btnSlotD_A15.CheckedState.Parent = this.btnSlotD_A15;
+            this.btnSlotD_A15.CustomImages.Parent = this.btnSlotD_A15;
+            this.btnSlotD_A15.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A15.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A15.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A15.HoverState.Parent = this.btnSlotD_A15;
+            this.btnSlotD_A15.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A15.Image")));
+            this.btnSlotD_A15.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A15.Location = new System.Drawing.Point(728, 55);
+            this.btnSlotD_A15.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A15.Name = "btnSlotD_A15";
+            this.btnSlotD_A15.ShadowDecoration.Parent = this.btnSlotD_A15;
+            this.btnSlotD_A15.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A15.TabIndex = 83;
+            this.btnSlotD_A15.UseTransparentBackground = true;
+            this.btnSlotD_A15.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A14
+            // 
+            this.btnSlotD_A14.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A14.BackgroundImage")));
+            this.btnSlotD_A14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A14.BorderRadius = 20;
+            this.btnSlotD_A14.Checked = true;
+            this.btnSlotD_A14.CheckedState.Parent = this.btnSlotD_A14;
+            this.btnSlotD_A14.CustomImages.Parent = this.btnSlotD_A14;
+            this.btnSlotD_A14.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A14.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A14.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A14.HoverState.Parent = this.btnSlotD_A14;
+            this.btnSlotD_A14.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A14.Image")));
+            this.btnSlotD_A14.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A14.Location = new System.Drawing.Point(690, 55);
+            this.btnSlotD_A14.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A14.Name = "btnSlotD_A14";
+            this.btnSlotD_A14.ShadowDecoration.Parent = this.btnSlotD_A14;
+            this.btnSlotD_A14.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A14.TabIndex = 82;
+            this.btnSlotD_A14.UseTransparentBackground = true;
+            this.btnSlotD_A14.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotL_A18
+            // 
+            this.btnSlotL_A18.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A18.BackgroundImage")));
+            this.btnSlotL_A18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotL_A18.BorderRadius = 20;
+            this.btnSlotL_A18.Checked = true;
+            this.btnSlotL_A18.CheckedState.Parent = this.btnSlotL_A18;
+            this.btnSlotL_A18.CustomImages.Parent = this.btnSlotL_A18;
+            this.btnSlotL_A18.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A18.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotL_A18.ForeColor = System.Drawing.Color.White;
+            this.btnSlotL_A18.HoverState.Parent = this.btnSlotL_A18;
+            this.btnSlotL_A18.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A18.Image")));
+            this.btnSlotL_A18.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotL_A18.Location = new System.Drawing.Point(859, 127);
+            this.btnSlotL_A18.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotL_A18.Name = "btnSlotL_A18";
+            this.btnSlotL_A18.ShadowDecoration.Parent = this.btnSlotL_A18;
+            this.btnSlotL_A18.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotL_A18.TabIndex = 96;
+            this.btnSlotL_A18.UseTransparentBackground = true;
+            this.btnSlotL_A18.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotL_A19
+            // 
+            this.btnSlotL_A19.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A19.BackgroundImage")));
+            this.btnSlotL_A19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotL_A19.BorderRadius = 20;
+            this.btnSlotL_A19.Checked = true;
+            this.btnSlotL_A19.CheckedState.Parent = this.btnSlotL_A19;
+            this.btnSlotL_A19.CustomImages.Parent = this.btnSlotL_A19;
+            this.btnSlotL_A19.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A19.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotL_A19.ForeColor = System.Drawing.Color.White;
+            this.btnSlotL_A19.HoverState.Parent = this.btnSlotL_A19;
+            this.btnSlotL_A19.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A19.Image")));
+            this.btnSlotL_A19.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotL_A19.Location = new System.Drawing.Point(859, 163);
+            this.btnSlotL_A19.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotL_A19.Name = "btnSlotL_A19";
+            this.btnSlotL_A19.ShadowDecoration.Parent = this.btnSlotL_A19;
+            this.btnSlotL_A19.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotL_A19.TabIndex = 95;
+            this.btnSlotL_A19.UseTransparentBackground = true;
+            this.btnSlotL_A19.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotL_A20
+            // 
+            this.btnSlotL_A20.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A20.BackgroundImage")));
+            this.btnSlotL_A20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotL_A20.BorderRadius = 20;
+            this.btnSlotL_A20.Checked = true;
+            this.btnSlotL_A20.CheckedState.Parent = this.btnSlotL_A20;
+            this.btnSlotL_A20.CustomImages.Parent = this.btnSlotL_A20;
+            this.btnSlotL_A20.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A20.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotL_A20.ForeColor = System.Drawing.Color.White;
+            this.btnSlotL_A20.HoverState.Parent = this.btnSlotL_A20;
+            this.btnSlotL_A20.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A20.Image")));
+            this.btnSlotL_A20.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotL_A20.Location = new System.Drawing.Point(859, 204);
+            this.btnSlotL_A20.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotL_A20.Name = "btnSlotL_A20";
+            this.btnSlotL_A20.ShadowDecoration.Parent = this.btnSlotL_A20;
+            this.btnSlotL_A20.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotL_A20.TabIndex = 94;
+            this.btnSlotL_A20.UseTransparentBackground = true;
+            this.btnSlotL_A20.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotL_A21
+            // 
+            this.btnSlotL_A21.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A21.BackgroundImage")));
+            this.btnSlotL_A21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotL_A21.BorderRadius = 20;
+            this.btnSlotL_A21.Checked = true;
+            this.btnSlotL_A21.CheckedState.Parent = this.btnSlotL_A21;
+            this.btnSlotL_A21.CustomImages.Parent = this.btnSlotL_A21;
+            this.btnSlotL_A21.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A21.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotL_A21.ForeColor = System.Drawing.Color.White;
+            this.btnSlotL_A21.HoverState.Parent = this.btnSlotL_A21;
+            this.btnSlotL_A21.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A21.Image")));
+            this.btnSlotL_A21.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotL_A21.Location = new System.Drawing.Point(859, 240);
+            this.btnSlotL_A21.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotL_A21.Name = "btnSlotL_A21";
+            this.btnSlotL_A21.ShadowDecoration.Parent = this.btnSlotL_A21;
+            this.btnSlotL_A21.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotL_A21.TabIndex = 93;
+            this.btnSlotL_A21.UseTransparentBackground = true;
+            this.btnSlotL_A21.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotL_A22
+            // 
+            this.btnSlotL_A22.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A22.BackgroundImage")));
+            this.btnSlotL_A22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotL_A22.BorderRadius = 20;
+            this.btnSlotL_A22.Checked = true;
+            this.btnSlotL_A22.CheckedState.Parent = this.btnSlotL_A22;
+            this.btnSlotL_A22.CustomImages.Parent = this.btnSlotL_A22;
+            this.btnSlotL_A22.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A22.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotL_A22.ForeColor = System.Drawing.Color.White;
+            this.btnSlotL_A22.HoverState.Parent = this.btnSlotL_A22;
+            this.btnSlotL_A22.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A22.Image")));
+            this.btnSlotL_A22.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotL_A22.Location = new System.Drawing.Point(859, 283);
+            this.btnSlotL_A22.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotL_A22.Name = "btnSlotL_A22";
+            this.btnSlotL_A22.ShadowDecoration.Parent = this.btnSlotL_A22;
+            this.btnSlotL_A22.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotL_A22.TabIndex = 92;
+            this.btnSlotL_A22.UseTransparentBackground = true;
+            this.btnSlotL_A22.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotL_A23
+            // 
+            this.btnSlotL_A23.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A23.BackgroundImage")));
+            this.btnSlotL_A23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotL_A23.BorderRadius = 20;
+            this.btnSlotL_A23.Checked = true;
+            this.btnSlotL_A23.CheckedState.Parent = this.btnSlotL_A23;
+            this.btnSlotL_A23.CustomImages.Parent = this.btnSlotL_A23;
+            this.btnSlotL_A23.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A23.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotL_A23.ForeColor = System.Drawing.Color.White;
+            this.btnSlotL_A23.HoverState.Parent = this.btnSlotL_A23;
+            this.btnSlotL_A23.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A23.Image")));
+            this.btnSlotL_A23.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotL_A23.Location = new System.Drawing.Point(859, 319);
+            this.btnSlotL_A23.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotL_A23.Name = "btnSlotL_A23";
+            this.btnSlotL_A23.ShadowDecoration.Parent = this.btnSlotL_A23;
+            this.btnSlotL_A23.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotL_A23.TabIndex = 91;
+            this.btnSlotL_A23.UseTransparentBackground = true;
+            this.btnSlotL_A23.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotL_A24
+            // 
+            this.btnSlotL_A24.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A24.BackgroundImage")));
+            this.btnSlotL_A24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotL_A24.BorderRadius = 20;
+            this.btnSlotL_A24.Checked = true;
+            this.btnSlotL_A24.CheckedState.Parent = this.btnSlotL_A24;
+            this.btnSlotL_A24.CustomImages.Parent = this.btnSlotL_A24;
+            this.btnSlotL_A24.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A24.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotL_A24.ForeColor = System.Drawing.Color.White;
+            this.btnSlotL_A24.HoverState.Parent = this.btnSlotL_A24;
+            this.btnSlotL_A24.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A24.Image")));
+            this.btnSlotL_A24.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotL_A24.Location = new System.Drawing.Point(859, 360);
+            this.btnSlotL_A24.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotL_A24.Name = "btnSlotL_A24";
+            this.btnSlotL_A24.ShadowDecoration.Parent = this.btnSlotL_A24;
+            this.btnSlotL_A24.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotL_A24.TabIndex = 90;
+            this.btnSlotL_A24.UseTransparentBackground = true;
+            this.btnSlotL_A24.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotL_A25
+            // 
+            this.btnSlotL_A25.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A25.BackgroundImage")));
+            this.btnSlotL_A25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotL_A25.BorderRadius = 20;
+            this.btnSlotL_A25.Checked = true;
+            this.btnSlotL_A25.CheckedState.Parent = this.btnSlotL_A25;
+            this.btnSlotL_A25.CustomImages.Parent = this.btnSlotL_A25;
+            this.btnSlotL_A25.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A25.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotL_A25.ForeColor = System.Drawing.Color.White;
+            this.btnSlotL_A25.HoverState.Parent = this.btnSlotL_A25;
+            this.btnSlotL_A25.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A25.Image")));
+            this.btnSlotL_A25.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotL_A25.Location = new System.Drawing.Point(859, 396);
+            this.btnSlotL_A25.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotL_A25.Name = "btnSlotL_A25";
+            this.btnSlotL_A25.ShadowDecoration.Parent = this.btnSlotL_A25;
+            this.btnSlotL_A25.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotL_A25.TabIndex = 89;
+            this.btnSlotL_A25.UseTransparentBackground = true;
+            this.btnSlotL_A25.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotL_A26
+            // 
+            this.btnSlotL_A26.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A26.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A26.BackgroundImage")));
+            this.btnSlotL_A26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotL_A26.BorderRadius = 20;
+            this.btnSlotL_A26.Checked = true;
+            this.btnSlotL_A26.CheckedState.Parent = this.btnSlotL_A26;
+            this.btnSlotL_A26.CustomImages.Parent = this.btnSlotL_A26;
+            this.btnSlotL_A26.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotL_A26.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotL_A26.ForeColor = System.Drawing.Color.White;
+            this.btnSlotL_A26.HoverState.Parent = this.btnSlotL_A26;
+            this.btnSlotL_A26.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotL_A26.Image")));
+            this.btnSlotL_A26.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotL_A26.Location = new System.Drawing.Point(859, 435);
+            this.btnSlotL_A26.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotL_A26.Name = "btnSlotL_A26";
+            this.btnSlotL_A26.ShadowDecoration.Parent = this.btnSlotL_A26;
+            this.btnSlotL_A26.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotL_A26.TabIndex = 97;
+            this.btnSlotL_A26.UseTransparentBackground = true;
+            this.btnSlotL_A26.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotR_A44
+            // 
+            this.btnSlotR_A44.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotR_A44.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotR_A44.BackgroundImage")));
+            this.btnSlotR_A44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotR_A44.BorderRadius = 20;
+            this.btnSlotR_A44.Checked = true;
+            this.btnSlotR_A44.CheckedState.Parent = this.btnSlotR_A44;
+            this.btnSlotR_A44.CustomImages.Parent = this.btnSlotR_A44;
+            this.btnSlotR_A44.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotR_A44.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotR_A44.ForeColor = System.Drawing.Color.White;
+            this.btnSlotR_A44.HoverState.Parent = this.btnSlotR_A44;
+            this.btnSlotR_A44.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotR_A44.Image")));
+            this.btnSlotR_A44.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotR_A44.Location = new System.Drawing.Point(742, 548);
+            this.btnSlotR_A44.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotR_A44.Name = "btnSlotR_A44";
+            this.btnSlotR_A44.ShadowDecoration.Parent = this.btnSlotR_A44;
+            this.btnSlotR_A44.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotR_A44.TabIndex = 100;
+            this.btnSlotR_A44.UseTransparentBackground = true;
+            this.btnSlotR_A44.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotR_A42
+            // 
+            this.btnSlotR_A42.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotR_A42.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotR_A42.BackgroundImage")));
+            this.btnSlotR_A42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotR_A42.BorderRadius = 20;
+            this.btnSlotR_A42.Checked = true;
+            this.btnSlotR_A42.CheckedState.Parent = this.btnSlotR_A42;
+            this.btnSlotR_A42.CustomImages.Parent = this.btnSlotR_A42;
+            this.btnSlotR_A42.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotR_A42.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotR_A42.ForeColor = System.Drawing.Color.White;
+            this.btnSlotR_A42.HoverState.Parent = this.btnSlotR_A42;
+            this.btnSlotR_A42.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotR_A42.Image")));
+            this.btnSlotR_A42.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotR_A42.Location = new System.Drawing.Point(742, 473);
+            this.btnSlotR_A42.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotR_A42.Name = "btnSlotR_A42";
+            this.btnSlotR_A42.ShadowDecoration.Parent = this.btnSlotR_A42;
+            this.btnSlotR_A42.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotR_A42.TabIndex = 99;
+            this.btnSlotR_A42.UseTransparentBackground = true;
+            this.btnSlotR_A42.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotR_A43
+            // 
+            this.btnSlotR_A43.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotR_A43.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotR_A43.BackgroundImage")));
+            this.btnSlotR_A43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotR_A43.BorderRadius = 20;
+            this.btnSlotR_A43.Checked = true;
+            this.btnSlotR_A43.CheckedState.Parent = this.btnSlotR_A43;
+            this.btnSlotR_A43.CustomImages.Parent = this.btnSlotR_A43;
+            this.btnSlotR_A43.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotR_A43.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotR_A43.ForeColor = System.Drawing.Color.White;
+            this.btnSlotR_A43.HoverState.Parent = this.btnSlotR_A43;
+            this.btnSlotR_A43.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotR_A43.Image")));
+            this.btnSlotR_A43.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotR_A43.Location = new System.Drawing.Point(742, 509);
+            this.btnSlotR_A43.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotR_A43.Name = "btnSlotR_A43";
+            this.btnSlotR_A43.ShadowDecoration.Parent = this.btnSlotR_A43;
+            this.btnSlotR_A43.Size = new System.Drawing.Size(55, 34);
+            this.btnSlotR_A43.TabIndex = 98;
+            this.btnSlotR_A43.UseTransparentBackground = true;
+            this.btnSlotR_A43.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A9
+            // 
+            this.btnSlotD_A9.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A9.BackgroundImage")));
+            this.btnSlotD_A9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A9.BorderRadius = 20;
+            this.btnSlotD_A9.Checked = true;
+            this.btnSlotD_A9.CheckedState.Parent = this.btnSlotD_A9;
+            this.btnSlotD_A9.CustomImages.Parent = this.btnSlotD_A9;
+            this.btnSlotD_A9.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A9.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A9.HoverState.Parent = this.btnSlotD_A9;
+            this.btnSlotD_A9.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A9.Image")));
+            this.btnSlotD_A9.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A9.Location = new System.Drawing.Point(347, 55);
+            this.btnSlotD_A9.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A9.Name = "btnSlotD_A9";
+            this.btnSlotD_A9.ShadowDecoration.Parent = this.btnSlotD_A9;
+            this.btnSlotD_A9.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A9.TabIndex = 102;
+            this.btnSlotD_A9.UseTransparentBackground = true;
+            this.btnSlotD_A9.Click += new System.EventHandler(this.btnSlot_Click);
+            // 
+            // btnSlotD_A10
+            // 
+            this.btnSlotD_A10.BackColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A10.BackgroundImage")));
+            this.btnSlotD_A10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSlotD_A10.BorderRadius = 20;
+            this.btnSlotD_A10.Checked = true;
+            this.btnSlotD_A10.CheckedState.Parent = this.btnSlotD_A10;
+            this.btnSlotD_A10.CustomImages.Parent = this.btnSlotD_A10;
+            this.btnSlotD_A10.FillColor = System.Drawing.Color.Transparent;
+            this.btnSlotD_A10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSlotD_A10.ForeColor = System.Drawing.Color.White;
+            this.btnSlotD_A10.HoverState.Parent = this.btnSlotD_A10;
+            this.btnSlotD_A10.Image = ((System.Drawing.Image)(resources.GetObject("btnSlotD_A10.Image")));
+            this.btnSlotD_A10.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnSlotD_A10.Location = new System.Drawing.Point(386, 55);
+            this.btnSlotD_A10.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSlotD_A10.Name = "btnSlotD_A10";
+            this.btnSlotD_A10.ShadowDecoration.Parent = this.btnSlotD_A10;
+            this.btnSlotD_A10.Size = new System.Drawing.Size(34, 55);
+            this.btnSlotD_A10.TabIndex = 101;
+            this.btnSlotD_A10.UseTransparentBackground = true;
+            this.btnSlotD_A10.Click += new System.EventHandler(this.btnSlot_Click);
             // 
             // PatioTrinidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Controls.Add(this.btnSlotD_A9);
+            this.Controls.Add(this.btnSlotD_A10);
+            this.Controls.Add(this.btnSlotR_A44);
+            this.Controls.Add(this.btnSlotR_A42);
+            this.Controls.Add(this.btnSlotR_A43);
+            this.Controls.Add(this.btnSlotL_A26);
+            this.Controls.Add(this.btnSlotL_A18);
+            this.Controls.Add(this.btnSlotL_A19);
+            this.Controls.Add(this.btnSlotL_A20);
+            this.Controls.Add(this.btnSlotL_A21);
+            this.Controls.Add(this.btnSlotL_A22);
+            this.Controls.Add(this.btnSlotL_A23);
+            this.Controls.Add(this.btnSlotL_A24);
+            this.Controls.Add(this.btnSlotL_A25);
+            this.Controls.Add(this.btnSlotD_A17);
+            this.Controls.Add(this.btnSlotD_A16);
+            this.Controls.Add(this.btnSlotD_A11);
+            this.Controls.Add(this.btnSlotD_A13);
+            this.Controls.Add(this.btnSlotD_A12);
+            this.Controls.Add(this.btnSlotD_A15);
+            this.Controls.Add(this.btnSlotD_A14);
+            this.Controls.Add(this.btnSlotU_A33);
+            this.Controls.Add(this.btnSlotU_A32);
+            this.Controls.Add(this.btnSlotU_A27);
+            this.Controls.Add(this.btnSlotU_A29);
+            this.Controls.Add(this.btnSlotU_A28);
+            this.Controls.Add(this.btnSlotU_A31);
+            this.Controls.Add(this.btnSlotU_A30);
+            this.Controls.Add(this.btnSlotD_A40);
+            this.Controls.Add(this.btnSlotD_A39);
+            this.Controls.Add(this.btnSlotD_A41);
+            this.Controls.Add(this.btnSlotD_A34);
+            this.Controls.Add(this.btnSlotD_A36);
+            this.Controls.Add(this.btnSlotD_A35);
             this.Controls.Add(this.btnSlotR_A8);
             this.Controls.Add(this.btnSlotR_A7);
             this.Controls.Add(this.btnSlotR_A6);
@@ -951,5 +1844,39 @@
         private Guna.UI2.WinForms.Guna2Button btnSlotR_A7;
         private Guna.UI2.WinForms.Guna2Button btnSlotR_A6;
         private Guna.UI2.WinForms.Guna2Button btnSlotR_A5;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A36;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A35;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A34;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A40;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A39;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A41;
+        private Guna.UI2.WinForms.Guna2Button btnSlotU_A33;
+        private Guna.UI2.WinForms.Guna2Button btnSlotU_A32;
+        private Guna.UI2.WinForms.Guna2Button btnSlotU_A27;
+        private Guna.UI2.WinForms.Guna2Button btnSlotU_A29;
+        private Guna.UI2.WinForms.Guna2Button btnSlotU_A28;
+        private Guna.UI2.WinForms.Guna2Button btnSlotU_A31;
+        private Guna.UI2.WinForms.Guna2Button btnSlotU_A30;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A17;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A16;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A11;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A13;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A12;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A15;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A14;
+        private Guna.UI2.WinForms.Guna2Button btnSlotL_A18;
+        private Guna.UI2.WinForms.Guna2Button btnSlotL_A19;
+        private Guna.UI2.WinForms.Guna2Button btnSlotL_A20;
+        private Guna.UI2.WinForms.Guna2Button btnSlotL_A21;
+        private Guna.UI2.WinForms.Guna2Button btnSlotL_A22;
+        private Guna.UI2.WinForms.Guna2Button btnSlotL_A23;
+        private Guna.UI2.WinForms.Guna2Button btnSlotL_A24;
+        private Guna.UI2.WinForms.Guna2Button btnSlotL_A25;
+        private Guna.UI2.WinForms.Guna2Button btnSlotL_A26;
+        private Guna.UI2.WinForms.Guna2Button btnSlotR_A44;
+        private Guna.UI2.WinForms.Guna2Button btnSlotR_A42;
+        private Guna.UI2.WinForms.Guna2Button btnSlotR_A43;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A9;
+        private Guna.UI2.WinForms.Guna2Button btnSlotD_A10;
     }
 }
