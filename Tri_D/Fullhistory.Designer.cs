@@ -45,6 +45,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuButton = new Bunifu.UI.WinForms.BunifuImageButton();
             this.fulltbl = new Bunifu.UI.WinForms.BunifuPanel();
+            this.Details = new Guna.UI2.WinForms.Guna2Button();
+            this.printBtn = new Guna.UI2.WinForms.Guna2Button();
             this.typeResultlbl = new Bunifu.UI.WinForms.BunifuLabel();
             this.fullnameResultlbl = new Bunifu.UI.WinForms.BunifuLabel();
             this.typeLabel = new Bunifu.UI.WinForms.BunifuLabel();
@@ -61,7 +63,6 @@
             this.reasonHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.slotHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dutyHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.printBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.fulltbl.SuspendLayout();
@@ -158,6 +159,7 @@
             this.fulltbl.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.fulltbl.BorderRadius = 3;
             this.fulltbl.BorderThickness = 1;
+            this.fulltbl.Controls.Add(this.Details);
             this.fulltbl.Controls.Add(this.printBtn);
             this.fulltbl.Controls.Add(this.typeResultlbl);
             this.fulltbl.Controls.Add(this.fullnameResultlbl);
@@ -171,6 +173,36 @@
             this.fulltbl.ShowBorders = true;
             this.fulltbl.Size = new System.Drawing.Size(955, 497);
             this.fulltbl.TabIndex = 9;
+            // 
+            // Details
+            // 
+            this.Details.CheckedState.Parent = this.Details;
+            this.Details.CustomImages.Parent = this.Details;
+            this.Details.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Details.ForeColor = System.Drawing.Color.White;
+            this.Details.HoverState.Parent = this.Details;
+            this.Details.Location = new System.Drawing.Point(480, 445);
+            this.Details.Name = "Details";
+            this.Details.ShadowDecoration.Parent = this.Details;
+            this.Details.Size = new System.Drawing.Size(180, 45);
+            this.Details.TabIndex = 10;
+            this.Details.Text = "Details";
+            this.Details.Click += new System.EventHandler(this.Details_Click);
+            // 
+            // printBtn
+            // 
+            this.printBtn.CheckedState.Parent = this.printBtn;
+            this.printBtn.CustomImages.Parent = this.printBtn;
+            this.printBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.printBtn.ForeColor = System.Drawing.Color.White;
+            this.printBtn.HoverState.Parent = this.printBtn;
+            this.printBtn.Location = new System.Drawing.Point(196, 445);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.ShadowDecoration.Parent = this.printBtn;
+            this.printBtn.Size = new System.Drawing.Size(180, 45);
+            this.printBtn.TabIndex = 9;
+            this.printBtn.Text = "Print";
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
             // 
             // typeResultlbl
             // 
@@ -393,21 +425,6 @@
             this.dutyHeader.HeaderText = "Duty";
             this.dutyHeader.Name = "dutyHeader";
             // 
-            // printBtn
-            // 
-            this.printBtn.CheckedState.Parent = this.printBtn;
-            this.printBtn.CustomImages.Parent = this.printBtn;
-            this.printBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.printBtn.ForeColor = System.Drawing.Color.White;
-            this.printBtn.HoverState.Parent = this.printBtn;
-            this.printBtn.Location = new System.Drawing.Point(393, 445);
-            this.printBtn.Name = "printBtn";
-            this.printBtn.ShadowDecoration.Parent = this.printBtn;
-            this.printBtn.Size = new System.Drawing.Size(180, 45);
-            this.printBtn.TabIndex = 9;
-            this.printBtn.Text = "guna2Button1";
-            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
-            // 
             // Fullhistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,5 +470,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn slotHeader;
         private System.Windows.Forms.DataGridViewTextBoxColumn dutyHeader;
         private Guna.UI2.WinForms.Guna2Button printBtn;
+        private Guna.UI2.WinForms.Guna2Button Details;
     }
 }

@@ -1,4 +1,5 @@
-﻿using LiveChartsCore.Themes;
+﻿using LiveChartsCore.Drawing;
+using LiveChartsCore.Themes;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Utilities.Collections;
 using System;
@@ -21,6 +22,7 @@ namespace Tri_D
         Bitmap MemoryImage;
         private PrintDocument printDocument1 = new PrintDocument();
         private PrintPreviewDialog previewdlg = new PrintPreviewDialog();
+        private float scaleFactor;
         public Fullhistory()
         {
             InitializeComponent();
@@ -42,15 +44,28 @@ namespace Tri_D
         }
         void printdoc1_PrintPage(object sender, PrintPageEventArgs e)
         {
+            // Get the page area (this will give the printable area of the page)
             Rectangle pagearea = e.PageBounds;
-            e.Graphics.DrawImage(MemoryImage, (pagearea.Width / 2) - (this.fulltbl.Width / 2), this.fulltbl.Location.Y);
+
+            // Scale the image to fit within the printable area
+            float scaleWidth = pagearea.Width / (float)fulltbl.Width;
+            float scaleHeight = pagearea.Height / (float)fulltbl.Height;
+            scaleFactor = Math.Min(scaleWidth, scaleHeight);  // Ensure the table fits both width and height
+
+            // Draw the image aligned to the top of the page instead of the center
+            e.Graphics.DrawImage(MemoryImage,
+                (pagearea.Width - fulltbl.Width * scaleFactor) / 2,  // Horizontally center the image
+                0,  // Align to the top of the page (Y = 0)
+                fulltbl.Width * scaleFactor,
+                fulltbl.Height * scaleFactor);
+
         }
         public void Print(Panel pnl)
         {
-            Panel pannel = pnl;
-            GetPrintArea(pnl);
-            previewdlg.Document = printDocument1;
-            previewdlg.ShowDialog();
+            GetPrintArea(pnl);  // Capture the table image
+            previewdlg.Document = printDocument1;  // Set the print document
+            previewdlg.ShowDialog();  // Show the print preview
+
         }
 
         private void Fullhistory_Load(object sender, EventArgs e)
@@ -120,6 +135,18 @@ namespace Tri_D
 
 
 
+        }
+
+        private void Details_Click(object sender, EventArgs e)
+        {
+            Details details = new Details();
+            details.Show();
+        }
+
+        private void details1_Load(object sender, EventArgs e)
+        {
+            Details details = new Details();
+            details.Hide();
         }
 
         /*private void printButton_Click(object sender, EventArgs e)
