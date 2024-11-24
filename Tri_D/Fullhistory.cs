@@ -129,13 +129,22 @@ namespace Tri_D
 
         private void printBtn_Click(object sender, EventArgs e)
         {
+            // Hide the "Details" button before printing
+            Details.Visible = false;
+
+            // Hide the "Print" button to prevent it from appearing in the print preview
             printBtn.Visible = false;
+
+            // Capture the print area and show the print preview
             Print(this.fulltbl);
-            
 
+            // Show the "Details" button again after printing
+            Details.Visible = true;
 
-
+            // Show the "Print" button again after printing
+            printBtn.Visible = true;
         }
+
 
         private void Details_Click(object sender, EventArgs e)
         {
