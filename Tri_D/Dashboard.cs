@@ -62,7 +62,12 @@ namespace Tri_D
 
             string queryVacantMotor = "SELECT COUNT(*) AS vacantMotor_count FROM parkingslotmotorcycle WHERE status = 'vacant';";
             string queryOccupiedMotor = "SELECT COUNT(*) AS occupiedMotor_count FROM parkingslotmotorcycle WHERE status = 'occupied';";
-            string queryTotalslotMotor = "SELECT COUNT(*) AS totalMotor_slots FROM parkingslotmotorcycle;";
+            string queryTotalslotMotor = "SELECT COUNT(*) AS totalMotor_slots FROM parkingslotmotorcycle;"; 
+            string querybar = @"
+        SELECT HOUR(time_in) AS hour, COUNT(*) AS count 
+        FROM history 
+        GROUP BY HOUR(time_in) 
+        ORDER BY hour;";
 
             MySqlCommand commandSql = new MySqlCommand(queryVacant, connection);
             MySqlCommand commandSql2 = new MySqlCommand(queryOccupied, connection);
@@ -70,6 +75,7 @@ namespace Tri_D
             MySqlCommand commandSql4 = new MySqlCommand(queryVacantMotor, connection);
             MySqlCommand commandSql5 = new MySqlCommand(queryOccupiedMotor, connection);
             MySqlCommand commandSql6 = new MySqlCommand(queryTotalslotMotor, connection);
+            MySqlCommand commandszz = new MySqlCommand(querybar, connection);
 
             int vacantCar = Convert.ToInt32(commandSql.ExecuteScalar());
             int occupiedCar = Convert.ToInt32(commandSql2.ExecuteScalar());
@@ -88,6 +94,31 @@ namespace Tri_D
             occupiednumMOTORLabel.Text = occupiedMotor.ToString();
             motorAvailabilityProgress.Value = occupiedMotor;
             motorAvailabilityProgress.Maximum = maximumSlotMotor;
+
+            using (MySqlDataReader reader = commandszz.ExecuteReader())
+            {
+                // Clear the existing points in the series
+                chart1.Series["MorningHrs"].Points.Clear();
+
+                // Add points dynamically to the series
+                while (reader.Read())
+                {
+                    int hour = reader.GetInt32("hour");  // Get the hour
+                    int count = reader.GetInt32("count"); // Get the count for that hour
+
+                    // Add point to the chart series
+                   if (hour <= 11) { chart1.Series["MorningHrs"].Points.AddXY(hour, count); }
+                   else {
+                        int adjustedHour = hour - 12; // Subtract 12 to make 13 become 1, 14 become 2, etc.
+                        if (adjustedHour == 0) { chart1.Series["EveningHrs"].Points.AddXY(adjustedHour+12, count); }
+                        else { chart1.Series["EveningHrs"].Points.AddXY(adjustedHour, count); }
+                        
+                    }
+                    
+
+                }
+
+            }
         }
         private void logoutButton_Click(object sender, EventArgs e)
         {
@@ -141,6 +172,18 @@ namespace Tri_D
         private void refreshLoad_Tick(object sender, EventArgs e)
         {
             RefreshParkingCounts();
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+      
+       // sample
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
