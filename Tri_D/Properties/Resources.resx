@@ -148,4 +148,16 @@
   <data name="CAR_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CAR_R.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="MOTOR_D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MOTOR_D.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MOTOR_U" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MOTOR_U.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MOTOR_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MOTOR_R.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MOTOR_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MOTOR_L.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

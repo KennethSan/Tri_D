@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace Tri_D.ParkingAreas
             InitializeComponent();
             load_details(slot_number);
             slot_number_refresh = slot_number;
+            Debug.WriteLine(slot_number);
             refresh_duration.Start();
         }
 
@@ -79,6 +81,62 @@ namespace Tri_D.ParkingAreas
                         employees e ON h.owner_id = e.employee_number
                     WHERE 
                         h.time_out IS NULL AND ps.slot_number = @slot_number;";
+
+                if (slot_number.Contains("M"))
+                {
+                    Debug.WriteLine("Motorcycle");
+                    admit_driver_query = @"SELECT 
+                        CONCAT(s.first_name, ' ', s.last_name) AS full_name, 
+                        h.time_in, 
+                        h.user_type,
+                        h.plate_number, 
+                        s.student_number AS identifier,
+                        s.email
+                    FROM 
+                        parkingslotmotorcycle ps
+                    JOIN 
+                        history h ON ps.user_id = h.owner_id
+                    JOIN 
+                        students s ON h.owner_id = s.student_number
+                    WHERE 
+                        h.time_out IS NULL AND h.slot_number = @slot_number
+
+                    UNION ALL
+
+                    SELECT 
+                        g.full_name, 
+                        h.time_in, 
+                        h.user_type,
+                        h.plate_number, 
+                        g.guest_number AS identifier,
+                        g.email
+                    FROM 
+                        parkingslotmotorcycle ps
+                    JOIN 
+                        history h ON ps.user_id = h.owner_id
+                    JOIN 
+                        guests g ON h.owner_id = g.guest_number
+                    WHERE 
+                        h.time_out IS NULL AND ps.slot_number = @slot_number
+
+                    UNION ALL
+
+                    SELECT 
+                        CONCAT(e.first_name, ' ', e.last_name) AS full_name, 
+                        h.time_in, 
+                        h.user_type,
+                        h.plate_number, 
+                        e.employee_number AS identifier,
+                        e.email
+                    FROM 
+                        parkingslotmotorcycle ps
+                    JOIN 
+                        history h ON ps.user_id = h.owner_id
+                    JOIN 
+                        employees e ON h.owner_id = e.employee_number
+                    WHERE 
+                        h.time_out IS NULL AND ps.slot_number = @slot_number;";
+                }
 
                 MySqlCommand cmd = new MySqlCommand(admit_driver_query, conn);
 

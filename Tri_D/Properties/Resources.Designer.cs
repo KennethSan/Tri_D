@@ -133,6 +133,46 @@ namespace Tri_D.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] MOTOR_D {
+            get {
+                object obj = ResourceManager.GetObject("MOTOR_D", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] MOTOR_L {
+            get {
+                object obj = ResourceManager.GetObject("MOTOR_L", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] MOTOR_R {
+            get {
+                object obj = ResourceManager.GetObject("MOTOR_R", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] MOTOR_U {
+            get {
+                object obj = ResourceManager.GetObject("MOTOR_U", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] Patio_Trinidad__1_ {
             get {
                 object obj = ResourceManager.GetObject("Patio Trinidad (1)", resourceCulture);
