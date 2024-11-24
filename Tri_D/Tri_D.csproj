@@ -300,23 +300,29 @@
     <Compile Include="Manage.Designer.cs">
       <DependentUpon>Manage.cs</DependentUpon>
     </Compile>
-    <Compile Include="ParkingAreas\MotorcycleArea1.cs">
+    <Compile Include="ParkingAreas\GymSideMotor.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ParkingAreas\MotorcycleArea1.Designer.cs">
-      <DependentUpon>MotorcycleArea1.cs</DependentUpon>
+    <Compile Include="ParkingAreas\GymSideMotor.Designer.cs">
+      <DependentUpon>GymSideMotor.cs</DependentUpon>
     </Compile>
-    <Compile Include="ParkingAreas\ParkingArea1.cs">
+    <Compile Include="ParkingAreas\PatioTrinidad.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ParkingAreas\ParkingArea1.Designer.cs">
-      <DependentUpon>ParkingArea1.cs</DependentUpon>
+    <Compile Include="ParkingAreas\PatioTrinidad.Designer.cs">
+      <DependentUpon>PatioTrinidad.cs</DependentUpon>
     </Compile>
-    <Compile Include="ParkingAreas\ParkingArea2.cs">
+    <Compile Include="ParkingAreas\CanteenSide.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ParkingAreas\ParkingArea2.Designer.cs">
-      <DependentUpon>ParkingArea2.cs</DependentUpon>
+    <Compile Include="ParkingAreas\CanteenSide.Designer.cs">
+      <DependentUpon>CanteenSide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParkingAreas\SSCFront.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParkingAreas\SSCFront.Designer.cs">
+      <DependentUpon>SSCFront.cs</DependentUpon>
     </Compile>
     <Compile Include="ParkingAreas\ViewUserDetailsManage.cs">
       <SubType>Form</SubType>
@@ -331,6 +337,31 @@
     </Compile>
     <Compile Include="Details.Designer.cs">
       <DependentUpon>Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource3.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource4.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource5.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdmitUser.resx">
       <DependentUpon>AdmitUser.cs</DependentUpon>
@@ -353,14 +384,17 @@
     <EmbeddedResource Include="Manage.resx">
       <DependentUpon>Manage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ParkingAreas\MotorcycleArea1.resx">
-      <DependentUpon>MotorcycleArea1.cs</DependentUpon>
+    <EmbeddedResource Include="ParkingAreas\GymSideMotor.resx">
+      <DependentUpon>GymSideMotor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ParkingAreas\ParkingArea1.resx">
-      <DependentUpon>ParkingArea1.cs</DependentUpon>
+    <EmbeddedResource Include="ParkingAreas\PatioTrinidad.resx">
+      <DependentUpon>PatioTrinidad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ParkingAreas\ParkingArea2.resx">
-      <DependentUpon>ParkingArea2.cs</DependentUpon>
+    <EmbeddedResource Include="ParkingAreas\CanteenSide.resx">
+      <DependentUpon>CanteenSide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParkingAreas\SSCFront.resx">
+      <DependentUpon>SSCFront.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParkingAreas\ViewUserDetailsManage.resx">
       <DependentUpon>ViewUserDetailsManage.cs</DependentUpon>
@@ -378,6 +412,26 @@
     </Compile>
     <EmbeddedResource Include="Details.resx">
       <DependentUpon>Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource3.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource3.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource4.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource4.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource5.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource5.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="OpenTK.dll.config" />
     <None Include="packages.config" />

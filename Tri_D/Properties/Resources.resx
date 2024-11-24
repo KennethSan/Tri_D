@@ -127,4 +127,25 @@
   <data name="RED_LIGHT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RED_LIGHT.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Patio Trinidad (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Patio Trinidad (1).png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CARV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GREENCIRCLE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\greencircle.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAR_D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAR_D.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAR_U" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAR_U.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAR_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAR_L.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CAR_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAR_R.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

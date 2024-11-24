@@ -30,7 +30,7 @@ namespace Tri_D
         {
             sidebar.Width = sidebar.MinimumSize.Width;
 
-            ParkingArea1 parking_area1 = new ParkingArea1();
+            PatioTrinidad parking_area1 = new PatioTrinidad();
             addUserControl(parking_area1);
             parking_area1.update_slot_buttons();
         }
@@ -184,20 +184,20 @@ namespace Tri_D
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            ParkingArea1 parking_area1 = new ParkingArea1();
+            PatioTrinidad parking_area1 = new PatioTrinidad();
             addUserControl(parking_area1);
             parking_area1.update_slot_buttons();
         }
 
         private void btnParking2_Click(object sender, EventArgs e)
         {
-            ParkingArea2 parking_area2 = new ParkingArea2();
+            CanteenSide parking_area2 = new CanteenSide();
             addUserControl(parking_area2);
         }
 
         private void btnMotorParking1_Click(object sender, EventArgs e)
         {
-            MotorcycleArea1 parking_motorcycle_area1 = new MotorcycleArea1();
+            GymSideMotor parking_motorcycle_area1 = new GymSideMotor();
             addUserControl(parking_motorcycle_area1);
         }
 
@@ -243,5 +243,16 @@ namespace Tri_D
             exitUser.Show();
         }
 
+        private void btnMotorParking2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SSCFront_Click(object sender, EventArgs e)
+        {
+            //GymSideMotor parking_motorcycle_area1 = new GymSideMotor();
+            SSCFront sscfront = new SSCFront();
+            addUserControl(sscfront);
+        }
     }
 }

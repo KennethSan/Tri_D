@@ -63,9 +63,79 @@ namespace Tri_D.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] CAR_D {
+            get {
+                object obj = ResourceManager.GetObject("CAR_D", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] CAR_L {
+            get {
+                object obj = ResourceManager.GetObject("CAR_L", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] CAR_R {
+            get {
+                object obj = ResourceManager.GetObject("CAR_R", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] CAR_U {
+            get {
+                object obj = ResourceManager.GetObject("CAR_U", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] CARV {
+            get {
+                object obj = ResourceManager.GetObject("CARV", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] GREEN_LIGHT {
             get {
                 object obj = ResourceManager.GetObject("GREEN_LIGHT", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] GREENCIRCLE {
+            get {
+                object obj = ResourceManager.GetObject("GREENCIRCLE", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Patio_Trinidad__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Patio Trinidad (1)", resourceCulture);
                 return ((byte[])(obj));
             }
         }
