@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manage));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tuaLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
@@ -57,17 +57,17 @@
             this.Verified = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Verify = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnMotorParking3 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMotorParking2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRoadParking = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPoolSide = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSSCFront = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPaymentsOffice = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGymSide = new Guna.UI2.WinForms.Guna2Button();
             this.btnGymSideMotor = new Guna.UI2.WinForms.Guna2Button();
             this.btnCanteenSide = new Guna.UI2.WinForms.Guna2Button();
             this.btnPatioTrinidad = new Guna.UI2.WinForms.Guna2Button();
             this.parkingPanel = new System.Windows.Forms.Panel();
             this.btnAdmit = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.SSCFront = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuButton = new Bunifu.UI.WinForms.BunifuImageButton();
             this.dashboardButton = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -228,21 +228,21 @@
             // vehiclesTable
             // 
             this.vehiclesTable.AllowUserToAddRows = false;
-            dataGridViewCellStyle50.BackColor = System.Drawing.Color.White;
-            this.vehiclesTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.vehiclesTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.vehiclesTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.vehiclesTable.BackgroundColor = System.Drawing.Color.White;
             this.vehiclesTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.vehiclesTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.vehiclesTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
-            dataGridViewCellStyle51.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
-            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.vehiclesTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.vehiclesTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.vehiclesTable.ColumnHeadersHeight = 40;
             this.vehiclesTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ownerHeader,
@@ -252,14 +252,14 @@
             this.colorHeader,
             this.Verified,
             this.Verify});
-            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle56.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle56.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.vehiclesTable.DefaultCellStyle = dataGridViewCellStyle56;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.vehiclesTable.DefaultCellStyle = dataGridViewCellStyle7;
             this.vehiclesTable.EnableHeadersVisualStyles = false;
             this.vehiclesTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
             this.vehiclesTable.Location = new System.Drawing.Point(21, 48);
@@ -296,8 +296,8 @@
             // 
             // ownerHeader
             // 
-            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ownerHeader.DefaultCellStyle = dataGridViewCellStyle52;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ownerHeader.DefaultCellStyle = dataGridViewCellStyle3;
             this.ownerHeader.FillWeight = 150F;
             this.ownerHeader.HeaderText = "Owner Name";
             this.ownerHeader.MinimumWidth = 6;
@@ -312,8 +312,8 @@
             // 
             // typeHeader
             // 
-            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.typeHeader.DefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.typeHeader.DefaultCellStyle = dataGridViewCellStyle4;
             this.typeHeader.FillWeight = 150F;
             this.typeHeader.HeaderText = "Type";
             this.typeHeader.MinimumWidth = 6;
@@ -322,8 +322,8 @@
             // 
             // plateHeader
             // 
-            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.plateHeader.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.plateHeader.DefaultCellStyle = dataGridViewCellStyle5;
             this.plateHeader.FillWeight = 150F;
             this.plateHeader.HeaderText = "Plate #";
             this.plateHeader.MinimumWidth = 6;
@@ -332,8 +332,8 @@
             // 
             // colorHeader
             // 
-            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colorHeader.DefaultCellStyle = dataGridViewCellStyle55;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colorHeader.DefaultCellStyle = dataGridViewCellStyle6;
             this.colorHeader.HeaderText = "Color";
             this.colorHeader.MinimumWidth = 6;
             this.colorHeader.Name = "colorHeader";
@@ -353,11 +353,11 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.guna2Button1);
-            this.panel2.Controls.Add(this.guna2Button2);
-            this.panel2.Controls.Add(this.SSCFront);
-            this.panel2.Controls.Add(this.btnMotorParking3);
-            this.panel2.Controls.Add(this.btnMotorParking2);
+            this.panel2.Controls.Add(this.btnRoadParking);
+            this.panel2.Controls.Add(this.btnPoolSide);
+            this.panel2.Controls.Add(this.btnSSCFront);
+            this.panel2.Controls.Add(this.btnPaymentsOffice);
+            this.panel2.Controls.Add(this.btnGymSide);
             this.panel2.Controls.Add(this.btnGymSideMotor);
             this.panel2.Controls.Add(this.btnCanteenSide);
             this.panel2.Controls.Add(this.btnPatioTrinidad);
@@ -367,50 +367,120 @@
             this.panel2.Size = new System.Drawing.Size(1374, 106);
             this.panel2.TabIndex = 6;
             // 
-            // btnMotorParking3
+            // btnRoadParking
             // 
-            this.btnMotorParking3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnMotorParking3.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.btnMotorParking3.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnMotorParking3.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnMotorParking3.CheckedState.Parent = this.btnMotorParking3;
-            this.btnMotorParking3.CustomBorderColor = System.Drawing.Color.White;
-            this.btnMotorParking3.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.btnMotorParking3.CustomImages.Parent = this.btnMotorParking3;
-            this.btnMotorParking3.FillColor = System.Drawing.Color.White;
-            this.btnMotorParking3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMotorParking3.ForeColor = System.Drawing.Color.Black;
-            this.btnMotorParking3.HoverState.Parent = this.btnMotorParking3;
-            this.btnMotorParking3.Location = new System.Drawing.Point(749, 1);
-            this.btnMotorParking3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMotorParking3.Name = "btnMotorParking3";
-            this.btnMotorParking3.ShadowDecoration.Parent = this.btnMotorParking3;
-            this.btnMotorParking3.Size = new System.Drawing.Size(180, 46);
-            this.btnMotorParking3.TabIndex = 11;
-            this.btnMotorParking3.Text = "Motorcycle Area 3";
+            this.btnRoadParking.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnRoadParking.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btnRoadParking.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnRoadParking.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnRoadParking.CheckedState.Parent = this.btnRoadParking;
+            this.btnRoadParking.CustomBorderColor = System.Drawing.Color.White;
+            this.btnRoadParking.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnRoadParking.CustomImages.Parent = this.btnRoadParking;
+            this.btnRoadParking.FillColor = System.Drawing.Color.White;
+            this.btnRoadParking.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRoadParking.ForeColor = System.Drawing.Color.Black;
+            this.btnRoadParking.HoverState.Parent = this.btnRoadParking;
+            this.btnRoadParking.Location = new System.Drawing.Point(5, 51);
+            this.btnRoadParking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRoadParking.Name = "btnRoadParking";
+            this.btnRoadParking.ShadowDecoration.Parent = this.btnRoadParking;
+            this.btnRoadParking.Size = new System.Drawing.Size(180, 46);
+            this.btnRoadParking.TabIndex = 14;
+            this.btnRoadParking.Text = "Road Parking";
+            this.btnRoadParking.Click += new System.EventHandler(this.btnRoadParking_Click);
             // 
-            // btnMotorParking2
+            // btnPoolSide
             // 
-            this.btnMotorParking2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnMotorParking2.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.btnMotorParking2.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnMotorParking2.CheckedState.FillColor = System.Drawing.Color.White;
-            this.btnMotorParking2.CheckedState.Parent = this.btnMotorParking2;
-            this.btnMotorParking2.CustomBorderColor = System.Drawing.Color.White;
-            this.btnMotorParking2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.btnMotorParking2.CustomImages.Parent = this.btnMotorParking2;
-            this.btnMotorParking2.FillColor = System.Drawing.Color.White;
-            this.btnMotorParking2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMotorParking2.ForeColor = System.Drawing.Color.Black;
-            this.btnMotorParking2.HoverState.Parent = this.btnMotorParking2;
-            this.btnMotorParking2.Location = new System.Drawing.Point(563, 1);
-            this.btnMotorParking2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMotorParking2.Name = "btnMotorParking2";
-            this.btnMotorParking2.ShadowDecoration.Parent = this.btnMotorParking2;
-            this.btnMotorParking2.Size = new System.Drawing.Size(180, 46);
-            this.btnMotorParking2.TabIndex = 10;
-            this.btnMotorParking2.Text = "Motorcycle Area 2";
-            this.btnMotorParking2.Click += new System.EventHandler(this.btnMotorParking2_Click);
+            this.btnPoolSide.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnPoolSide.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btnPoolSide.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnPoolSide.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnPoolSide.CheckedState.Parent = this.btnPoolSide;
+            this.btnPoolSide.CustomBorderColor = System.Drawing.Color.White;
+            this.btnPoolSide.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnPoolSide.CustomImages.Parent = this.btnPoolSide;
+            this.btnPoolSide.FillColor = System.Drawing.Color.White;
+            this.btnPoolSide.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPoolSide.ForeColor = System.Drawing.Color.Black;
+            this.btnPoolSide.HoverState.Parent = this.btnPoolSide;
+            this.btnPoolSide.Location = new System.Drawing.Point(191, 53);
+            this.btnPoolSide.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPoolSide.Name = "btnPoolSide";
+            this.btnPoolSide.ShadowDecoration.Parent = this.btnPoolSide;
+            this.btnPoolSide.Size = new System.Drawing.Size(180, 46);
+            this.btnPoolSide.TabIndex = 13;
+            this.btnPoolSide.Text = "Pool Side";
+            this.btnPoolSide.Click += new System.EventHandler(this.btnPoolSide_Click);
+            // 
+            // btnSSCFront
+            // 
+            this.btnSSCFront.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnSSCFront.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btnSSCFront.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSSCFront.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnSSCFront.CheckedState.Parent = this.btnSSCFront;
+            this.btnSSCFront.CustomBorderColor = System.Drawing.Color.White;
+            this.btnSSCFront.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnSSCFront.CustomImages.Parent = this.btnSSCFront;
+            this.btnSSCFront.FillColor = System.Drawing.Color.White;
+            this.btnSSCFront.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSSCFront.ForeColor = System.Drawing.Color.Black;
+            this.btnSSCFront.HoverState.Parent = this.btnSSCFront;
+            this.btnSSCFront.Location = new System.Drawing.Point(377, 2);
+            this.btnSSCFront.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSSCFront.Name = "btnSSCFront";
+            this.btnSSCFront.ShadowDecoration.Parent = this.btnSSCFront;
+            this.btnSSCFront.Size = new System.Drawing.Size(180, 46);
+            this.btnSSCFront.TabIndex = 12;
+            this.btnSSCFront.Text = "SSC Front";
+            this.btnSSCFront.Click += new System.EventHandler(this.SSCFront_Click);
+            // 
+            // btnPaymentsOffice
+            // 
+            this.btnPaymentsOffice.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnPaymentsOffice.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btnPaymentsOffice.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnPaymentsOffice.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnPaymentsOffice.CheckedState.Parent = this.btnPaymentsOffice;
+            this.btnPaymentsOffice.CustomBorderColor = System.Drawing.Color.White;
+            this.btnPaymentsOffice.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnPaymentsOffice.CustomImages.Parent = this.btnPaymentsOffice;
+            this.btnPaymentsOffice.FillColor = System.Drawing.Color.White;
+            this.btnPaymentsOffice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPaymentsOffice.ForeColor = System.Drawing.Color.Black;
+            this.btnPaymentsOffice.HoverState.Parent = this.btnPaymentsOffice;
+            this.btnPaymentsOffice.Location = new System.Drawing.Point(749, 1);
+            this.btnPaymentsOffice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPaymentsOffice.Name = "btnPaymentsOffice";
+            this.btnPaymentsOffice.ShadowDecoration.Parent = this.btnPaymentsOffice;
+            this.btnPaymentsOffice.Size = new System.Drawing.Size(180, 46);
+            this.btnPaymentsOffice.TabIndex = 11;
+            this.btnPaymentsOffice.Text = "Payments Office";
+            this.btnPaymentsOffice.Click += new System.EventHandler(this.btnPaymentsOffice_Click);
+            // 
+            // btnGymSide
+            // 
+            this.btnGymSide.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnGymSide.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.btnGymSide.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnGymSide.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnGymSide.CheckedState.Parent = this.btnGymSide;
+            this.btnGymSide.CustomBorderColor = System.Drawing.Color.White;
+            this.btnGymSide.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnGymSide.CustomImages.Parent = this.btnGymSide;
+            this.btnGymSide.FillColor = System.Drawing.Color.White;
+            this.btnGymSide.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGymSide.ForeColor = System.Drawing.Color.Black;
+            this.btnGymSide.HoverState.Parent = this.btnGymSide;
+            this.btnGymSide.Location = new System.Drawing.Point(563, 1);
+            this.btnGymSide.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGymSide.Name = "btnGymSide";
+            this.btnGymSide.ShadowDecoration.Parent = this.btnGymSide;
+            this.btnGymSide.Size = new System.Drawing.Size(180, 46);
+            this.btnGymSide.TabIndex = 10;
+            this.btnGymSide.Text = "Gym Side";
+            this.btnGymSide.Click += new System.EventHandler(this.btnMotorParking2_Click);
             // 
             // btnGymSideMotor
             // 
@@ -438,6 +508,7 @@
             // btnCanteenSide
             // 
             this.btnCanteenSide.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnCanteenSide.Checked = true;
             this.btnCanteenSide.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnCanteenSide.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnCanteenSide.CheckedState.FillColor = System.Drawing.Color.White;
@@ -461,7 +532,6 @@
             // btnPatioTrinidad
             // 
             this.btnPatioTrinidad.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnPatioTrinidad.Checked = true;
             this.btnPatioTrinidad.CheckedState.BorderColor = System.Drawing.Color.White;
             this.btnPatioTrinidad.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnPatioTrinidad.CheckedState.FillColor = System.Drawing.Color.White;
@@ -479,7 +549,7 @@
             this.btnPatioTrinidad.ShadowDecoration.Parent = this.btnPatioTrinidad;
             this.btnPatioTrinidad.Size = new System.Drawing.Size(180, 46);
             this.btnPatioTrinidad.TabIndex = 7;
-            this.btnPatioTrinidad.Text = "Parking Area 1";
+            this.btnPatioTrinidad.Text = "Patio Trinidad";
             this.btnPatioTrinidad.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // parkingPanel
@@ -526,73 +596,6 @@
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button1.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button1.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.guna2Button1.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2Button1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(5, 51);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 46);
-            this.guna2Button1.TabIndex = 14;
-            this.guna2Button1.Text = "Motorcycle Area 3";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button2.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.guna2Button2.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.guna2Button2.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomBorderColor = System.Drawing.Color.White;
-            this.guna2Button2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(191, 53);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(180, 46);
-            this.guna2Button2.TabIndex = 13;
-            this.guna2Button2.Text = "Motorcycle Area 2";
-            // 
-            // SSCFront
-            // 
-            this.SSCFront.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.SSCFront.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.SSCFront.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.SSCFront.CheckedState.FillColor = System.Drawing.Color.White;
-            this.SSCFront.CheckedState.Parent = this.SSCFront;
-            this.SSCFront.CustomBorderColor = System.Drawing.Color.White;
-            this.SSCFront.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.SSCFront.CustomImages.Parent = this.SSCFront;
-            this.SSCFront.FillColor = System.Drawing.Color.White;
-            this.SSCFront.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SSCFront.ForeColor = System.Drawing.Color.Black;
-            this.SSCFront.HoverState.Parent = this.SSCFront;
-            this.SSCFront.Location = new System.Drawing.Point(377, 2);
-            this.SSCFront.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SSCFront.Name = "SSCFront";
-            this.SSCFront.ShadowDecoration.Parent = this.SSCFront;
-            this.SSCFront.Size = new System.Drawing.Size(180, 46);
-            this.SSCFront.TabIndex = 12;
-            this.SSCFront.Text = "SSC Front";
-            this.SSCFront.Click += new System.EventHandler(this.SSCFront_Click);
             // 
             // pictureBox1
             // 
@@ -763,15 +766,15 @@
         private System.Windows.Forms.DataGridViewButtonColumn Verify;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btnPatioTrinidad;
-        private Guna.UI2.WinForms.Guna2Button btnMotorParking3;
-        private Guna.UI2.WinForms.Guna2Button btnMotorParking2;
+        private Guna.UI2.WinForms.Guna2Button btnPaymentsOffice;
+        private Guna.UI2.WinForms.Guna2Button btnGymSide;
         private Guna.UI2.WinForms.Guna2Button btnGymSideMotor;
         private Guna.UI2.WinForms.Guna2Button btnCanteenSide;
         private System.Windows.Forms.Panel parkingPanel;
         private Guna.UI2.WinForms.Guna2Button btnAdmit;
         private Guna.UI2.WinForms.Guna2Button btnExit;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button SSCFront;
+        private Guna.UI2.WinForms.Guna2Button btnRoadParking;
+        private Guna.UI2.WinForms.Guna2Button btnPoolSide;
+        private Guna.UI2.WinForms.Guna2Button btnSSCFront;
     }
 }

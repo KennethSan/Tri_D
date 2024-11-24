@@ -29,15 +29,18 @@ namespace Tri_D
             using (MySqlConnection conn = new MySqlConnection(connection.ConnectionString))
             {
                 conn.Open();
-                string load_queued_query = @"SELECT 
+                string load_queued_query = @"
+                    SELECT 
                         h.plate_number,
                         h.slot_number,
                         h.time_in,
-                        COALESCE(e.first_name, s.first_name) AS first_name,
-                        COALESCE(e.last_name, s.last_name) AS last_name,
+                        COALESCE(e.first_name, s.first_name, NULL) AS first_name,
+                        COALESCE(e.last_name, s.last_name, NULL) AS last_name,
+                        g.full_name AS guest_name,
                         CASE 
                             WHEN e.employee_number IS NOT NULL THEN 'Employee'
                             WHEN s.student_number IS NOT NULL THEN 'Student'
+                            WHEN g.guest_number IS NOT NULL THEN 'Guest'
                             ELSE 'Unknown'
                         END AS owner_type,
                         h.owner_id AS reference_number
@@ -47,6 +50,8 @@ namespace Tri_D
                         employees e ON h.owner_id = e.employee_number
                     LEFT JOIN 
                         students s ON h.owner_id = s.student_number
+                    LEFT JOIN 
+                        guests g ON h.owner_id = g.guest_number
                     WHERE 
                         time_out IS NULL AND slot_number IS NOT NULL";
                 MySqlCommand cmd = new MySqlCommand(load_queued_query, conn);
@@ -57,15 +62,28 @@ namespace Tri_D
                 {
                     string first_name = reader["first_name"].ToString();
                     string last_name = reader["last_name"].ToString();
+                    string guest_name = reader["guest_name"].ToString();
                     string plate_number = reader["plate_number"].ToString();
                     string slot_number = reader["slot_number"].ToString();
                     string time_in = reader["time_in"].ToString();
 
-                    string display = first_name + last_name + " | " + plate_number + " | " + slot_number + " | " + time_in;
+                    string display;
+                    if (!string.IsNullOrEmpty(guest_name))
+                    {
+                        // Display guest name if it's a guest
+                        display = guest_name + " (Guest) | " + plate_number + " | " + slot_number + " | " + time_in;
+                    }
+                    else
+                    {
+                        // Display first and last name for employees or students
+                        display = first_name + " " + last_name + " | " + plate_number + " | " + slot_number + " | " + time_in;
+                    }
+
                     combo_drivers.Items.Add(display);
                 }
 
                 reader.Close();
+
 
 
             }
@@ -95,12 +113,12 @@ namespace Tri_D
             // Calculate duration
             TimeSpan duration = outTime - inTime;
 
-            if (slot_number.Contains("A"))
+            if (slot_number.Contains("M"))
             {
                 using (MySqlConnection conn = new MySqlConnection(connection.ConnectionString))
                 {
                     conn.Open();
-                    string update_slots_query = @"UPDATE parkingslot SET status='vacant' WHERE slot_number=@slot_number";
+                    string update_slots_query = @"UPDATE parkingslotmotorcycle SET status='vacant', user_id=NULL WHERE slot_number=@slot_number";
                     MySqlCommand cmd = new MySqlCommand(update_slots_query, conn);
 
                     // Use parameterized queries to prevent SQL injection
@@ -113,7 +131,7 @@ namespace Tri_D
                 using (MySqlConnection conn = new MySqlConnection(connection.ConnectionString))
                 {
                     conn.Open();
-                    string update_slots_query = @"UPDATE parkingslotmotorcycle SET status='vacant' WHERE slot_number=@slot_number";
+                    string update_slots_query = @"UPDATE parkingslot SET status='vacant', user_id=NULL WHERE slot_number=@slot_number";
                     MySqlCommand cmd = new MySqlCommand(update_slots_query, conn);
 
                     // Use parameterized queries to prevent SQL injection

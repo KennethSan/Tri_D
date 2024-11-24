@@ -133,9 +133,11 @@ namespace Tri_D
 
         private void printBtn_Click(object sender, EventArgs e)
         {
-            printBtn.Visible = false;
-            AdjustTableHeightForRows();
+            // Hide the "Details" button before printing
+            Details.Visible = false;
 
+            // Hide the "Print" button to prevent it from appearing in the print preview
+            printBtn.Visible = false;
             Print(this.fulltbl);
             ResetTableAndPanelSize();
             printBtn.Visible = true;

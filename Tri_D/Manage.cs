@@ -30,9 +30,9 @@ namespace Tri_D
         {
             sidebar.Width = sidebar.MinimumSize.Width;
 
-            PatioTrinidad parking_area1 = new PatioTrinidad();
-            addUserControl(parking_area1);
-            parking_area1.update_slot_buttons();
+            CanteenSide default_parking = new CanteenSide();
+            addUserControl(default_parking);
+            default_parking.update_slot_buttons();
         }
 
         private void menuButton_Click(object sender, EventArgs e)
@@ -191,14 +191,17 @@ namespace Tri_D
 
         private void btnParking2_Click(object sender, EventArgs e)
         {
-            CanteenSide parking_area2 = new CanteenSide();
-            addUserControl(parking_area2);
+            CanteenSide canteen = new CanteenSide();
+            addUserControl(canteen);
+            canteen.update_slot_buttons();
         }
 
         private void btnMotorParking1_Click(object sender, EventArgs e)
         {
             GymSideMotor parking_motorcycle_area1 = new GymSideMotor();
             addUserControl(parking_motorcycle_area1);
+            parking_motorcycle_area1.update_slot_buttons();
+
         }
 
 
@@ -245,7 +248,9 @@ namespace Tri_D
 
         private void btnMotorParking2_Click(object sender, EventArgs e)
         {
-
+            GymSide gymSide = new GymSide();
+            addUserControl(gymSide);
+            gymSide.update_slot_buttons();
         }
 
         private void SSCFront_Click(object sender, EventArgs e)
@@ -253,6 +258,28 @@ namespace Tri_D
             //GymSideMotor parking_motorcycle_area1 = new GymSideMotor();
             SSCFront sscfront = new SSCFront();
             addUserControl(sscfront);
+            sscfront.update_slot_buttons();
+        }
+
+        private void btnPaymentsOffice_Click(object sender, EventArgs e)
+        {
+            PaymentsOffice paymentsOffice = new PaymentsOffice();
+            addUserControl(paymentsOffice);
+            paymentsOffice.update_slot_buttons();
+        }
+
+        private void btnRoadParking_Click(object sender, EventArgs e)
+        {
+            RoadParking roadparking = new RoadParking();
+            addUserControl(roadparking);
+            roadparking.update_slot_buttons();
+        }
+
+        private void btnPoolSide_Click(object sender, EventArgs e)
+        {
+            PoolSide poolSide = new PoolSide();
+            addUserControl(poolSide);
+            poolSide.update_slot_buttons();
         }
     }
 }

@@ -179,7 +179,7 @@ namespace Tri_D
 
         }
       
-       
+       // sample
 
         private void chart1_Click(object sender, EventArgs e)
         {
