@@ -179,11 +179,25 @@ namespace Tri_D
                     sidebarExpand = false;
                     sidebarTimer.Stop();
                 }
+                int current_x = historyPanel.Location.X - 10;
+                historyPanel.Location = new Point(current_x, 88);
+                if (historyPanel.Location.X >= 297)
+                {
+                    sidebarExpand = false;
+                    sidebarTimer.Stop();
+                }
             }
             else
             {
                 sidebar.Width += 10;
                 if (sidebar.Width == sidebar.MaximumSize.Width)
+                {
+                    sidebarExpand = true;
+                    sidebarTimer.Stop();
+                }
+                int current_x = historyPanel.Location.X + 10;
+                historyPanel.Location = new Point(current_x, 88);
+                if (historyPanel.Location.X <= 12)
                 {
                     sidebarExpand = true;
                     sidebarTimer.Stop();

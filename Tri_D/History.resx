@@ -5069,7 +5069,7 @@
   <metadata name="sidebarTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="historyPanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA8QAAAG2CAYAAAC52U8UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAA2rSURBVHhe7dfBbRRRFETRDoVQiIBEvWZLGt2zcQKsiAB6
@@ -5161,7 +5161,7 @@
   <data name="searchImage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACYAAAAlCAYAAAAuqZsAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAZlJREFUWEftlwFNA0EQRU8CDkACDsABOAAJOAAH1AESkIAEJCABCfAfuZ9Mmi70
+        DQAACw0B7QfALAAAAZlJREFUWEftlwFNA0EQRU8CDkACDsABOAAJOAAH1AESkIAEJCABCfAfuZ9Mmi70
         duboEvqSH3pQZv/OzE6305H/zpl0Ld3OupROpIPA4o/Su/TR0Kt0I2F8dcjERooG3qRn6WnWixQN8/c7
         aTXYOYuwGAvfSxdSiysJkzaI+fISY8pZoERLykPfeUP8b5m5mClK1UOMQW+WgBkCEjhDzDqHJwXBCISW
         lK8FfUksei+Fs9Vbwm3or5KsuS/Ov55qoMeI2d1r7I4A7LASPiWI211OUp0K0MB9232YhjVGXxGAoViJ

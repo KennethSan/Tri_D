@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tuaLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -54,7 +54,7 @@
             this.sidePanel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.logoutButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
-            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.historyPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.historyTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ownerHeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OwnerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,7 +73,7 @@
             this.sidePanel2.SuspendLayout();
             this.sidePanel3.SuspendLayout();
             this.sidePanel4.SuspendLayout();
-            this.bunifuPanel1.SuspendLayout();
+            this.historyPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.historyTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchImage)).BeginInit();
             this.SuspendLayout();
@@ -86,10 +86,10 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1063, 79);
+            this.guna2Panel1.Size = new System.Drawing.Size(1274, 79);
             this.guna2Panel1.TabIndex = 4;
             // 
             // tuaLabel
@@ -101,7 +101,7 @@
             this.tuaLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             this.tuaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
             this.tuaLabel.Location = new System.Drawing.Point(372, 15);
-            this.tuaLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tuaLabel.Margin = new System.Windows.Forms.Padding(4);
             this.tuaLabel.Name = "tuaLabel";
             this.tuaLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tuaLabel.Size = new System.Drawing.Size(469, 41);
@@ -115,7 +115,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(277, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(65, 71);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -144,7 +144,7 @@
             this.menuButton.ImageZoomSize = new System.Drawing.Size(57, 48);
             this.menuButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("menuButton.InitialImage")));
             this.menuButton.Location = new System.Drawing.Point(16, 15);
-            this.menuButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(4);
             this.menuButton.Name = "menuButton";
             this.menuButton.Rotation = 0;
             this.menuButton.ShowActiveImage = true;
@@ -168,17 +168,17 @@
             this.sidebar.Controls.Add(this.sidePanel2);
             this.sidebar.Controls.Add(this.sidePanel3);
             this.sidebar.Controls.Add(this.sidePanel4);
-            this.sidebar.Location = new System.Drawing.Point(-3, 0);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidebar.Location = new System.Drawing.Point(0, 1);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.sidebar.MaximumSize = new System.Drawing.Size(275, 555);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(13, 555);
+            this.sidebar.Size = new System.Drawing.Size(10, 555);
             this.sidebar.TabIndex = 5;
             // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(267, 75);
             this.panel1.TabIndex = 2;
@@ -189,7 +189,7 @@
             this.sidePanel.BorderRadius = 200;
             this.sidePanel.Controls.Add(this.dashboardButton);
             this.sidePanel.Location = new System.Drawing.Point(4, 87);
-            this.sidePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel.Name = "sidePanel";
             this.sidePanel.ShadowDecoration.Parent = this.sidePanel;
             this.sidePanel.Size = new System.Drawing.Size(267, 57);
@@ -203,7 +203,7 @@
             this.dashboardButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dashboardButton.HoverState.Parent = this.dashboardButton;
             this.dashboardButton.Location = new System.Drawing.Point(-16, -12);
-            this.dashboardButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dashboardButton.Margin = new System.Windows.Forms.Padding(4);
             this.dashboardButton.Name = "dashboardButton";
             this.dashboardButton.PressedState.Parent = this.dashboardButton;
             this.dashboardButton.Size = new System.Drawing.Size(299, 81);
@@ -216,7 +216,7 @@
             this.sidePanel2.BorderRadius = 200;
             this.sidePanel2.Controls.Add(this.manageButton);
             this.sidePanel2.Location = new System.Drawing.Point(4, 152);
-            this.sidePanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel2.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel2.Name = "sidePanel2";
             this.sidePanel2.ShadowDecoration.Parent = this.sidePanel2;
             this.sidePanel2.Size = new System.Drawing.Size(267, 57);
@@ -230,7 +230,7 @@
             this.manageButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.manageButton.HoverState.Parent = this.manageButton;
             this.manageButton.Location = new System.Drawing.Point(0, 0);
-            this.manageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.manageButton.Margin = new System.Windows.Forms.Padding(4);
             this.manageButton.Name = "manageButton";
             this.manageButton.PressedState.Parent = this.manageButton;
             this.manageButton.Size = new System.Drawing.Size(261, 64);
@@ -243,7 +243,7 @@
             this.sidePanel3.BorderRadius = 200;
             this.sidePanel3.Controls.Add(this.historyButton);
             this.sidePanel3.Location = new System.Drawing.Point(4, 217);
-            this.sidePanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel3.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel3.Name = "sidePanel3";
             this.sidePanel3.ShadowDecoration.Parent = this.sidePanel3;
             this.sidePanel3.Size = new System.Drawing.Size(267, 57);
@@ -256,7 +256,7 @@
             this.historyButton.CheckedState.Parent = this.historyButton;
             this.historyButton.HoverState.Parent = this.historyButton;
             this.historyButton.Location = new System.Drawing.Point(0, 0);
-            this.historyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.historyButton.Margin = new System.Windows.Forms.Padding(4);
             this.historyButton.Name = "historyButton";
             this.historyButton.PressedState.Parent = this.historyButton;
             this.historyButton.Size = new System.Drawing.Size(261, 64);
@@ -268,7 +268,7 @@
             this.sidePanel4.BorderRadius = 200;
             this.sidePanel4.Controls.Add(this.logoutButton);
             this.sidePanel4.Location = new System.Drawing.Point(4, 282);
-            this.sidePanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sidePanel4.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel4.Name = "sidePanel4";
             this.sidePanel4.ShadowDecoration.Parent = this.sidePanel4;
             this.sidePanel4.Size = new System.Drawing.Size(267, 57);
@@ -282,7 +282,7 @@
             this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logoutButton.HoverState.Parent = this.logoutButton;
             this.logoutButton.Location = new System.Drawing.Point(0, 0);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(4);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.PressedState.Parent = this.logoutButton;
             this.logoutButton.Size = new System.Drawing.Size(261, 64);
@@ -294,42 +294,42 @@
             this.sidebarTimer.Interval = 5;
             this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
-            // bunifuPanel1
+            // historyPanel
             // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
-            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.bunifuPanel1.BorderRadius = 3;
-            this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.historyTable);
-            this.bunifuPanel1.Controls.Add(this.searchImage);
-            this.bunifuPanel1.Controls.Add(this.searchTextbox);
-            this.bunifuPanel1.Location = new System.Drawing.Point(69, 102);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(964, 438);
-            this.bunifuPanel1.TabIndex = 6;
+            this.historyPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.historyPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("historyPanel.BackgroundImage")));
+            this.historyPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.historyPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.historyPanel.BorderRadius = 3;
+            this.historyPanel.BorderThickness = 1;
+            this.historyPanel.Controls.Add(this.historyTable);
+            this.historyPanel.Controls.Add(this.searchImage);
+            this.historyPanel.Controls.Add(this.searchTextbox);
+            this.historyPanel.Location = new System.Drawing.Point(12, 88);
+            this.historyPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.historyPanel.Name = "historyPanel";
+            this.historyPanel.ShowBorders = true;
+            this.historyPanel.Size = new System.Drawing.Size(964, 438);
+            this.historyPanel.TabIndex = 6;
             // 
             // historyTable
             // 
             this.historyTable.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.historyTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            this.historyTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.historyTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.historyTable.BackgroundColor = System.Drawing.Color.White;
             this.historyTable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.historyTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.historyTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.historyTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(205)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.historyTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.historyTable.ColumnHeadersHeight = 40;
             this.historyTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ownerHeader,
@@ -340,18 +340,18 @@
             this.timeoutHeader,
             this.durationHeader,
             this.detailsButton});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.historyTable.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(147)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.historyTable.DefaultCellStyle = dataGridViewCellStyle27;
             this.historyTable.EnableHeadersVisualStyles = false;
             this.historyTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
             this.historyTable.Location = new System.Drawing.Point(19, 62);
-            this.historyTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.historyTable.Margin = new System.Windows.Forms.Padding(4);
             this.historyTable.Name = "historyTable";
             this.historyTable.RowHeadersVisible = false;
             this.historyTable.RowHeadersWidth = 51;
@@ -384,8 +384,8 @@
             // 
             // ownerHeader
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ownerHeader.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ownerHeader.DefaultCellStyle = dataGridViewCellStyle21;
             this.ownerHeader.FillWeight = 150F;
             this.ownerHeader.HeaderText = "Owner Name";
             this.ownerHeader.MinimumWidth = 6;
@@ -400,8 +400,8 @@
             // 
             // typeHeader
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.typeHeader.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.typeHeader.DefaultCellStyle = dataGridViewCellStyle22;
             this.typeHeader.FillWeight = 150F;
             this.typeHeader.HeaderText = "Type";
             this.typeHeader.MinimumWidth = 6;
@@ -410,8 +410,8 @@
             // 
             // dateHeader
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dateHeader.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dateHeader.DefaultCellStyle = dataGridViewCellStyle23;
             this.dateHeader.FillWeight = 150F;
             this.dateHeader.HeaderText = "Date";
             this.dateHeader.MinimumWidth = 6;
@@ -420,8 +420,8 @@
             // 
             // timeinHeader
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.timeinHeader.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.timeinHeader.DefaultCellStyle = dataGridViewCellStyle24;
             this.timeinHeader.HeaderText = "Time-In";
             this.timeinHeader.MinimumWidth = 6;
             this.timeinHeader.Name = "timeinHeader";
@@ -429,8 +429,8 @@
             // 
             // timeoutHeader
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.timeoutHeader.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.timeoutHeader.DefaultCellStyle = dataGridViewCellStyle25;
             this.timeoutHeader.HeaderText = "Time-Out";
             this.timeoutHeader.MinimumWidth = 6;
             this.timeoutHeader.Name = "timeoutHeader";
@@ -438,8 +438,8 @@
             // 
             // durationHeader
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.durationHeader.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.durationHeader.DefaultCellStyle = dataGridViewCellStyle26;
             this.durationHeader.HeaderText = "Duration";
             this.durationHeader.MinimumWidth = 6;
             this.durationHeader.Name = "durationHeader";
@@ -460,7 +460,7 @@
             this.searchImage.BackColor = System.Drawing.Color.White;
             this.searchImage.Image = ((System.Drawing.Image)(resources.GetObject("searchImage.Image")));
             this.searchImage.Location = new System.Drawing.Point(27, 18);
-            this.searchImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchImage.Margin = new System.Windows.Forms.Padding(4);
             this.searchImage.Name = "searchImage";
             this.searchImage.Size = new System.Drawing.Size(29, 30);
             this.searchImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -483,7 +483,7 @@
             this.searchTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTextbox.HoverState.Parent = this.searchTextbox;
             this.searchTextbox.Location = new System.Drawing.Point(19, 10);
-            this.searchTextbox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.searchTextbox.Margin = new System.Windows.Forms.Padding(5);
             this.searchTextbox.Name = "searchTextbox";
             this.searchTextbox.PasswordChar = '\0';
             this.searchTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
@@ -499,11 +499,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(1063, 555);
-            this.Controls.Add(this.bunifuPanel1);
+            this.ClientSize = new System.Drawing.Size(1274, 555);
+            this.Controls.Add(this.historyPanel);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.sidebar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "History";
             this.Text = "History";
             this.Load += new System.EventHandler(this.History_Load);
@@ -515,7 +515,7 @@
             this.sidePanel2.ResumeLayout(false);
             this.sidePanel3.ResumeLayout(false);
             this.sidePanel4.ResumeLayout(false);
-            this.bunifuPanel1.ResumeLayout(false);
+            this.historyPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.historyTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchImage)).EndInit();
             this.ResumeLayout(false);
@@ -539,7 +539,7 @@
         private Guna.UI2.WinForms.Guna2Panel sidePanel4;
         private Guna.UI2.WinForms.Guna2ImageButton logoutButton;
         private System.Windows.Forms.Timer sidebarTimer;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuPanel historyPanel;
         private Guna.UI2.WinForms.Guna2TextBox searchTextbox;
         private System.Windows.Forms.PictureBox searchImage;
         private Guna.UI2.WinForms.Guna2DataGridView historyTable;
