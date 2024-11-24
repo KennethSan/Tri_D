@@ -29,6 +29,8 @@ namespace Tri_D
         {
             InitializeComponent();
             historyTable.CellClick += historyTable_CellClick;
+            historyTable.CellEndEdit += historyTable_CellEndEdit;
+
             string queryHistory = @"
     SELECT h.date, h.time_in AS timein, h.time_out AS timeout, 
            CONCAT(s.first_name, ' ', s.last_name) AS owner, 'Student' AS type, h.owner_id AS ownerID 
@@ -138,6 +140,102 @@ namespace Tri_D
              
             }
         }
+        private void historyTable_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            if (historyTable.Columns[e.ColumnIndex].Name == "timeinHeader")
+            {
+                int rowIndex = e.RowIndex;
+
+                string ownerID = historyTable.Rows[rowIndex].Cells["OwnerID"].Value.ToString(); // Owner ID
+                string dateString = historyTable.Rows[rowIndex].Cells["dateHeader"].Value.ToString(); // Date
+                string newTimeInString = historyTable.Rows[rowIndex].Cells["timeinHeader"].Value.ToString(); // New Time-In
+
+                // Validate the new value (ensure it's a valid time)
+                if (TimeSpan.TryParseExact(newTimeInString, @"hh\:mm", null, out TimeSpan newTimeIn))
+                {
+                    DateTime date = DateTime.ParseExact(dateString, "yyyy-MM-dd", null);
+
+                    // Step 1: Update `time_in` in the database
+                    string updateQuery = @"
+                UPDATE history 
+                SET time_in = @newTimeIn 
+                WHERE owner_id = @ownerID 
+                AND date = @date";
+
+                    using (MySqlCommand updateCmd = new MySqlCommand(updateQuery, connection))
+                    {
+                        updateCmd.Parameters.AddWithValue("@newTimeIn", newTimeIn.ToString(@"hh\:mm\:ss"));
+                        updateCmd.Parameters.AddWithValue("@ownerID", ownerID);
+                        updateCmd.Parameters.AddWithValue("@date", date);
+
+                        try
+                        {
+                            int rowsAffected = updateCmd.ExecuteNonQuery();
+                            if (rowsAffected > 0)
+                            {
+                                // Step 2: Fetch `time_out` for recalculating duration
+                                string fetchTimeOutQuery = @"
+                            SELECT time_out FROM history 
+                            WHERE owner_id = @ownerID 
+                            AND date = @date";
+
+                                using (MySqlCommand fetchCmd = new MySqlCommand(fetchTimeOutQuery, connection))
+                                {
+                                    fetchCmd.Parameters.AddWithValue("@ownerID", ownerID);
+                                    fetchCmd.Parameters.AddWithValue("@date", date);
+
+                                    object timeOutObj = fetchCmd.ExecuteScalar();
+                                    if (timeOutObj != DBNull.Value)
+                                    {
+                                        TimeSpan timeOut = TimeSpan.Parse(timeOutObj.ToString());
+
+                                        // Step 3: Calculate the new duration
+                                        TimeSpan newDuration = CalculateDuration(newTimeIn, timeOut);
+
+                                        // Update duration in the database
+                                        string updateDurationQuery = @"
+                                    UPDATE history 
+                                    SET duration = @newDuration 
+                                    WHERE owner_id = @ownerID 
+                                    AND date = @date";
+
+                                        using (MySqlCommand updateDurationCmd = new MySqlCommand(updateDurationQuery, connection))
+                                        {
+                                            updateDurationCmd.Parameters.AddWithValue("@newDuration", newDuration.ToString(@"hh\:mm\:ss"));
+                                            updateDurationCmd.Parameters.AddWithValue("@ownerID", ownerID);
+                                            updateDurationCmd.Parameters.AddWithValue("@date", date);
+
+                                            updateDurationCmd.ExecuteNonQuery();
+
+                                            // Update duration in the DataGridView
+                                            historyTable.Rows[rowIndex].Cells["durationHeader"].Value = newDuration.ToString(@"hh\:mm");
+                                            MessageBox.Show("Time-In and Duration updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Time-Out is not set for this record. Duration cannot be calculated.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("No matching record found to update. Check the input values.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error updating Time-In: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Time format. Please use HH:mm.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
         private void dashboardButton_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();

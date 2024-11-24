@@ -23,18 +23,23 @@ namespace Tri_D
         private PrintDocument printDocument1 = new PrintDocument();
         private PrintPreviewDialog previewdlg = new PrintPreviewDialog();
         private float scaleFactor;
+        private Size originalTableSize;
+        private Size originalPanelSize;
+
         public Fullhistory()
         {
             InitializeComponent();
             printDocument1.PrintPage += new PrintPageEventHandler(printdoc1_PrintPage);
-
+            originalTableSize = fullHistoryTable.Size;
+            originalPanelSize = fulltbl.Size;
         }
         public void GetPrintArea(Panel pnl)
         {
+            // Update Bitmap size to match panel's current size
             MemoryImage = new Bitmap(pnl.Width, pnl.Height);
-                pnl.DrawToBitmap(MemoryImage, new Rectangle(0, 0, pnl.Width, pnl.Height));
-            }
-            protected override void OnPaint(PaintEventArgs e)
+            pnl.DrawToBitmap(MemoryImage, new Rectangle(0, 0, pnl.Width, pnl.Height));
+        }
+        protected override void OnPaint(PaintEventArgs e)
             {
                 if (MemoryImage != null)
                 {
@@ -44,21 +49,20 @@ namespace Tri_D
         }
         void printdoc1_PrintPage(object sender, PrintPageEventArgs e)
         {
-            // Get the page area (this will give the printable area of the page)
+            // Get the printable area
             Rectangle pagearea = e.PageBounds;
 
-            // Scale the image to fit within the printable area
-            float scaleWidth = pagearea.Width / (float)fulltbl.Width;
-            float scaleHeight = pagearea.Height / (float)fulltbl.Height;
-            scaleFactor = Math.Min(scaleWidth, scaleHeight);  // Ensure the table fits both width and height
+            // Calculate scale factor
+            float scaleWidth = pagearea.Width / (float)MemoryImage.Width;
+            float scaleHeight = pagearea.Height / (float)MemoryImage.Height;
+            scaleFactor = Math.Min(scaleWidth, scaleHeight);
 
-            // Draw the image aligned to the top of the page instead of the center
+            // Center and draw the scaled image
             e.Graphics.DrawImage(MemoryImage,
-                (pagearea.Width - fulltbl.Width * scaleFactor) / 2,  // Horizontally center the image
-                0,  // Align to the top of the page (Y = 0)
-                fulltbl.Width * scaleFactor,
-                fulltbl.Height * scaleFactor);
-
+                (pagearea.Width - MemoryImage.Width * scaleFactor) / 2,  // Center horizontally
+                0,                                                      // Start from the top
+                MemoryImage.Width * scaleFactor,
+                MemoryImage.Height * scaleFactor);
         }
         public void Print(Panel pnl)
         {
@@ -130,12 +134,40 @@ namespace Tri_D
         private void printBtn_Click(object sender, EventArgs e)
         {
             printBtn.Visible = false;
+            AdjustTableHeightForRows();
+
             Print(this.fulltbl);
-            
+            ResetTableAndPanelSize();
+            printBtn.Visible = true;
 
 
 
         }
+        private void ResetTableAndPanelSize()
+        {
+            fullHistoryTable.Size = originalTableSize;
+            fulltbl.Size = originalPanelSize;
+        }
+
+        private void AdjustTableHeightForRows()
+        {
+            int maxVisibleRows = 8; // Maximum rows before stretching
+            int rowCount = fullHistoryTable.Rows.Count;
+
+            if (rowCount > maxVisibleRows)
+            {
+                int rowHeight = fullHistoryTable.RowTemplate.Height;
+                int headerHeight = fullHistoryTable.ColumnHeadersHeight;
+
+                // Compute the desired height for the table
+                int newHeight = headerHeight + (rowHeight * rowCount);
+
+                // Set the table and panel height
+                fullHistoryTable.Height = newHeight;
+                fulltbl.Height = newHeight + 20; // Add some padding for the panel
+            }
+        }
+
 
         private void Details_Click(object sender, EventArgs e)
         {

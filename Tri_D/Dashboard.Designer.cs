@@ -65,7 +65,6 @@
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.refreshLoad = new System.Windows.Forms.Timer(this.components);
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebar.SuspendLayout();
@@ -292,7 +291,7 @@
             this.guna2Panel2.Controls.Add(this.occupiedLabel);
             this.guna2Panel2.Controls.Add(this.carAvailabilityProgress);
             this.guna2Panel2.Controls.Add(this.parkingavailabilityLabel);
-            this.guna2Panel2.Location = new System.Drawing.Point(16, 104);
+            this.guna2Panel2.Location = new System.Drawing.Point(42, 104);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(243, 113);
@@ -407,7 +406,7 @@
             this.guna2Panel3.Controls.Add(this.bunifuLabel4);
             this.guna2Panel3.Controls.Add(this.motorAvailabilityProgress);
             this.guna2Panel3.Controls.Add(this.bunifuLabel5);
-            this.guna2Panel3.Location = new System.Drawing.Point(12, 263);
+            this.guna2Panel3.Location = new System.Drawing.Point(42, 260);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
             this.guna2Panel3.Size = new System.Drawing.Size(247, 113);
@@ -536,26 +535,11 @@
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(497, 395);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 9;
-            this.guna2Button1.Text = "guna2Button1";
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 452);
-            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.sidebar);
@@ -614,6 +598,5 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private System.Windows.Forms.Timer refreshLoad;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
