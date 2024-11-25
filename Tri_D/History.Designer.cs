@@ -88,7 +88,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(956, 64);
+            this.guna2Panel1.Size = new System.Drawing.Size(756, 64);
             this.guna2Panel1.TabIndex = 4;
             // 
             // tuaLabel
@@ -164,7 +164,7 @@
             this.sidebar.Controls.Add(this.sidePanel2);
             this.sidebar.Controls.Add(this.sidePanel3);
             this.sidebar.Controls.Add(this.sidePanel4);
-            this.sidebar.Location = new System.Drawing.Point(0, 1);
+            this.sidebar.Location = new System.Drawing.Point(-100, 1);
             this.sidebar.MaximumSize = new System.Drawing.Size(206, 451);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(8, 451);
@@ -466,7 +466,7 @@
             this.searchTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTextbox.HoverState.Parent = this.searchTextbox;
             this.searchTextbox.Location = new System.Drawing.Point(14, 8);
-            this.searchTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.searchTextbox.Name = "searchTextbox";
             this.searchTextbox.PasswordChar = '\0';
             this.searchTextbox.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
@@ -482,7 +482,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(956, 451);
+            this.ClientSize = new System.Drawing.Size(756, 451);
             this.Controls.Add(this.historyPanel);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.sidebar);

@@ -431,6 +431,15 @@ namespace Tri_D
         private void menuButton_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
+            if(this.Width == 772)
+            {
+                this.Width = 972;
+            }
+            else if(this.Width == 972)
+            { 
+                this.Width = 772; }
+            
+            
         }
     }
 }
