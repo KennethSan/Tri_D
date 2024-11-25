@@ -175,11 +175,8 @@ namespace Tri_D
 
         private void Details_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("clicked");
-            //Details details = new Details();
-            details1.Visible = true;
-            details1.BringToFront();
-            //details.Show();
+            DetailsUser details = new DetailsUser();
+            details.Show();
         }
 
         
