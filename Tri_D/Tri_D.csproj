@@ -271,6 +271,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetailsUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailsUser.Designer.cs">
+      <DependentUpon>DetailsUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExitUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -398,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsUser.resx">
+      <DependentUpon>DetailsUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExitUser.resx">
       <DependentUpon>ExitUser.cs</DependentUpon>
