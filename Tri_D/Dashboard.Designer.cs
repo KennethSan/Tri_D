@@ -35,6 +35,7 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.timelbl = new System.Windows.Forms.Label();
             this.tuaLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuButton = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -65,6 +66,7 @@
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.refreshLoad = new System.Windows.Forms.Timer(this.components);
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.timenow = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebar.SuspendLayout();
@@ -79,18 +81,29 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
+            this.guna2Panel1.Controls.Add(this.timelbl);
             this.guna2Panel1.Controls.Add(this.tuaLabel);
             this.guna2Panel1.Controls.Add(this.pictureBox1);
             this.guna2Panel1.Controls.Add(this.menuButton);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(-48, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(10, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(946, 61);
+            this.guna2Panel1.Size = new System.Drawing.Size(841, 61);
             this.guna2Panel1.TabIndex = 0;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // timelbl
+            // 
+            this.timelbl.AutoSize = true;
+            this.timelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timelbl.Location = new System.Drawing.Point(590, 24);
+            this.timelbl.Name = "timelbl";
+            this.timelbl.Size = new System.Drawing.Size(57, 24);
+            this.timelbl.TabIndex = 3;
+            this.timelbl.Text = "Time";
             // 
             // tuaLabel
             // 
@@ -100,7 +113,7 @@
             this.tuaLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.tuaLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
             this.tuaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(46)))));
-            this.tuaLabel.Location = new System.Drawing.Point(275, 13);
+            this.tuaLabel.Location = new System.Drawing.Point(133, 11);
             this.tuaLabel.Name = "tuaLabel";
             this.tuaLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tuaLabel.Size = new System.Drawing.Size(418, 37);
@@ -113,7 +126,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(216)))), ((int)(((byte)(199)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(208, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(67, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 58);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -141,7 +154,7 @@
             this.menuButton.ImageSize = new System.Drawing.Size(42, 38);
             this.menuButton.ImageZoomSize = new System.Drawing.Size(43, 39);
             this.menuButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("menuButton.InitialImage")));
-            this.menuButton.Location = new System.Drawing.Point(60, 11);
+            this.menuButton.Location = new System.Drawing.Point(15, 11);
             this.menuButton.Name = "menuButton";
             this.menuButton.Rotation = 0;
             this.menuButton.ShowActiveImage = true;
@@ -535,6 +548,10 @@
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
+            // timenow
+            // 
+            this.timenow.Tick += new System.EventHandler(this.timenow_Tick);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -598,5 +615,7 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private System.Windows.Forms.Timer refreshLoad;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Label timelbl;
+        private System.Windows.Forms.Timer timenow;
     }
 }

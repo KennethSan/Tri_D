@@ -138,6 +138,7 @@ namespace Tri_D
 
             // Hide the "Print" button to prevent it from appearing in the print preview
             printBtn.Visible = false;
+            AdjustTableHeightForRows();
             Print(this.fulltbl);
             ResetTableAndPanelSize();
             printBtn.Visible = true;
@@ -167,21 +168,21 @@ namespace Tri_D
                 // Set the table and panel height
                 fullHistoryTable.Height = newHeight;
                 fulltbl.Height = newHeight + 20; // Add some padding for the panel
+                this.Height = newHeight + 200;
             }
         }
 
 
         private void Details_Click(object sender, EventArgs e)
         {
-            Details details = new Details();
-            details.Show();
+            //MessageBox.Show("clicked");
+            //Details details = new Details();
+            details1.Visible = true;
+            details1.BringToFront();
+            //details.Show();
         }
 
-        private void details1_Load(object sender, EventArgs e)
-        {
-            Details details = new Details();
-            details.Hide();
-        }
+        
 
         /*private void printButton_Click(object sender, EventArgs e)
         {

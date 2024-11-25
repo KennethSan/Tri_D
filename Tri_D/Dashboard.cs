@@ -19,6 +19,7 @@ namespace Tri_D
         public Dashboard()
         {
             InitializeComponent();
+            timenow.Start();
 
         }
 
@@ -55,7 +56,9 @@ namespace Tri_D
         }
         private void RefreshParkingCounts()
         {
-            
+            timelbl.Text = DateTime.Now.ToString();
+
+
             string queryVacant = "SELECT COUNT(*) AS vacant_count FROM parkingslot WHERE status = 'vacant';";
             string queryOccupied = "SELECT COUNT(*) AS occupied_count FROM parkingslot WHERE status = 'occupied';";
             string queryTotalslot = "SELECT COUNT(*) AS total_slots FROM parkingslot;";
@@ -184,6 +187,11 @@ namespace Tri_D
         private void chart1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timenow_Tick(object sender, EventArgs e)
+        {
+            
         }
     }
 }

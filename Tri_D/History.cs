@@ -30,6 +30,8 @@ namespace Tri_D
             InitializeComponent();
             historyTable.CellClick += historyTable_CellClick;
             historyTable.CellEndEdit += historyTable_CellEndEdit;
+            searchTextbox.TextChanged += SearchTextbox_TextChanged;
+
 
             string queryHistory = @"
     SELECT h.date, h.time_in AS timein, h.time_out AS timeout, 
@@ -113,6 +115,33 @@ namespace Tri_D
         {
             sidebar.Width = sidebar.MinimumSize.Width;
         }
+
+
+        private void SearchTextbox_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = searchTextbox.Text.ToLower(); // Get the search text and convert it to lowercase
+
+            // Loop through the rows in the historyTable
+            foreach (DataGridViewRow row in historyTable.Rows)
+            {
+                // Check if the row should be visible based on the search text
+                bool isVisible = row.Cells["ownerHeader"].Value.ToString().ToLower().Contains(searchText) ||
+                                 row.Cells["OwnerID"].Value.ToString().ToLower().Contains(searchText) ||
+                                 row.Cells["typeHeader"].Value.ToString().ToLower().Contains(searchText) ||
+                                 row.Cells["dateHeader"].Value.ToString().Contains(searchText) ||
+                                 row.Cells["timeinHeader"].Value.ToString().Contains(searchText) ||
+                                 row.Cells["timeoutHeader"].Value.ToString().Contains(searchText) ||
+                                 row.Cells["durationHeader"].Value.ToString().Contains(searchText);
+
+                // Set the row visibility
+                row.Visible = isVisible;
+            }
+        }
+
+
+
+
+
         private void historyTable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Check if the clicked cell is the details button
@@ -226,6 +255,101 @@ namespace Tri_D
                         catch (Exception ex)
                         {
                             MessageBox.Show($"Error updating Time-In: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Time format. Please use HH:mm.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+
+
+
+            if (historyTable.Columns[e.ColumnIndex].Name == "timeoutHeader")
+            {
+                int rowIndex = e.RowIndex;
+
+                string ownerID = historyTable.Rows[rowIndex].Cells["OwnerID"].Value.ToString(); // Owner ID
+                string dateString = historyTable.Rows[rowIndex].Cells["dateHeader"].Value.ToString(); // Date
+                string newTimeOutString = historyTable.Rows[rowIndex].Cells["timeoutHeader"].Value.ToString(); // New Time-Out
+
+                // Validate the new value (ensure it's a valid time)
+                if (TimeSpan.TryParseExact(newTimeOutString, @"hh\:mm", null, out TimeSpan newTimeOut))
+                {
+                    DateTime date = DateTime.ParseExact(dateString, "yyyy-MM-dd", null);
+
+                    // Step 1: Update `time_out` in the database
+                    string updateQuery = @"
+                        UPDATE history 
+                        SET time_out = @newTimeOut 
+                        WHERE owner_id = @ownerID 
+                        AND date = @date";
+
+                    using (MySqlCommand updateCmd = new MySqlCommand(updateQuery, connection))
+                    {
+                        updateCmd.Parameters.AddWithValue("@newTimeOut", newTimeOut.ToString(@"hh\:mm\:ss"));
+                        updateCmd.Parameters.AddWithValue("@ownerID", ownerID);
+                        updateCmd.Parameters.AddWithValue("@date", date);
+
+                        try
+                        {
+                            int rowsAffected = updateCmd.ExecuteNonQuery();
+                            if (rowsAffected > 0)
+                            {
+                                // Step 2: Fetch `time_in` for recalculating duration
+                                string fetchTimeInQuery = @"
+                        SELECT time_in FROM history 
+                        WHERE owner_id = @ownerID 
+                        AND date = @date";
+
+                                using (MySqlCommand fetchCmd = new MySqlCommand(fetchTimeInQuery, connection))
+                                {
+                                    fetchCmd.Parameters.AddWithValue("@ownerID", ownerID);
+                                    fetchCmd.Parameters.AddWithValue("@date", date);
+
+                                    object timeInObj = fetchCmd.ExecuteScalar();
+                                    if (timeInObj != DBNull.Value)
+                                    {
+                                        TimeSpan timeIn = TimeSpan.Parse(timeInObj.ToString());
+
+                                        // Step 3: Calculate the new duration
+                                        TimeSpan newDuration = CalculateDuration(timeIn, newTimeOut);
+
+                                        // Update duration in the database
+                                        string updateDurationQuery = @"
+                                UPDATE history 
+                                SET duration = @newDuration 
+                                WHERE owner_id = @ownerID 
+                                AND date = @date";
+
+                                        using (MySqlCommand updateDurationCmd = new MySqlCommand(updateDurationQuery, connection))
+                                        {
+                                            updateDurationCmd.Parameters.AddWithValue("@newDuration", newDuration.ToString(@"hh\:mm\:ss"));
+                                            updateDurationCmd.Parameters.AddWithValue("@ownerID", ownerID);
+                                            updateDurationCmd.Parameters.AddWithValue("@date", date);
+
+                                            updateDurationCmd.ExecuteNonQuery();
+
+                                            // Update duration in the DataGridView
+                                            historyTable.Rows[rowIndex].Cells["durationHeader"].Value = newDuration.ToString(@"hh\:mm");
+                                            MessageBox.Show("Time-Out and Duration updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Time-In is not set for this record. Duration cannot be calculated.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("No matching record found to update. Check the input values.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error updating Time-Out: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
