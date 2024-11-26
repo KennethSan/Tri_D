@@ -114,12 +114,12 @@ namespace Tri_D
                 cmd.ExecuteNonQuery();
             }
 
-            if (slot_number.Contains("A"))
+            if (slot_number.Contains("M"))
             {
                 using (MySqlConnection conn = new MySqlConnection(connection.ConnectionString))
                 {
                     conn.Open();
-                    string update_slots_query = @"UPDATE parkingslot SET status='occupied', user_id=@user_id WHERE slot_number=@slot_number";
+                    string update_slots_query = @"UPDATE parkingslotmotorcycle SET status='occupied', user_id=@user_id WHERE slot_number=@slot_number";
                     MySqlCommand cmd = new MySqlCommand(update_slots_query, conn);
 
                     // Use parameterized queries to prevent SQL injection
@@ -132,7 +132,7 @@ namespace Tri_D
                 using (MySqlConnection conn = new MySqlConnection(connection.ConnectionString))
                 {
                     conn.Open();
-                    string update_slots_query = @"UPDATE parkingslotmotorcycle SET status='occupied', user_id=@user_id WHERE slot_number=@slot_number";
+                    string update_slots_query = @"UPDATE parkingslot SET status='occupied', user_id=@user_id WHERE slot_number=@slot_number";
                     MySqlCommand cmd = new MySqlCommand(update_slots_query, conn);
 
                     // Use parameterized queries to prevent SQL injection

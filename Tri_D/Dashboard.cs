@@ -193,5 +193,15 @@ namespace Tri_D
         {
             
         }
+
+        private void parkingavailabilityLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

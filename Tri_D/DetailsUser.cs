@@ -99,30 +99,35 @@ namespace Tri_D
         {
             try
             {
-                // Remove any whitespace characters from the base64 string
-                base64String = base64String.Trim();
+                // Clean up the base64 string
+                base64String = base64String.Replace("\r", "").Replace("\n", "").Trim();
 
-                // Ensure the base64 string has a length that is a multiple of 4
+                // Ensure the base64 string has proper padding
                 int paddingLength = base64String.Length % 4;
                 if (paddingLength > 0)
                 {
                     base64String = base64String.PadRight(base64String.Length + (4 - paddingLength), '=');
                 }
 
-                // Convert the base64 string to a byte array
+                // Convert to byte array
                 byte[] imageBytes = Convert.FromBase64String(base64String);
 
-                // Create an Image object from the byte array and display it in the PictureBox
+                // Load image into PictureBox
                 using (MemoryStream ms = new MemoryStream(imageBytes))
                 {
                     pictureBox.Image = Image.FromStream(ms);
                 }
             }
+            catch (FormatException fex)
+            {
+                MessageBox.Show($"Base64 format issue: {fex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error displaying image: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"General error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
 
